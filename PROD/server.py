@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify
 import datetime
 
 
-with open("/Users/kirillkuznecov/Documents/Документы/data_science/PROD/data/model.pkl", 'rb') as pkl_model:
+with open("./data/model.pkl", 'rb') as pkl_model:
     model = pickle.load(pkl_model)
 
 app = Flask(__name__)
