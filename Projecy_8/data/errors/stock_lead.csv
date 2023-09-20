@@ -1,0 +1,5 @@
+date,model_name,rmse,mae,mape
+
+2023-09-19 00:00:00,AR-baseline-stock,11.259,10.068,18.7
+2023-09-19 00:00:00,ARIMA-stock,13.18,11.793,21.9
+2023-09-19 00:00:00,SARIMAX-stock,5.814,4.803,8.9
