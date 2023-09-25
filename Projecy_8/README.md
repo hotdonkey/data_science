@@ -1,4 +1,4 @@
-# Project 7. Ghana GDP forecast
+# Project 8. Timeseries predictor
 
 ## Table of content
 [1. Project description and dataset link](README.md#Project-description)  
@@ -9,19 +9,19 @@
 [6. Conclusion](README.md#Conclusion) 
 
 ### Project description    
-TimeSeries prediction model based on Ghana GDP data.
+TimeSeries prediction model based on LME/Westmetall datasets.
 
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
 
 ### What case are we trying to solve?    
-TimeSeries prognosis for Ghana GDP on 3 years forward.
+TimeSeries prognosis for LME/Westmetall 90 days ahead.
 
 **Task conditions:**  
 Dataset prepared for modelling.
 
 **Quality metrics**     
-RMSE, visual estimation.
+MAE, RMSE, MAPE, visual estimation.
 
 **What do we practice**     
 Everything from statsmodels module and beyond.
@@ -29,7 +29,8 @@ Everything from statsmodels module and beyond.
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
 ### Short info about the data
-Simple timeseries.
+Timeseries of spot prices, forwards and stock.
+No outliers, only anomalyes.
   
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
@@ -51,7 +52,7 @@ Great success.
 
 
 ### Conclusion:  
-We reached the minimal threshold of RMSE to say that we made a solid model. 
+We reached the minimal threshold of MAE to say that we made a solid model. 
 
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
