@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 import pika
-import json
 
 
 metall = [
