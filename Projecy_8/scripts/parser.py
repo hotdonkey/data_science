@@ -8,6 +8,7 @@ metall = [
     'lead', 'nickel', 'zink'
 ]
 
+
 def get_metalls(metall_name: str):
 
     # Список источников, нам понадобится информация по 5 видам сырья:
@@ -59,18 +60,27 @@ def get_metalls(metall_name: str):
 
 if __name__ == '__main__':
     # Создание подключения к RabbitMQ
-    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters('localhost'))
     channel = connection.channel()
 
     # Создание очереди для отправки сообщений
-    channel.queue_declare(queue='raw_metall_queue')
+    channel.queue_declare(queue='raw_aluminium_queue')
+    channel.queue_declare(queue='raw_copper_queue')
+    channel.queue_declare(queue='raw_lead_queue')
+    channel.queue_declare(queue='raw_nickel_queue')
+    channel.queue_declare(queue='raw_zink_queue')
 
     for i in metall:
         # Получение данных
         data = get_metalls(i)
 
         # Отправка данных в очередь RabbitMQ
-        channel.basic_publish(exchange='', routing_key='raw_metall_queue', body=f'{i}:{data.to_json()}')
+        channel.basic_publish(
+            exchange='', 
+            routing_key=f'raw_{i}_queue', 
+            body=f'{data.to_json()}'
+            )
 
     # Закрытие подключения к RabbitMQ
     connection.close()
