@@ -12,14 +12,17 @@ metall = [
 
 def callback(ch, method, properties, body):
     # Ответ из очереди
-    data = json.loads(body)
+    data_raw = json.loads(body)
+
+    key_route = data_raw['id']
+    data = json.loads(data_raw['body'])
 
     # Преобразование ответа
     data = pd.DataFrame(data)
     data.replace(0, np.nan, inplace=True)
     data.dropna(inplace=True, axis=0)
     data.reset_index(inplace=True)
-    
+
     # Convert milliseconds to seconds
     data.iloc[:, 0] = pd.to_numeric(data.iloc[:, 0]) / 1000
     data.iloc[:, 0] = pd.to_datetime(
@@ -59,24 +62,46 @@ def callback(ch, method, properties, body):
     # рабочую информацию (для трейн/тест) и часть
     # для будущего прогноза неизвестного периода
     split_param = (data.iloc[:, 0].isna()) & (data.iloc[:, 2].isna())
-    
+
     # on: Spot_AR/ Stock_AR
-    data_target = data[split_param]  
+    data_target = data[split_param]
     # on: Garch/ Spot_AR/ Stock_AR/ Spot_DT/ Prognosis
     working_data = data[~split_param]
+
+    # Отправим данные на модуль GARCH
+    channel.basic_publish(
+        exchange='',
+        routing_key=f'garch_{key_route}_queue',
+        body=json.dumps({
+            'id': key_route,
+            'body': working_data.to_json()}
+        )
+    )
+    
+    # Отправим данные на модуль STOCK_AR
+    channel.basic_publish(
+        exchange='',
+        routing_key=f'stock_ar_{key_route}_reconstr_w_queue',
+        body=json.dumps({
+            'id': key_route,
+            'body': working_data.to_json()}
+        )
+    )
     
     channel.basic_publish(
         exchange='',
-        routing_key='garch_queue',
-        body=working_data.to_json()
+        routing_key=f'stock_ar_{key_route}_reconstr_t_queue',
+        body=json.dumps({
+            'id': key_route,
+            'body': data_target.to_json()}
+        )
     )
-    
 
     # Теперь поделим рабочую выборку
     # train = working_data.iloc[:-90]
     # test = working_data.iloc[-90:]
 
-    print(f'Answer: {data}')
+    print(f'Answer: {key_route, data}')
 
 
 if __name__ == '__main__':
@@ -93,22 +118,23 @@ if __name__ == '__main__':
     for i in metall:
         channel.queue_declare(queue=f'garch_{i}_queue')
 
-    
-    channel.queue_declare(queue='spot_ar_aluminium_queue')
-    channel.queue_declare(queue='spot_ar_copper_queue')
-    channel.queue_declare(queue='spot_ar_lead_queue')
-    channel.queue_declare(queue='spot_ar_nickel_queue')
-    channel.queue_declare(queue='spot_ar_zink_queue')
-    
-    channel.queue_declare(queue='stock_ar_queue')
-    
-    
-    channel.queue_declare(queue='spot_dt_queue')
-    
-    
-    channel.queue_declare(queue='prognosis_queue')
-    
-    
+    for i in metall:
+        channel.queue_declare(queue=f'spot_ar_{i}_reconstr_w_queue')
+        
+    for i in metall:
+        channel.queue_declare(queue=f'spot_ar_{i}_reconstr_t_queue')
+
+    for i in metall:
+        channel.queue_declare(queue=f'stock_ar_{i}_reconstr_w_queue')
+        
+    for i in metall:
+        channel.queue_declare(queue=f'stock_ar_{i}_reconstr_t_queue')
+
+    for i in metall:
+        channel.queue_declare(queue=f'spot_dt_{i}_reconstr_queue')
+
+    for i in metall:
+        channel.queue_declare(queue=f'prognosis_{i}_reconstr_queue')
 
     for i in metall:
         # Получение данных
