@@ -74,8 +74,8 @@ def callback(ch, method, properties, body):
             'body': corr_values_stock.to_json()}
         )
     )
-
-    print(f"Upload on Stock_AR {key_route} completed successfully")
+    print(corr_values_stock)
+    #print(f"Upload on Stock_AR {key_route} completed successfully")
 
     # SPOT________________________________________________________________
     model_garch_spot = arch_model(
@@ -102,8 +102,8 @@ def callback(ch, method, properties, body):
             'body': corr_values_spot.to_json()}
         )
     )
-
-    print(f"Upload on Spot_DT {key_route} completed successfully")
+    print(corr_values_spot)
+    #print(f"Upload on Spot_DT {key_route} completed successfully")
 
 
 if __name__ == '__main__':
