@@ -30,7 +30,7 @@ def get_metalls(metall_name: str):
 if __name__ == '__main__':
     # Создание подключения к RabbitMQ
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters('localhost'))
+        pika.ConnectionParameters('rabbitmq'))
     channel = connection.channel()
 
     # Создание очереди для отправки сообщений

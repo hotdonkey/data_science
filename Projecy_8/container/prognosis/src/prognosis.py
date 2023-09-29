@@ -109,6 +109,6 @@ if __name__ == '__main__':
         model_result = pd.concat([result_ar, result_dt, result_adj], axis=1)
 
         model_result.to_csv(
-            f'./results/final/result_{metall}.csv', sep=',')
+            f'./final/result_{metall}.csv', sep=',')
 
         print(f'Model {metall} finished. Uploaded on local machine')

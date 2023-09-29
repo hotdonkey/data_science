@@ -87,7 +87,7 @@ def callback(ch, method, properties, body):
 if __name__ == '__main__':
     # Создание подключения к RabbitMQ
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters('localhost'))
+        pika.ConnectionParameters('rabbitmq'))
     channel = connection.channel()
 
     # Создание очередей для принятия сообщений

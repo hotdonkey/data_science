@@ -9,40 +9,68 @@ services:
     container_name: rabbitmq
     restart: always
 
-  features:
+  parser:
     build:
-      context: ./features
+      context: ./parser
     restart: always
     depends_on:
-      - rabbitmq
-  
-  model:
-    build:
-      context: ./model
-    restart: always
-    depends_on:
-      - rabbitmq
-      - features
-  
-  metric:
-    build:
-      context: ./metric
-    restart: always
-    depends_on:
-      - rabbitmq
-      - features
-      - model
     volumes:
-      - ./logs:/usr/src/app/logs
+      - ./data:/usr/src/app/data
   
-  plot:
+  db_push:
     build:
-      context: ./plot
+      context: ./db_push
     restart: always
     depends_on:
       - rabbitmq
-      - features
-      - model
-      - metric
+      - parser
+  
+  data_reconstructor:
+    build:
+      context: ./data_reconstructor
+    restart: always
+    depends_on:
+      - rabbitmq
+      - db_push
+
+  stock_ar:
+    build:
+      context: ./stock_ar
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor 
+
+  spot_ar:
+    build:
+      context: ./spot_ar
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor
     volumes:
-      - ./logs:/usr/src/app/logs
+      - ./results/intermediate:/usr/src/app/intermediate  
+
+  spot_dt:
+    build:
+      context: ./spot_dt
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor
+      - stock_ar
+    volumes:
+      - ./results/intermediate:/usr/src/app/intermediate    
+
+  prognosis:
+    build:
+      context: ./prognosis
+    restart: always
+    depends_on:
+      - rabbitmq
+      - spot_ar
+      - spot_dt   
+    volumes:
+      - ./results/intermediate:/usr/src/app/final
+
+

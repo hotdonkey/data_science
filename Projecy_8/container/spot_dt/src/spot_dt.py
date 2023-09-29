@@ -76,11 +76,11 @@ def callback(ch, method, properties, body):
 
     # Сохранение результата прогноза авторегрессии
     result_data.to_csv(
-        f'./results/intermediate/spot_dt_prognosis_{key}.csv', sep=',')
+        f'./intermediate/spot_dt_prognosis_{key}.csv', sep=',')
 
     # Сохранение результата для формирования обобщенного прогноза
     data_target.to_csv(
-        f'./results/intermediate/spot_dt_result_{key}.csv', sep=',')
+        f'./intermediate/spot_dt_result_{key}.csv', sep=',')
 
     print(key, result_data)
 
@@ -88,7 +88,7 @@ def callback(ch, method, properties, body):
 if __name__ == '__main__':
     # Создание подключения к RabbitMQ
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters('localhost'))
+        pika.ConnectionParameters('rabbitmq'))
     channel = connection.channel()
 
     # Создание очередей для получения сообщений
