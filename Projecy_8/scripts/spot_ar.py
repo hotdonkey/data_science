@@ -5,26 +5,23 @@ from statsmodels.tsa.ar_model import AutoReg
 import pickle
 import pika
 
-metall = [
-    'aluminium', 'copper',
-    'lead', 'nickel', 'zink'
-]
 
 metall_dict = {
     'aluminium': 'al', 'copper': 'cu',
     'lead': 'pb', 'nickel': 'nk', 'zink': 'zn'
 }
 
+
 def callback(ch, method, properties, body):
     data_raw = json.loads(body)
 
     key = data_raw['id']
-    
+
     with open(f'./models/ar_spot_{metall_dict[key]}.pkl', 'rb') as pkl_file:
         stock_params = pickle.load(pkl_file)
-    
+
     lags = stock_params['order'][0]
-    
+
     data = pd.DataFrame(json.loads(data_raw['body']))
 
     data.reset_index(inplace=True)
@@ -48,11 +45,18 @@ def callback(ch, method, properties, body):
 
     pred_real_spot = ar_model_real_stock.predict(
         start=len(working_data), end=len(working_data)+89)
-    
+
     data_target.iloc[:, 0] = pred_real_spot
-    
+
     result_data = pd.concat([working_data, data_target])
-    
+
+    # Сохранение результата прогноза авторегрессии
+    result_data.to_csv(
+        f'./results/intermediate/spot_ar_prognosis_{key}.csv', sep=',')
+
+    # Сохранение результата для формирования обобщенного прогноза
+    data_target.to_csv(
+        f'./results/intermediate/spot_ar_result_{key}.csv', sep=',')
 
     print(key, result_data)
 
@@ -66,11 +70,12 @@ if __name__ == '__main__':
     # Создание очередей для получения сообщений
 
     channel.queue_declare(queue=f'spot_ar_queue')
-    
+
     # Создание очередей для отправки сообщений
     channel.queue_declare(queue=f'spot_dt_queue')
+    channel.queue_declare(queue=f'prognosis_ar_queue')
 
-    #channel.queue_declare(queue=f'stock_ar_garch_queue')
+    # channel.queue_declare(queue=f'stock_ar_garch_queue')
 
     # Получение запроса
     channel.basic_consume(

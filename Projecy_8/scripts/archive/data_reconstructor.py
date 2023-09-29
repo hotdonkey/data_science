@@ -13,6 +13,7 @@ metall = [
 def callback(ch, method, properties, body):
     # Ответ из очереди
     data_raw = json.loads(body)
+
     key_route = data_raw['id']
     data = json.loads(data_raw['body'])
 
@@ -64,40 +65,41 @@ def callback(ch, method, properties, body):
 
     # on: Spot_AR/ Stock_AR
     data_target = data[split_param]
-    
     # on: Garch/ Spot_AR/ Stock_AR/ Spot_DT/ Prognosis
     working_data = data[~split_param]
 
     # Отправим данные на модуль GARCH
-    #channel.basic_publish(
-    #    exchange='',
-    #    routing_key=f'garch_queue',
-    #    body=json.dumps({
-    #        'id': key_route,
-    #        'body': working_data.to_json()}
-    #    )
-    #)
-
-    # Отправим данные на модуль STOCK_AR
     channel.basic_publish(
         exchange='',
-        routing_key=f'stock_ar_queue',
+        routing_key=f'garch_{key_route}_queue',
         body=json.dumps({
             'id': key_route,
-            'body': data.to_json()}
+            'body': working_data.to_json()}
         )
     )
     
-    # Отправим данные на модуль SPOT_AR
+    # Отправим данные на модуль STOCK_AR
     channel.basic_publish(
         exchange='',
-        routing_key=f'spot_ar_queue',
+        routing_key=f'stock_ar_{key_route}_reconstr_w_queue',
         body=json.dumps({
             'id': key_route,
-            'body': data.to_json()}
+            'body': working_data.to_json()}
+        )
+    )
+    
+    channel.basic_publish(
+        exchange='',
+        routing_key=f'stock_ar_{key_route}_reconstr_t_queue',
+        body=json.dumps({
+            'id': key_route,
+            'body': data_target.to_json()}
         )
     )
 
+    # Теперь поделим рабочую выборку
+    # train = working_data.iloc[:-90]
+    # test = working_data.iloc[-90:]
 
     print(f'Answer: {key_route, data}')
 
@@ -109,22 +111,38 @@ if __name__ == '__main__':
     channel = connection.channel()
 
     # Создание очередей для принятия сообщений
-    channel.queue_declare(queue=f'raw_queue')
+    for i in metall:
+        channel.queue_declare(queue=f'raw_{i}_queue')
 
     # Создание очередей для отправки сообщений
-    #channel.queue_declare(queue=f'garch_queue')
+    for i in metall:
+        channel.queue_declare(queue=f'garch_{i}_queue')
 
-    channel.queue_declare(queue=f'stock_ar_queue')
-    
-    channel.queue_declare(queue=f'spot_ar_queue')
-    
+    for i in metall:
+        channel.queue_declare(queue=f'spot_ar_{i}_reconstr_w_queue')
+        
+    for i in metall:
+        channel.queue_declare(queue=f'spot_ar_{i}_reconstr_t_queue')
 
+    for i in metall:
+        channel.queue_declare(queue=f'stock_ar_{i}_reconstr_w_queue')
+        
+    for i in metall:
+        channel.queue_declare(queue=f'stock_ar_{i}_reconstr_t_queue')
 
-    channel.basic_consume(
-        queue=f'raw_queue',
-        on_message_callback=callback,
-        auto_ack=True
-    )
+    for i in metall:
+        channel.queue_declare(queue=f'spot_dt_{i}_reconstr_queue')
+
+    for i in metall:
+        channel.queue_declare(queue=f'prognosis_{i}_reconstr_queue')
+
+    for i in metall:
+        # Получение данных
+        channel.basic_consume(
+            queue=f'raw_{i}_queue',
+            on_message_callback=callback,
+            auto_ack=True
+        )
 
     # Закрытие подключения к RabbitMQ
     print('...Ожидание сообщений, для выхода нажмите CTRL+C')

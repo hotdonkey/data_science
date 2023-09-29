@@ -14,7 +14,17 @@ def get_metalls(metall_name: str):
     data = pd.read_csv(
         f'./data/{metall_name}.csv', index_col='date', parse_dates=['date'])
 
-    return data
+    # Отправка данных в очередь RabbitMQ
+    channel.basic_publish(
+        exchange='',
+        routing_key=f'raw_queue',
+        body=json.dumps({
+            'id': target,
+            'type':'raw_data',
+            'body': data.to_json()}
+        )
+    )
+
 
 
 if __name__ == '__main__':
@@ -24,23 +34,10 @@ if __name__ == '__main__':
     channel = connection.channel()
 
     # Создание очереди для отправки сообщений
-
-    for i in metall:
-        channel.queue_declare(queue=f'raw_{i}_queue')
+    channel.queue_declare(queue=f'raw_queue')
 
     for target in metall:
-        # Получение данных
         data = get_metalls(target)
-
-        # Отправка данных в очередь RabbitMQ
-        channel.basic_publish(
-            exchange='', 
-            routing_key=f'raw_{target}_queue', 
-            body=json.dumps({
-                'id':target,
-                'body':data.to_json()}
-            )
-        )
 
     # Закрытие подключения к RabbitMQ
     connection.close()

@@ -1,22 +1,16 @@
 import requests
 import pandas as pd
-import pika
 
 
-metall = [
-    'aluminium', 'copper',
-    'lead', 'nickel', 'zink'
-]
+# Список источников, нам понадобится информация по 5 видам сырья:
+# алюминий, медь, свинец, никель и цинк
+metalls = {
+    'aluminium': 'Al', 'copper': 'Cu',
+    'lead': 'Pb', 'nickel': 'Ni', 'zink': 'Zn'
+}
 
 
 def get_metalls(metall_name: str):
-
-    # Список источников, нам понадобится информация по 5 видам сырья:
-    # алюминий, медь, свинец, никель и цинк
-    metalls = {
-        'aluminium': 'Al', 'copper': 'Cu',
-        'lead': 'Pb', 'nickel': 'Ni', 'zink': 'Zn'
-    }
 
     # Запрос к источнику
     url = f'https://www.westmetall.com/en/markdaten.php?action=table&field=LME_{metalls[metall_name]}_cash'
@@ -55,32 +49,10 @@ def get_metalls(metall_name: str):
     data.drop_duplicates(inplace=True)
     data.set_index('date', inplace=True)
 
-    return data
 
 
 if __name__ == '__main__':
-    # Создание подключения к RabbitMQ
-    connection = pika.BlockingConnection(
-        pika.ConnectionParameters('localhost'))
-    channel = connection.channel()
-
-    # Создание очереди для отправки сообщений
-    channel.queue_declare(queue='raw_aluminium_queue')
-    channel.queue_declare(queue='raw_copper_queue')
-    channel.queue_declare(queue='raw_lead_queue')
-    channel.queue_declare(queue='raw_nickel_queue')
-    channel.queue_declare(queue='raw_zink_queue')
-
-    for i in metall:
+    
+    for metall in metalls.keys():
         # Получение данных
-        data = get_metalls(i)
-
-        # Отправка данных в очередь RabbitMQ
-        channel.basic_publish(
-            exchange='', 
-            routing_key=f'raw_{i}_queue', 
-            body=f'{data.to_json()}'
-            )
-
-    # Закрытие подключения к RabbitMQ
-    connection.close()
+        data = get_metalls(metall)
