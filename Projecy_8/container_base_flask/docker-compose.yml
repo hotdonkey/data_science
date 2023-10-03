@@ -21,5 +21,7 @@ services:
       command: python flask_server.py
       volumes:
       - ./data:/usr/src/app/data
+      - ./results/intermediate:/usr/src/app/results/intermediate
+      - ./results/final:/usr/src/app/results/final
 
 

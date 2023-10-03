@@ -8,6 +8,11 @@ import pandas as pd
 app = Flask(__name__)
 
 
+@app.route('/')
+def index():
+    return "Test message. The server is running. Use entry points: /db_push or /prognosis"
+
+
 @app.route('/db_push')
 def db_push():
     def get_metalls(metall_name: str, channel):
@@ -109,8 +114,11 @@ def prognosis():
             f'./results/intermediate/spot_ar_prognosis_{metall}.csv', sep=',', parse_dates=['index'])
 
         data_ar = pd.DataFrame(data_ar.iloc[:, :2])
-        data_ar = data_ar.rename(columns={data_ar.columns.to_list()[1]:
-            'AutoReg', 'index': 'date'})
+        data_ar = data_ar.rename(columns={
+            data_ar.columns.to_list()[1]:
+            'AutoReg', 'index': 'date'
+        }
+        )
         data_ar['dow'] = data_ar['date'].dt.day_of_week
         data_ar = data_ar[(data_ar['dow'] != 5) & (data_ar['dow'] != 6)]
         data_ar.drop(['dow'], axis=1, inplace=True)
@@ -127,8 +135,11 @@ def prognosis():
             f'./results/intermediate/spot_dt_prognosis_{metall}.csv', sep=',', parse_dates=['index'])
 
         data_dt = pd.DataFrame(data_dt.iloc[:, :2])
-        data_dt = data_dt.rename(columns={data_dt.columns.to_list()[1]:
-            'Decision_tree', 'index': 'date'})
+        data_dt = data_dt.rename(columns={
+            data_dt.columns.to_list()[1]:
+            'Decision_tree', 'index': 'date'
+        }
+        )
         data_dt['dow'] = data_dt['date'].dt.day_of_week
         data_dt = data_dt[(data_dt['dow'] != 5) & (data_dt['dow'] != 6)]
         data_dt.drop(['dow'], axis=1, inplace=True)
@@ -162,9 +173,9 @@ def prognosis():
         model_result.to_csv(
             f'./results/final/result_{metall}.csv', sep=',')
 
-        print(f'Model {metall} finished. Uploaded on local machine')
+        return f'Model {metall} finished. Uploaded on local machine'
 
 
 # Run the Flask application
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8000)
