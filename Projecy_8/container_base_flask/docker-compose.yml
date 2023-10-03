@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    hostname: rabbitmq
+    container_name: rabbitmq
+    restart: always
+
+
+  flask_app:
+      build:
+        context: ./server
+      restart: always
+      depends_on:
+        - rabbitmq
+      ports:
+        - "8000:8000"
+      command: python flask_server.py
+      volumes:
+      - ./data:/usr/src/app/data
+
+

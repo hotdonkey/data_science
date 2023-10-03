@@ -61,30 +61,35 @@ def conf_int_quarter(data, name):
 if __name__ == '__main__':
     for metall in metall_dict.keys():
         # Датафрейм авторегрессии
-        ar_df = pd.read_csv(
-            f'./results/intermediate/spot_ar_prognosis_{metall}.csv', sep=',', parse_dates=['index'], index_col=0)
+        data_ar = pd.read_csv(
+            f'./results/intermediate/spot_ar_prognosis_{metall}.csv', sep=',', parse_dates=['index'])
 
-        ar_df = ar_df.rename(columns={ar_df.columns.to_list()[0]: 'AutoReg'})
+        data_ar = pd.DataFrame(data_ar.iloc[:,:2])
+        data_ar = data_ar.rename(columns={data_ar.columns.to_list()[1]:'AutoReg', 'index':'date'})
+        data_ar['dow'] = data_ar['date'].dt.day_of_week
+        data_ar = data_ar[(data_ar['dow'] != 5) & (data_ar['dow'] != 6)]
+        data_ar.drop(['dow'], axis=1, inplace=True)
+        data_ar.set_index('date', inplace=True)
 
-        ar_df = pd.DataFrame(ar_df.iloc[:, 0])
-
-        ar_month_data = conf_int_month(ar_df, 'AutoReg')
-        ar_quarter_data = conf_int_quarter(ar_df, 'AutoReg')
+        ar_month_data = conf_int_month(data_ar, 'AutoReg')
+        ar_quarter_data = conf_int_quarter(data_ar, 'AutoReg')
 
         result_ar = pd.concat([ar_month_data, ar_quarter_data], axis=0)
         result_ar = result_ar.round()
 
         # Датафрейм дерева решений
-        dt_df = pd.read_csv(
-            f'./results/intermediate/spot_dt_prognosis_{metall}.csv', sep=',', parse_dates=['index'], index_col=0)
+        data_dt = pd.read_csv(
+            f'./results/intermediate/spot_dt_prognosis_{metall}.csv', sep=',', parse_dates=['index'])
 
-        dt_df = dt_df.rename(
-            columns={dt_df.columns.to_list()[0]: 'Decision_tree'})
+        data_dt = pd.DataFrame(data_dt.iloc[:,:2])
+        data_dt = data_dt.rename(columns={data_dt.columns.to_list()[1]:'Decision_tree', 'index':'date'})
+        data_dt['dow'] = data_dt['date'].dt.day_of_week
+        data_dt = data_dt[(data_dt['dow'] != 5) & (data_dt['dow'] != 6)]
+        data_dt.drop(['dow'], axis=1, inplace=True)
+        data_dt.set_index('date', inplace=True)
 
-        dt_df = pd.DataFrame(dt_df.iloc[:, 0])
-
-        dt_month_data = conf_int_month(dt_df, 'Decision_tree')
-        dt_quarter_data = conf_int_quarter(dt_df, 'Decision_tree')
+        dt_month_data = conf_int_month(data_dt, 'Decision_tree')
+        dt_quarter_data = conf_int_quarter(data_dt, 'Decision_tree')
 
         result_dt = pd.concat([dt_month_data, dt_quarter_data], axis=0)
         result_dt = result_dt.round()
@@ -92,7 +97,7 @@ if __name__ == '__main__':
         # Консолидирующая таблица
 
         adj_df = pd.concat(
-            [ar_df, dt_df], axis=1)
+            [data_ar, data_dt], axis=1)
 
         adj_df['Final'] = np.mean(
             [adj_df['AutoReg'], adj_df['Decision_tree']], axis=0)
@@ -109,6 +114,6 @@ if __name__ == '__main__':
         model_result = pd.concat([result_ar, result_dt, result_adj], axis=1)
 
         model_result.to_csv(
-            f'./final/result_{metall}.csv', sep=',')
+            f'./results/final/result_{metall}.csv', sep=',')
 
         print(f'Model {metall} finished. Uploaded on local machine')

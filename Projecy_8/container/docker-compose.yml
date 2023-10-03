@@ -9,14 +9,25 @@ services:
     container_name: rabbitmq
     restart: always
 
+  flask_server:
+    build:
+      context: ./server
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+    entrypoint: python server.py
+
   parser:
     build:
       context: ./parser
     restart: always
     depends_on:
+      - rabbitmq
     volumes:
       - ./data:/usr/src/app/data
-  
+
   db_push:
     build:
       context: ./db_push
@@ -24,7 +35,7 @@ services:
     depends_on:
       - rabbitmq
       - parser
-  
+
   data_reconstructor:
     build:
       context: ./data_reconstructor
@@ -39,7 +50,7 @@ services:
     restart: always
     depends_on:
       - rabbitmq
-      - data_reconstructor 
+      - data_reconstructor
 
   spot_ar:
     build:
@@ -49,7 +60,7 @@ services:
       - rabbitmq
       - data_reconstructor
     volumes:
-      - ./results/intermediate:/usr/src/app/intermediate  
+      - ./results/intermediate:/usr/src/app/intermediate
 
   spot_dt:
     build:
@@ -60,7 +71,7 @@ services:
       - data_reconstructor
       - stock_ar
     volumes:
-      - ./results/intermediate:/usr/src/app/intermediate    
+      - ./results/intermediate:/usr/src/app/intermediate
 
   prognosis:
     build:
@@ -69,8 +80,6 @@ services:
     depends_on:
       - rabbitmq
       - spot_ar
-      - spot_dt   
+      - spot_dt
     volumes:
-      - ./results/intermediate:/usr/src/app/final
-
-
+      - ./results/final:/usr/src/app/final
