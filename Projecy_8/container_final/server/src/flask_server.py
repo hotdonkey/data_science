@@ -217,9 +217,9 @@ def prognosis():
             data_ar.set_index('date', inplace=True)
 
             ar_month_data = conf_int_month(data_ar, 'AutoReg')
-            ar_quarter_data = conf_int_quarter(data_ar, 'AutoReg')
-
-            result_ar = pd.concat([ar_month_data, ar_quarter_data], axis=0)
+            #ar_quarter_data = conf_int_quarter(data_ar, 'AutoReg')
+            result_ar = pd.DataFrame(ar_month_data)
+            #result_ar = pd.concat([ar_month_data, ar_quarter_data], axis=0)
             result_ar = result_ar.round()
 
             # Датафрейм дерева решений
@@ -238,9 +238,9 @@ def prognosis():
             data_dt.set_index('date', inplace=True)
 
             dt_month_data = conf_int_month(data_dt, 'Decision_tree')
-            dt_quarter_data = conf_int_quarter(data_dt, 'Decision_tree')
-
-            result_dt = pd.concat([dt_month_data, dt_quarter_data], axis=0)
+            #dt_quarter_data = conf_int_quarter(data_dt, 'Decision_tree')
+            result_dt = pd.DataFrame(dt_month_data)
+            #result_dt = pd.concat([dt_month_data, dt_quarter_data], axis=0)
             result_dt = result_dt.round()
 
             # Консолидирующая таблица
@@ -255,9 +255,9 @@ def prognosis():
             adj_df = pd.DataFrame(adj_df.iloc[:, -1])
 
             adj_month = conf_int_month(adj_df, 'Final')
-            adj_quarter = conf_int_quarter(adj_df, 'Final')
-
-            result_adj = pd.concat([adj_month, adj_quarter], axis=0)
+            #adj_quarter = conf_int_quarter(adj_df, 'Final')
+            result_adj = pd.DataFrame(adj_month)
+            #result_adj = pd.concat([adj_month, adj_quarter], axis=0)
             result_adj = result_adj.round()
 
             model_result = pd.concat(
