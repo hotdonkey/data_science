@@ -16,7 +16,8 @@ logger = logging.getLogger(__name__)
 
 @app.route('/')
 def index():
-    return "Test message. The server is running. Use entry points: /parse, /db_push, /prognosis"
+    return "Test message. The server is running. Use entry points: /parse (make your tea), /db_push, /prognosis"
+
 
 @app.route('/parse')
 def parse_data():
@@ -82,18 +83,17 @@ def parse_data():
             # pandas не корректно преобразовал значения
             cleared_df.iloc[:, 3] = pd.to_numeric(
                 cleared_df.iloc[:, 3]) / 1000
-            
+
             cleared_df.set_index('date', inplace=True)
-            
+
             cleared_df.to_csv(f'./data/{metall_name}.csv', sep=',')
 
-            
         for metall in metalls.keys():
             # Получение данных
             get_metalls(metall)
-            
+
         return 'Parsing completed successfully'
-            
+
     except Exception as e:
         logger.error(f"An error occurred in parser: {str(e)}")
         return 'Error occurred while parsing database.'

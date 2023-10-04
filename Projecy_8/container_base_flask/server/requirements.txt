@@ -22,3 +22,5 @@ urllib3==2.0.4
 Werkzeug==2.3.7
 pika==1.1.0
 lxml==4.9.3
+html5lib==1.1
+statsmodels==0.14.0
