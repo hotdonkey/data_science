@@ -1,0 +1,7 @@
+{
+    "include": ["**/*.py"],
+    "exclude": ["**/node_modules/**"],
+    "executionEnvironments": ["./"],
+    "strict": true,
+    "openFilesOnly": true
+}
