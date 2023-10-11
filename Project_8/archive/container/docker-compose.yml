@@ -1,0 +1,85 @@
+version: "3.7"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    hostname: rabbitmq
+    container_name: rabbitmq
+    restart: always
+
+  flask_server:
+    build:
+      context: ./server
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+    entrypoint: python server.py
+
+  parser:
+    build:
+      context: ./parser
+    restart: always
+    depends_on:
+      - rabbitmq
+    volumes:
+      - ./data:/usr/src/app/data
+
+  db_push:
+    build:
+      context: ./db_push
+    restart: always
+    depends_on:
+      - rabbitmq
+      - parser
+
+  data_reconstructor:
+    build:
+      context: ./data_reconstructor
+    restart: always
+    depends_on:
+      - rabbitmq
+      - db_push
+
+  stock_ar:
+    build:
+      context: ./stock_ar
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor
+
+  spot_ar:
+    build:
+      context: ./spot_ar
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor
+    volumes:
+      - ./results/intermediate:/usr/src/app/intermediate
+
+  spot_dt:
+    build:
+      context: ./spot_dt
+    restart: always
+    depends_on:
+      - rabbitmq
+      - data_reconstructor
+      - stock_ar
+    volumes:
+      - ./results/intermediate:/usr/src/app/intermediate
+
+  prognosis:
+    build:
+      context: ./prognosis
+    restart: always
+    depends_on:
+      - rabbitmq
+      - spot_ar
+      - spot_dt
+    volumes:
+      - ./results/final:/usr/src/app/final

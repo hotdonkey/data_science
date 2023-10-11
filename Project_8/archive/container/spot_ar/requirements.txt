@@ -1,0 +1,4 @@
+numpy==1.24.3;
+pandas==2.0.3;
+statsmodels==0.14.0;
+pika==1.1.0;
