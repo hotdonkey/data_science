@@ -1,3 +1,10 @@
 .DS_Store
 netflix_titles.csv
-
+answers.txt
+Otvety.txt
+prepared_answers.txt
+speaker.ann
+w2v_model
+w2v_model.syn1neg.npy
+w2v_model.wv.vectors.npy
+ProductsDataset.csv
