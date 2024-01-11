@@ -9,4 +9,6 @@
 * [Project 5](https://github.com/hotdonkey/data_science/tree/main/Project_5)
 * [Project 6](https://github.com/hotdonkey/data_science/tree/main/Project_6)
 * [Project 7](https://github.com/hotdonkey/data_science/tree/main/Project_7)
-* [Project 8](https://github.com/hotdonkey/data_science/tree/main/Projecy_8)
+* [Project 8](https://github.com/hotdonkey/data_science/tree/main/Project_8)
+* [Project 9](https://github.com/hotdonkey/data_science/tree/main/Project_9)
+* [Project 10](https://github.com/hotdonkey/data_science/tree/main/Project_10)

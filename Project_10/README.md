@@ -1,4 +1,4 @@
-# Project 2. Analysis of resumes from HeadHunter
+# Project 10. Simple chat-bot
 
 ## Table of content
 [1. Project description and dataset link](README.md#Project-description)  
@@ -9,34 +9,35 @@
 [6. Conclusion](README.md#Conclusion) 
 
 ### Project description    
-HH database analisis via sql query 'n pandas moves.
+Simple chatbot for answering product/fallback questions.
 
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
 
 ### What case are we trying to solve?    
-Step-by-step data analisis with attempts to find some connections within the data and make some conclusions (in russian).
+We're trying to understand the basis of chatbot logic and nlp processes.
 
 **Task conditions:**  
-We have a database of vacansies on hh in perspective of employer, area 'n sallary
+Dataset prepared for modelling.
 
 **Quality metrics**     
-Mostly our metrics are questions on the SkillFactory online platform. Right answers are our signals on every 
-step of data transformation that saying us we didn't ruined it all.
+Accuracy.
 
 **What do we practice**     
-SQL ftw.
+Text preprocessing, tokenization, vectorization and index-search.
 
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
 ### Short info about the data
-5 or 6 tables in database filled with all kind of info.
+Two datasets for product and fallback answeres.
   
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
 
 ### Work stages 
-Make query
+Look
+Model
+Optimise
 ...
 Profit.
 
@@ -50,8 +51,7 @@ Great success.
 
 
 ### Conclusion:  
-As a first attempt in EDA we can say that this stage of Data Science work takes a lot of time and should be treated with
-cautious and precision. 
+We reached the minimal threshold of RMSE to say that we made a solid model. 
 
 :arrow_up:[To the table of content](README.md#Table_of_content)
 
