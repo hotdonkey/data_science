@@ -8,3 +8,4 @@ w2v_model
 w2v_model.syn1neg.npy
 w2v_model.wv.vectors.npy
 ProductsDataset.csv
+.DS_Store
