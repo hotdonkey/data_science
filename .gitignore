@@ -15,4 +15,5 @@ properties_2016.csv
 criteo.csv
 saved_weights.pt
 cat_train.csv
+*_env
 

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Home page - Продажа квартир</title>
+    </head>
+    <body>
+        <h1>Объявление!</h1>
+        {% for f in flats %}
+        <div>
+            <hr>
+            <form method="post" action="/flats">
+                <input type="hidden" name="flatId" value="{{f.id}}">
+                <p><b>{{f.title}}</b></p>
+                <p>Город: {{ f.city }}</p>
+                <p>Стоимость: {{ f.cost }}</p>
+                <input type="submit" value="Посмотреть">
+            </form>
+        </div>
+        {% endfor %}
+    </body>
+</html>
