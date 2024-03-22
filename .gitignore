@@ -17,4 +17,4 @@ saved_weights.pt
 cat_train.csv
 *_env
 houseApp
-
+/BUSINESS/RETAIL/data/*
