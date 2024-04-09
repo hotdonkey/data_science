@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  flask_app:
+      build:
+        context: ./
+      restart: always
+      ports:
+        - "8000:8000"
+      command: python flask_server.py
+      volumes:
+      - ./data/:/app/data
