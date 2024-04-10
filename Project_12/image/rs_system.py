@@ -8,6 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 # Получение данных для коллаборативной фильтрации
 events_raw = pd.read_csv("./data/events.csv")
 
+
 # Основная функция рекомендаций
 def rs_batch(data, lb_interactions, upb_ineractions, top_items, month_border=7):
     events = data.copy()
@@ -60,7 +61,7 @@ def rs_batch(data, lb_interactions, upb_ineractions, top_items, month_border=7):
     trans_cat_train = dict()
     # Создаем словарь для закодированных значений тестового набора
     trans_cat_test = dict()
-    
+
     # Применяем кодирование юзеров и айтемов
     for k in id_cols:
         cate_enc = LabelEncoder()
@@ -73,7 +74,7 @@ def rs_batch(data, lb_interactions, upb_ineractions, top_items, month_border=7):
 
     # Создаем словарь для закодированных значений целевой переменной
     ratings = dict()
-    
+
     cate_enc_2 = LabelEncoder()
     ratings["train"] = cate_enc_2.fit_transform(
         events_train.event
@@ -130,12 +131,12 @@ def rs_batch(data, lb_interactions, upb_ineractions, top_items, month_border=7):
     predicted_ratings_df = get_predicted_ratings(
         events_test["visitorid"], events_test["itemid"], predicted_scores
     )
-    
+
     # Берем только отрицательные значения ибо они то нам и нужны
     predicted_ratings_df = predicted_ratings_df[
         predicted_ratings_df["predicted_score"] < 0
     ]
-    
+
     # Создаем сводную содержащую скоры ны пересечении айтемов и юзеров
     predicted_ratings_pivot = pd.pivot_table(
         data=predicted_ratings_df,
@@ -144,48 +145,49 @@ def rs_batch(data, lb_interactions, upb_ineractions, top_items, month_border=7):
         values="predicted_score",
         aggfunc="sum",
     )
-    
+
     # Вытащим внутрености сводной
     users = predicted_ratings_pivot.index.to_list()
     items = predicted_ratings_pivot.columns.to_list()
     scores = np.array(predicted_ratings_pivot)
-    
+
     # Начинаем вытаскивать предикты ибо lightfm возвращает индексы
     rec_list = []
-    
+
     # Проходимся циклом по юзерам
     for i in range(len(users)):
         var_list = []
         # Ищем 3 максимальных индекса
         best_var = np.argsort(scores[i])[:5].tolist()
-        
+
         # Бежим по индексам и вытаскиваем айтемы
         for j in best_var:
             var_list.append(items[j])
 
         rec_list.append(var_list)
-    
+
     # Заворачиваем в датафрейм
     recommendations = pd.DataFrame(data={"users": users, "recommendations": rec_list})
 
     return recommendations
+
 
 def rs_system(data_rs):
 
     # Формируем 3 основные группы пользователей
     # Рандомов с ниским количеством интеракций
     random_customers = rs_batch(
-        data=data_rs, lb_interactions=0, upb_ineractions=1000, top_items=4
+        data=data_rs, lb_interactions=0, upb_ineractions=500, top_items=40
     )
-    
+
     # Посльзователей из средней группы
     temp_customers = rs_batch(
-        data=data_rs, lb_interactions=1000, upb_ineractions=1500, top_items=10
+        data=data_rs, lb_interactions=500, upb_ineractions=1000, top_items=10
     )
-    
+
     # И самых выжных
     mvp_customers = rs_batch(
-        data=data_rs, lb_interactions=1500, upb_ineractions=100000, top_items=10
+        data=data_rs, lb_interactions=1000, upb_ineractions=100000, top_items=10
     )
 
     # Почистим дублирующие рекомендации для юзеров с приоритетом MVP->Temp->Random
@@ -199,7 +201,7 @@ def rs_system(data_rs):
     random_customers = random_customers[
         ~random_customers["users"].isin(temp_customers["users"])
     ]
-    
+
     print(f"Random_customer_batch size = {random_customers.shape[0]}")
     print(f"Temp_customer_batch size = {temp_customers.shape[0]}")
     print(f"MVP_customer_batch size = {mvp_customers.shape[0]}")
@@ -207,14 +209,15 @@ def rs_system(data_rs):
     recomendation_df = pd.concat(
         [random_customers, temp_customers, mvp_customers]
     ).reset_index(drop=True)
-    
+
     return recomendation_df
+
 
 # Дефолтная рекомендация
 def default_recommendation(data_raw, data_rec):
     # Получим топ-3 товара
     data = data_raw.copy()
-    
+
     top_3_items = (
         data[data["event"] == "transaction"]["itemid"]
         .value_counts()[:5]
@@ -250,6 +253,7 @@ def run_rs_system_script():
         print("Проверьте источник данных на соответствие структуре")
     except ValueError:
         print("Вероятное превышение границы временного интервала в rs_batch")
+
 
 if __name__ == "__main__":
     run_rs_system_script()

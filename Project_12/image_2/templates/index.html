@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прототип рекомендательной системы</title>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <form action="/run_rs" method="post">
+        <button type="submit">Сконфигурировать новый пулл предложений (время обработки 4-6 мин.)</button>
+    </form>
+    <br>
+    <form method="get" action="/recommend">
+        <label for="user_id">Введите User ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <button type="submit">Получение рекомендации</button>
+    </form>
+</body>
+</html>
