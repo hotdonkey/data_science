@@ -8,6 +8,7 @@ w2v_model
 w2v_model.syn1neg.npy
 w2v_model.wv.vectors.npy
 ProductsDataset.csv
+dst-3.0_16_1_hh_database.csv
 .DS_Store
 market_index.ann
 fallback_index.ann
