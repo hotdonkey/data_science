@@ -3,17 +3,35 @@ CREATE TABLE IF NOT EXISTS customers (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50),
     gender VARCHAR(6) NOT NULL,
-    "DOB" DATE,
-    job_title VARCHAR(100),
-    job_industry_category VARCHAR(100),
+    "DOB" DATE
+);
+
+CREATE TABLE IF NOT EXISTS prop_feats (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
     wealth_segment VARCHAR(50) NOT NULL,
     deceased_indicator CHAR(1) NOT NULL,
     owns_car VARCHAR(3) NOT NULL,
+    property_valuation INT NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+CREATE TABLE IF NOT EXISTS job_title (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
+    job_title VARCHAR(100),
+    job_industry_category VARCHAR(100),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+CREATE TABLE IF NOT EXISTS location (
+    id SERIAL PRIMARY KEY,
+    customer_id INT NOT NULL,
     address VARCHAR(255) NOT NULL,
     postcode VARCHAR(20) NOT NULL,
     state VARCHAR(50) NOT NULL,
     country VARCHAR(50) NOT NULL,
-    property_valuation INT NOT NULL
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
 CREATE TABLE IF NOT EXISTS products (

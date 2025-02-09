@@ -1,0 +1,4001 @@
+customer_id,wealth_segment,deceased_indicator,owns_car,property_valuation
+1,Mass Customer,N,Yes,10
+2,Mass Customer,N,Yes,10
+3,Mass Customer,N,Yes,9
+4,Mass Customer,N,No,4
+5,Affluent Customer,N,Yes,9
+6,High Net Worth,N,Yes,9
+7,Affluent Customer,N,Yes,4
+8,Mass Customer,N,No,12
+9,Affluent Customer,N,Yes,8
+10,Mass Customer,N,Yes,4
+11,Mass Customer,N,No,6
+12,Mass Customer,N,No,8
+13,High Net Worth,N,Yes,9
+14,Affluent Customer,N,No,4
+15,Mass Customer,N,No,9
+16,Mass Customer,N,Yes,12
+17,Affluent Customer,N,Yes,9
+18,Affluent Customer,N,No,8
+19,High Net Worth,N,No,7
+20,Mass Customer,N,No,10
+21,Affluent Customer,N,Yes,3
+22,Mass Customer,N,No,5
+23,High Net Worth,N,Yes,7
+24,Mass Customer,N,Yes,4
+25,Mass Customer,N,Yes,7
+26,Mass Customer,N,Yes,11
+27,Mass Customer,N,Yes,12
+28,Affluent Customer,N,Yes,9
+29,Mass Customer,N,No,9
+30,Affluent Customer,N,Yes,8
+31,High Net Worth,N,Yes,6
+32,Affluent Customer,N,No,8
+33,Affluent Customer,N,Yes,1
+34,Affluent Customer,N,No,4
+35,High Net Worth,N,Yes,10
+36,Affluent Customer,N,No,8
+37,High Net Worth,N,No,9
+38,Affluent Customer,N,No,10
+39,Mass Customer,N,No,8
+40,Affluent Customer,N,No,2
+41,Mass Customer,N,No,3
+42,Mass Customer,N,No,6
+43,Mass Customer,N,No,4
+44,Affluent Customer,N,Yes,9
+45,Mass Customer,N,No,9
+46,Affluent Customer,N,Yes,10
+47,Affluent Customer,N,No,5
+48,Mass Customer,N,Yes,8
+49,Affluent Customer,N,No,3
+50,Mass Customer,N,Yes,8
+51,Mass Customer,N,No,10
+52,Mass Customer,N,Yes,10
+53,Mass Customer,N,No,6
+54,Mass Customer,N,Yes,9
+55,Affluent Customer,N,Yes,9
+56,Mass Customer,N,Yes,10
+57,Mass Customer,N,Yes,7
+58,Affluent Customer,N,Yes,8
+59,High Net Worth,N,No,9
+60,Mass Customer,N,No,8
+61,High Net Worth,N,No,10
+62,Mass Customer,N,Yes,10
+63,Mass Customer,N,Yes,10
+64,High Net Worth,N,No,7
+65,Affluent Customer,N,Yes,7
+66,High Net Worth,N,No,12
+67,Mass Customer,N,No,10
+68,Affluent Customer,N,No,6
+69,Mass Customer,N,No,8
+70,Affluent Customer,N,No,8
+71,Affluent Customer,N,Yes,8
+72,Affluent Customer,N,Yes,9
+73,Affluent Customer,N,Yes,5
+74,Mass Customer,N,Yes,9
+75,Mass Customer,N,No,10
+76,High Net Worth,N,Yes,1
+77,Mass Customer,N,No,6
+78,Affluent Customer,N,No,8
+79,Mass Customer,N,No,12
+80,Mass Customer,N,No,11
+81,High Net Worth,N,No,11
+82,High Net Worth,N,No,11
+83,Mass Customer,N,Yes,12
+84,Mass Customer,N,Yes,12
+85,Mass Customer,N,No,11
+86,High Net Worth,N,Yes,10
+87,Mass Customer,N,No,9
+88,High Net Worth,N,Yes,10
+89,Mass Customer,N,Yes,10
+90,Mass Customer,N,No,7
+91,Affluent Customer,N,Yes,10
+92,Mass Customer,N,No,11
+93,Mass Customer,N,Yes,8
+94,Mass Customer,N,No,10
+95,Affluent Customer,N,Yes,9
+96,Mass Customer,N,No,12
+97,Mass Customer,N,Yes,10
+98,Mass Customer,N,No,9
+99,Mass Customer,N,No,12
+100,Mass Customer,N,Yes,10
+101,High Net Worth,N,No,10
+102,Affluent Customer,N,No,9
+103,Affluent Customer,N,Yes,12
+104,Mass Customer,N,Yes,8
+105,Mass Customer,N,No,11
+106,High Net Worth,N,Yes,8
+107,Mass Customer,N,Yes,12
+108,High Net Worth,N,No,11
+109,Affluent Customer,N,Yes,4
+110,Affluent Customer,N,No,9
+111,Mass Customer,N,No,1
+112,High Net Worth,N,No,8
+113,Mass Customer,N,No,6
+114,Affluent Customer,N,No,10
+115,Mass Customer,N,No,7
+116,Affluent Customer,N,Yes,2
+117,Mass Customer,N,No,9
+118,High Net Worth,N,No,2
+119,High Net Worth,N,Yes,8
+120,High Net Worth,N,Yes,8
+121,Mass Customer,N,No,10
+122,Mass Customer,N,Yes,4
+123,High Net Worth,N,No,1
+124,High Net Worth,N,Yes,5
+125,Mass Customer,N,No,9
+126,Mass Customer,N,Yes,7
+127,Mass Customer,N,No,3
+128,Mass Customer,N,Yes,8
+129,High Net Worth,N,Yes,1
+130,Mass Customer,N,No,11
+131,High Net Worth,N,No,6
+132,Mass Customer,N,Yes,3
+133,Mass Customer,N,Yes,10
+134,Affluent Customer,N,Yes,9
+135,Mass Customer,N,No,1
+136,High Net Worth,N,Yes,9
+137,High Net Worth,N,No,11
+138,Affluent Customer,N,Yes,9
+139,Affluent Customer,N,No,6
+140,Mass Customer,N,No,3
+141,High Net Worth,N,Yes,5
+142,Affluent Customer,N,No,11
+143,Mass Customer,N,Yes,11
+144,Mass Customer,N,No,8
+145,Mass Customer,N,No,7
+146,Mass Customer,N,No,7
+147,Mass Customer,N,Yes,9
+148,Mass Customer,N,Yes,12
+149,Mass Customer,N,Yes,8
+150,Affluent Customer,N,No,8
+151,Mass Customer,N,Yes,10
+152,Mass Customer,N,No,11
+153,Mass Customer,N,Yes,8
+154,Mass Customer,N,No,6
+155,Mass Customer,N,No,10
+156,Mass Customer,N,Yes,11
+157,Affluent Customer,N,No,10
+158,Affluent Customer,N,No,10
+159,Affluent Customer,N,No,10
+160,Mass Customer,N,No,4
+161,Mass Customer,N,No,10
+162,Mass Customer,N,No,4
+163,High Net Worth,N,Yes,6
+164,Affluent Customer,N,Yes,6
+165,Mass Customer,N,Yes,9
+166,Affluent Customer,N,No,8
+167,High Net Worth,N,Yes,11
+168,Affluent Customer,N,Yes,4
+169,High Net Worth,N,Yes,8
+170,High Net Worth,N,No,9
+171,Mass Customer,N,No,11
+172,Affluent Customer,N,Yes,8
+173,Affluent Customer,N,No,5
+174,Mass Customer,N,No,7
+175,Affluent Customer,N,No,9
+176,Mass Customer,N,No,8
+177,High Net Worth,N,No,1
+178,Affluent Customer,N,No,4
+179,High Net Worth,N,Yes,10
+180,Affluent Customer,N,No,1
+181,Mass Customer,N,No,5
+182,Affluent Customer,N,Yes,7
+183,Affluent Customer,N,No,10
+184,High Net Worth,N,Yes,11
+185,Mass Customer,N,Yes,4
+186,Mass Customer,N,No,9
+187,Mass Customer,N,No,7
+188,High Net Worth,N,Yes,6
+189,Affluent Customer,N,No,7
+190,Affluent Customer,N,No,5
+191,Affluent Customer,N,Yes,9
+192,Mass Customer,N,Yes,8
+193,Mass Customer,N,Yes,12
+194,Affluent Customer,N,No,7
+195,Mass Customer,N,No,8
+196,High Net Worth,N,No,2
+197,High Net Worth,N,No,9
+198,Mass Customer,N,No,5
+199,Mass Customer,N,Yes,11
+200,Affluent Customer,N,Yes,10
+201,Mass Customer,N,Yes,9
+202,Affluent Customer,N,Yes,9
+203,Mass Customer,N,Yes,8
+204,Mass Customer,N,No,7
+205,Mass Customer,N,Yes,11
+206,Mass Customer,N,Yes,9
+207,Mass Customer,N,No,10
+208,High Net Worth,N,No,4
+209,Affluent Customer,N,Yes,4
+210,Mass Customer,N,No,9
+211,Mass Customer,N,Yes,3
+212,Affluent Customer,N,No,10
+213,High Net Worth,N,Yes,11
+214,Mass Customer,N,No,8
+215,High Net Worth,N,Yes,8
+216,High Net Worth,N,Yes,8
+217,High Net Worth,N,No,8
+218,High Net Worth,N,Yes,11
+219,Mass Customer,N,No,7
+220,High Net Worth,N,No,12
+221,Mass Customer,N,No,9
+222,Mass Customer,N,No,7
+223,Affluent Customer,N,Yes,9
+224,Affluent Customer,N,No,7
+225,Affluent Customer,N,No,10
+226,Mass Customer,N,No,11
+227,Mass Customer,N,No,10
+228,High Net Worth,N,No,9
+229,High Net Worth,N,No,10
+230,High Net Worth,N,No,10
+231,Mass Customer,N,Yes,8
+232,Mass Customer,N,No,2
+233,Mass Customer,N,No,11
+234,High Net Worth,N,No,8
+235,Mass Customer,N,No,3
+236,Affluent Customer,N,No,9
+237,High Net Worth,N,Yes,7
+238,Mass Customer,N,Yes,9
+239,Affluent Customer,N,No,8
+240,High Net Worth,N,Yes,6
+241,Mass Customer,N,No,1
+242,Affluent Customer,N,No,5
+243,High Net Worth,N,Yes,4
+244,Affluent Customer,N,No,10
+245,Affluent Customer,N,No,11
+246,High Net Worth,N,No,10
+247,High Net Worth,N,Yes,8
+248,Affluent Customer,N,Yes,7
+249,High Net Worth,N,No,7
+250,Mass Customer,N,Yes,1
+251,Affluent Customer,N,Yes,2
+252,Mass Customer,N,Yes,7
+253,Mass Customer,N,Yes,5
+254,Mass Customer,N,No,6
+255,Mass Customer,N,No,6
+256,High Net Worth,N,Yes,2
+257,Affluent Customer,N,Yes,1
+258,High Net Worth,N,No,10
+259,High Net Worth,N,Yes,9
+260,High Net Worth,N,Yes,10
+261,Mass Customer,N,No,9
+262,High Net Worth,N,Yes,10
+263,High Net Worth,N,No,10
+264,Mass Customer,N,No,9
+265,High Net Worth,N,Yes,7
+266,Affluent Customer,N,No,10
+267,High Net Worth,N,No,2
+268,Mass Customer,N,No,12
+269,Mass Customer,N,Yes,9
+270,Mass Customer,N,Yes,8
+271,Mass Customer,N,No,4
+272,Mass Customer,N,Yes,8
+273,Mass Customer,N,No,8
+274,Mass Customer,N,Yes,12
+275,High Net Worth,N,No,11
+276,Mass Customer,N,No,8
+277,High Net Worth,N,No,6
+278,Affluent Customer,N,Yes,5
+279,Mass Customer,N,No,6
+280,Affluent Customer,N,Yes,11
+281,High Net Worth,N,Yes,12
+282,High Net Worth,N,Yes,7
+283,Mass Customer,N,No,8
+284,High Net Worth,N,Yes,7
+285,Mass Customer,N,No,9
+286,Affluent Customer,N,Yes,9
+287,Affluent Customer,N,No,5
+288,High Net Worth,N,No,8
+289,High Net Worth,N,No,2
+290,Mass Customer,N,No,7
+291,Mass Customer,N,No,6
+292,Affluent Customer,N,Yes,8
+293,Mass Customer,N,Yes,7
+294,High Net Worth,N,No,8
+295,Mass Customer,N,Yes,9
+296,High Net Worth,N,Yes,9
+297,High Net Worth,N,No,7
+298,High Net Worth,N,No,7
+299,Mass Customer,N,Yes,9
+300,Mass Customer,N,No,11
+301,High Net Worth,N,No,4
+302,Mass Customer,N,No,3
+303,Mass Customer,N,Yes,9
+304,Mass Customer,N,Yes,5
+305,Mass Customer,N,No,7
+306,High Net Worth,N,No,9
+307,Affluent Customer,N,Yes,10
+308,High Net Worth,N,No,10
+309,Mass Customer,N,Yes,8
+310,Mass Customer,N,Yes,3
+311,High Net Worth,N,No,10
+312,Affluent Customer,N,Yes,7
+313,Mass Customer,N,Yes,10
+314,High Net Worth,N,Yes,2
+315,Affluent Customer,N,No,8
+316,Mass Customer,N,Yes,2
+317,Mass Customer,N,Yes,5
+318,Affluent Customer,N,Yes,6
+319,Mass Customer,N,Yes,9
+320,Mass Customer,N,No,9
+321,Mass Customer,N,No,8
+322,Mass Customer,N,Yes,10
+323,Mass Customer,N,Yes,8
+324,Mass Customer,N,Yes,8
+325,Affluent Customer,N,Yes,4
+326,Mass Customer,N,No,9
+327,Mass Customer,N,No,8
+328,Mass Customer,N,No,8
+329,High Net Worth,N,Yes,5
+330,High Net Worth,N,Yes,2
+331,Mass Customer,N,Yes,6
+332,High Net Worth,N,No,8
+333,Affluent Customer,N,Yes,10
+334,Affluent Customer,N,Yes,12
+335,Affluent Customer,N,No,8
+336,High Net Worth,N,No,10
+337,High Net Worth,N,Yes,8
+338,Mass Customer,N,No,10
+339,Mass Customer,N,No,11
+340,Mass Customer,N,Yes,9
+341,Mass Customer,N,No,9
+342,High Net Worth,N,No,10
+343,Affluent Customer,N,No,9
+344,High Net Worth,N,Yes,10
+345,High Net Worth,N,Yes,11
+346,Mass Customer,N,No,9
+347,Mass Customer,N,No,10
+348,Mass Customer,N,Yes,6
+349,High Net Worth,N,No,9
+350,Mass Customer,N,Yes,5
+351,Mass Customer,N,Yes,8
+352,Mass Customer,N,No,3
+353,Mass Customer,N,No,9
+354,Mass Customer,N,No,9
+355,Mass Customer,N,Yes,4
+356,High Net Worth,N,No,7
+357,Affluent Customer,N,No,11
+358,Mass Customer,N,No,7
+359,Affluent Customer,N,Yes,12
+360,Mass Customer,N,Yes,9
+361,Mass Customer,N,Yes,5
+362,High Net Worth,N,Yes,10
+363,Mass Customer,N,Yes,12
+364,Affluent Customer,N,No,6
+365,High Net Worth,N,No,10
+366,High Net Worth,N,No,4
+367,Mass Customer,N,Yes,4
+368,High Net Worth,N,No,8
+369,Mass Customer,N,Yes,9
+370,Affluent Customer,N,Yes,10
+371,Mass Customer,N,No,9
+372,Affluent Customer,N,Yes,7
+373,High Net Worth,N,Yes,5
+374,Mass Customer,N,Yes,9
+375,Mass Customer,N,Yes,7
+376,Mass Customer,N,Yes,1
+377,Mass Customer,N,No,12
+378,Mass Customer,N,No,5
+379,High Net Worth,N,Yes,8
+380,Mass Customer,N,No,7
+381,Affluent Customer,N,No,9
+382,Mass Customer,N,Yes,8
+383,Affluent Customer,N,No,10
+384,Affluent Customer,N,No,8
+385,High Net Worth,N,No,9
+386,Mass Customer,N,No,10
+387,Mass Customer,N,No,2
+388,Mass Customer,N,Yes,8
+389,Affluent Customer,N,Yes,10
+390,Affluent Customer,N,No,5
+391,Mass Customer,N,No,7
+392,Mass Customer,N,No,11
+393,Mass Customer,N,Yes,7
+394,High Net Worth,N,Yes,12
+395,High Net Worth,N,Yes,3
+396,High Net Worth,N,Yes,11
+397,Affluent Customer,N,Yes,5
+398,Affluent Customer,N,No,1
+399,Affluent Customer,N,Yes,3
+400,Mass Customer,N,No,4
+401,Mass Customer,N,No,8
+402,Affluent Customer,N,No,1
+403,Mass Customer,N,Yes,8
+404,Affluent Customer,N,Yes,10
+405,High Net Worth,N,Yes,9
+406,High Net Worth,N,No,8
+407,High Net Worth,N,Yes,8
+408,Affluent Customer,N,No,3
+409,Mass Customer,N,Yes,9
+410,Mass Customer,N,Yes,8
+411,High Net Worth,N,No,9
+412,High Net Worth,N,No,4
+413,High Net Worth,N,Yes,8
+414,High Net Worth,N,No,1
+415,Affluent Customer,N,Yes,8
+416,Mass Customer,N,Yes,7
+417,Mass Customer,N,No,3
+418,Mass Customer,N,No,11
+419,Affluent Customer,N,No,2
+420,High Net Worth,N,No,11
+421,Mass Customer,N,Yes,3
+422,Affluent Customer,N,No,8
+423,Mass Customer,N,No,11
+424,High Net Worth,N,No,10
+425,Mass Customer,N,Yes,3
+426,Affluent Customer,N,No,7
+427,Mass Customer,N,Yes,7
+428,High Net Worth,N,Yes,10
+429,High Net Worth,N,Yes,2
+430,High Net Worth,N,Yes,10
+431,Affluent Customer,N,Yes,12
+432,Affluent Customer,N,Yes,10
+433,Affluent Customer,N,No,7
+434,Mass Customer,N,Yes,4
+435,Mass Customer,N,No,8
+436,Mass Customer,N,No,6
+437,Affluent Customer,N,Yes,8
+438,High Net Worth,N,Yes,6
+439,Affluent Customer,N,No,7
+440,Mass Customer,N,No,6
+441,Mass Customer,N,No,5
+442,Mass Customer,N,No,9
+443,High Net Worth,N,Yes,10
+444,Mass Customer,N,Yes,10
+445,Mass Customer,N,No,7
+446,Affluent Customer,N,Yes,10
+447,Mass Customer,N,Yes,10
+448,High Net Worth,N,No,8
+449,High Net Worth,N,Yes,10
+450,Mass Customer,N,Yes,10
+451,High Net Worth,N,No,10
+452,Mass Customer,N,Yes,7
+453,High Net Worth,N,No,9
+454,Affluent Customer,N,Yes,8
+455,Mass Customer,N,Yes,5
+456,Affluent Customer,N,Yes,2
+457,High Net Worth,N,Yes,10
+458,Affluent Customer,N,Yes,6
+459,Mass Customer,N,Yes,7
+460,Affluent Customer,N,Yes,11
+461,Mass Customer,N,Yes,5
+462,Affluent Customer,N,Yes,9
+463,Mass Customer,N,Yes,9
+464,Mass Customer,N,Yes,9
+465,Affluent Customer,N,Yes,12
+466,Affluent Customer,N,Yes,11
+467,Affluent Customer,N,No,8
+468,High Net Worth,N,Yes,9
+469,High Net Worth,N,Yes,9
+470,Mass Customer,N,No,9
+471,Affluent Customer,N,No,10
+472,Mass Customer,N,Yes,8
+473,Mass Customer,N,Yes,9
+474,Affluent Customer,N,No,8
+475,Affluent Customer,N,No,4
+476,Mass Customer,N,No,6
+477,High Net Worth,N,Yes,9
+478,Affluent Customer,N,Yes,9
+479,Mass Customer,N,Yes,9
+480,Mass Customer,N,Yes,9
+481,Mass Customer,N,No,3
+482,Mass Customer,N,No,7
+483,Affluent Customer,N,No,9
+484,Mass Customer,N,No,2
+485,High Net Worth,N,No,4
+486,Affluent Customer,N,Yes,11
+487,Mass Customer,N,No,10
+488,Mass Customer,N,Yes,9
+489,Mass Customer,N,Yes,10
+490,Mass Customer,N,No,10
+491,Affluent Customer,N,Yes,9
+492,Mass Customer,N,No,9
+493,Mass Customer,N,Yes,9
+494,Mass Customer,N,No,3
+495,Mass Customer,N,Yes,7
+496,Affluent Customer,N,Yes,7
+497,Mass Customer,N,Yes,8
+498,High Net Worth,N,Yes,3
+499,Affluent Customer,N,No,10
+500,Affluent Customer,N,Yes,7
+501,High Net Worth,N,No,9
+502,Mass Customer,N,No,10
+503,Affluent Customer,N,Yes,8
+504,High Net Worth,N,Yes,9
+505,High Net Worth,N,Yes,6
+506,Mass Customer,N,No,8
+507,Mass Customer,N,No,3
+508,Mass Customer,N,Yes,8
+509,Affluent Customer,N,Yes,12
+510,Mass Customer,N,No,10
+511,High Net Worth,N,No,12
+512,Mass Customer,N,No,8
+513,Mass Customer,N,No,11
+514,Mass Customer,N,Yes,8
+515,High Net Worth,N,No,12
+516,Mass Customer,N,No,9
+517,Mass Customer,N,Yes,8
+518,Mass Customer,N,Yes,9
+519,Mass Customer,N,Yes,10
+520,Affluent Customer,N,Yes,5
+521,High Net Worth,N,No,2
+522,Affluent Customer,N,Yes,12
+523,Affluent Customer,N,Yes,8
+524,Mass Customer,N,No,10
+525,Mass Customer,N,Yes,9
+526,Mass Customer,N,Yes,10
+527,Mass Customer,N,Yes,7
+528,Mass Customer,N,No,5
+529,Affluent Customer,N,Yes,7
+530,Mass Customer,N,No,11
+531,High Net Worth,N,No,12
+532,Affluent Customer,N,No,7
+533,Mass Customer,N,No,10
+534,Mass Customer,N,No,7
+535,Affluent Customer,N,No,9
+536,Affluent Customer,N,No,9
+537,High Net Worth,N,No,10
+538,Mass Customer,N,Yes,6
+539,High Net Worth,N,No,4
+540,Mass Customer,N,No,10
+541,Affluent Customer,N,Yes,8
+542,Mass Customer,N,No,2
+543,Affluent Customer,N,Yes,9
+544,High Net Worth,N,Yes,7
+545,Mass Customer,N,Yes,1
+546,Mass Customer,N,Yes,6
+547,Mass Customer,N,No,7
+548,High Net Worth,N,Yes,9
+549,Mass Customer,N,Yes,7
+550,Mass Customer,N,No,9
+551,High Net Worth,N,No,4
+552,High Net Worth,N,Yes,8
+553,Affluent Customer,N,Yes,2
+554,Mass Customer,N,Yes,7
+555,Mass Customer,N,No,10
+556,Mass Customer,N,No,1
+557,Affluent Customer,N,Yes,8
+558,Mass Customer,N,No,3
+559,High Net Worth,N,Yes,5
+560,Affluent Customer,N,No,9
+561,Mass Customer,N,No,8
+562,Mass Customer,N,No,12
+563,Mass Customer,N,Yes,11
+564,High Net Worth,N,No,8
+565,Mass Customer,N,Yes,2
+566,High Net Worth,N,Yes,10
+567,Affluent Customer,N,No,10
+568,Mass Customer,N,No,10
+569,Mass Customer,N,No,8
+570,Mass Customer,N,Yes,12
+571,Mass Customer,N,No,11
+572,High Net Worth,N,Yes,10
+573,Mass Customer,N,No,8
+574,Mass Customer,N,No,10
+575,High Net Worth,N,Yes,10
+576,Mass Customer,N,Yes,7
+577,Mass Customer,N,Yes,9
+578,High Net Worth,N,Yes,4
+579,Mass Customer,N,No,7
+580,Mass Customer,N,Yes,10
+581,Mass Customer,N,Yes,4
+582,Affluent Customer,N,No,9
+583,Mass Customer,N,No,8
+584,Affluent Customer,N,Yes,1
+585,Mass Customer,N,Yes,11
+586,Mass Customer,N,No,11
+587,Mass Customer,N,Yes,11
+588,Mass Customer,N,No,8
+589,Mass Customer,N,Yes,4
+590,Mass Customer,N,Yes,9
+591,Affluent Customer,N,No,4
+592,Mass Customer,N,No,2
+593,Mass Customer,N,No,7
+594,Mass Customer,N,No,12
+595,Mass Customer,N,No,8
+596,Affluent Customer,N,No,8
+597,Mass Customer,N,No,11
+598,High Net Worth,N,No,3
+599,Mass Customer,N,Yes,5
+600,Mass Customer,N,Yes,8
+601,High Net Worth,N,Yes,8
+602,High Net Worth,N,Yes,8
+603,Affluent Customer,N,No,11
+604,Affluent Customer,N,No,6
+605,Mass Customer,N,Yes,9
+606,Mass Customer,N,Yes,6
+607,Mass Customer,N,No,8
+608,High Net Worth,N,Yes,11
+609,Mass Customer,N,No,9
+610,Mass Customer,N,Yes,11
+611,Mass Customer,N,Yes,9
+612,Mass Customer,N,No,4
+613,High Net Worth,N,No,7
+614,Mass Customer,N,Yes,7
+615,Mass Customer,N,No,9
+616,High Net Worth,N,No,3
+617,Mass Customer,N,No,7
+618,Affluent Customer,N,Yes,3
+619,Mass Customer,N,No,3
+620,Mass Customer,N,Yes,8
+621,High Net Worth,N,No,7
+622,Mass Customer,N,No,7
+623,High Net Worth,N,No,5
+624,Mass Customer,N,Yes,4
+625,High Net Worth,N,Yes,1
+626,Mass Customer,N,No,10
+627,High Net Worth,N,No,8
+628,Mass Customer,N,No,8
+629,High Net Worth,N,No,8
+630,Affluent Customer,N,Yes,3
+631,Affluent Customer,N,No,8
+632,Mass Customer,N,No,9
+633,High Net Worth,N,Yes,8
+634,Mass Customer,N,No,6
+635,Mass Customer,N,Yes,7
+636,Mass Customer,N,No,9
+637,High Net Worth,N,No,6
+638,High Net Worth,N,No,8
+639,Mass Customer,N,No,4
+640,High Net Worth,N,Yes,1
+641,Affluent Customer,N,No,10
+642,Mass Customer,N,No,2
+643,Mass Customer,N,Yes,9
+644,Affluent Customer,N,No,7
+645,High Net Worth,N,No,8
+646,Affluent Customer,N,No,7
+647,Mass Customer,N,Yes,12
+648,Mass Customer,N,Yes,3
+649,Mass Customer,N,Yes,4
+650,Mass Customer,N,No,8
+651,Affluent Customer,N,No,8
+652,High Net Worth,N,Yes,5
+653,Affluent Customer,N,Yes,7
+654,Affluent Customer,N,No,9
+655,Affluent Customer,N,Yes,12
+656,High Net Worth,N,Yes,10
+657,Affluent Customer,N,No,7
+658,Affluent Customer,N,Yes,9
+659,Affluent Customer,N,Yes,9
+660,High Net Worth,N,No,5
+661,High Net Worth,N,No,10
+662,Mass Customer,N,Yes,8
+663,Affluent Customer,N,Yes,12
+664,High Net Worth,N,No,9
+665,Mass Customer,N,No,7
+666,High Net Worth,N,Yes,2
+667,High Net Worth,N,Yes,10
+668,Mass Customer,N,No,1
+669,Mass Customer,N,No,7
+670,Affluent Customer,N,No,7
+671,Mass Customer,N,No,12
+672,High Net Worth,N,No,8
+673,Mass Customer,N,Yes,10
+674,Mass Customer,N,No,7
+675,Mass Customer,N,Yes,9
+676,High Net Worth,N,Yes,7
+677,Mass Customer,N,No,9
+678,High Net Worth,N,No,8
+679,Mass Customer,N,No,7
+680,High Net Worth,N,Yes,9
+681,Mass Customer,N,Yes,4
+682,Affluent Customer,N,Yes,9
+683,Mass Customer,N,Yes,12
+684,Mass Customer,N,No,8
+685,Mass Customer,N,No,10
+686,High Net Worth,N,Yes,7
+687,High Net Worth,N,Yes,7
+688,High Net Worth,N,No,9
+689,High Net Worth,N,Yes,4
+690,Affluent Customer,N,Yes,8
+691,Affluent Customer,N,Yes,8
+692,Mass Customer,N,No,10
+693,Affluent Customer,N,Yes,7
+694,Mass Customer,N,No,7
+695,High Net Worth,N,No,6
+696,Affluent Customer,N,Yes,3
+697,Mass Customer,N,No,5
+698,High Net Worth,N,Yes,12
+699,Affluent Customer,N,Yes,6
+700,Mass Customer,N,No,11
+701,Mass Customer,N,Yes,10
+702,Mass Customer,N,No,1
+703,Mass Customer,N,No,9
+704,Mass Customer,N,No,3
+705,High Net Worth,N,No,9
+706,High Net Worth,N,Yes,8
+707,Mass Customer,N,Yes,7
+708,Mass Customer,N,Yes,9
+709,Mass Customer,N,Yes,6
+710,High Net Worth,N,Yes,10
+711,Affluent Customer,N,No,9
+712,Mass Customer,N,No,7
+713,Mass Customer,N,Yes,9
+714,High Net Worth,N,Yes,11
+715,Mass Customer,N,No,1
+716,Mass Customer,N,No,10
+717,Mass Customer,N,Yes,8
+718,Mass Customer,N,Yes,9
+719,Mass Customer,N,No,9
+720,Affluent Customer,N,No,8
+721,Affluent Customer,N,Yes,8
+722,Mass Customer,N,No,8
+723,Mass Customer,N,Yes,3
+724,Mass Customer,N,Yes,6
+725,High Net Worth,N,Yes,9
+726,Mass Customer,N,Yes,10
+727,Mass Customer,N,No,9
+728,Mass Customer,N,Yes,11
+729,Affluent Customer,N,No,10
+730,Mass Customer,N,No,10
+731,Mass Customer,N,No,7
+732,Mass Customer,N,No,5
+733,Mass Customer,N,No,2
+734,Affluent Customer,N,No,5
+735,Mass Customer,N,Yes,11
+736,High Net Worth,N,No,2
+737,Mass Customer,N,No,9
+738,Mass Customer,N,Yes,9
+739,Mass Customer,N,No,10
+740,Affluent Customer,N,No,11
+741,Mass Customer,N,No,5
+742,Mass Customer,N,No,8
+743,Mass Customer,N,Yes,11
+744,Affluent Customer,N,Yes,9
+745,Mass Customer,N,Yes,12
+746,Affluent Customer,N,Yes,8
+747,Mass Customer,N,No,10
+748,High Net Worth,N,No,3
+749,Mass Customer,N,No,3
+750,Affluent Customer,N,Yes,4
+751,Affluent Customer,N,No,4
+752,High Net Worth,N,No,7
+753,Affluent Customer,Y,Yes,8
+754,Mass Customer,N,No,10
+755,Mass Customer,N,No,10
+756,Mass Customer,N,Yes,9
+757,Mass Customer,N,No,9
+758,High Net Worth,N,Yes,8
+759,High Net Worth,N,No,5
+760,Mass Customer,N,Yes,1
+761,Affluent Customer,N,Yes,1
+762,Mass Customer,N,Yes,8
+763,Affluent Customer,N,No,8
+764,Mass Customer,N,Yes,9
+765,Affluent Customer,N,No,8
+766,Mass Customer,N,Yes,10
+767,High Net Worth,N,No,4
+768,Affluent Customer,N,Yes,7
+769,Mass Customer,N,No,3
+770,High Net Worth,N,Yes,8
+771,Affluent Customer,N,Yes,4
+772,Mass Customer,N,No,4
+773,Affluent Customer,N,Yes,9
+774,High Net Worth,N,No,9
+775,Affluent Customer,N,No,9
+776,High Net Worth,N,No,3
+777,High Net Worth,N,No,10
+778,High Net Worth,N,No,3
+779,High Net Worth,N,No,2
+780,Mass Customer,N,No,6
+781,Mass Customer,N,No,8
+782,Mass Customer,N,No,10
+783,Affluent Customer,N,No,7
+784,High Net Worth,N,Yes,9
+785,Mass Customer,N,Yes,11
+786,Affluent Customer,N,No,9
+787,Affluent Customer,N,Yes,10
+788,Mass Customer,N,No,7
+789,Affluent Customer,N,Yes,10
+790,Affluent Customer,N,No,3
+791,Mass Customer,N,Yes,9
+792,High Net Worth,N,Yes,8
+793,High Net Worth,N,Yes,8
+794,Affluent Customer,N,Yes,9
+795,High Net Worth,N,No,8
+796,Mass Customer,N,No,4
+797,Mass Customer,N,No,3
+798,High Net Worth,N,No,7
+799,Mass Customer,N,Yes,7
+800,Mass Customer,N,No,7
+801,Affluent Customer,N,No,8
+802,Mass Customer,N,No,9
+803,High Net Worth,N,No,8
+804,High Net Worth,N,Yes,2
+805,Mass Customer,N,No,8
+806,Mass Customer,N,Yes,9
+807,Affluent Customer,N,No,10
+808,High Net Worth,N,Yes,4
+809,Mass Customer,N,No,12
+810,Mass Customer,N,Yes,8
+811,Mass Customer,N,No,11
+812,Mass Customer,N,No,10
+813,Mass Customer,N,No,5
+814,Mass Customer,N,No,11
+815,Mass Customer,N,Yes,12
+816,Mass Customer,N,No,12
+817,Mass Customer,N,Yes,8
+818,Mass Customer,N,No,5
+819,Affluent Customer,N,Yes,11
+820,High Net Worth,N,No,3
+821,Mass Customer,N,Yes,12
+822,High Net Worth,N,No,8
+823,Affluent Customer,N,No,11
+824,Affluent Customer,N,Yes,11
+825,Affluent Customer,N,Yes,8
+826,Mass Customer,N,Yes,8
+827,Affluent Customer,N,No,4
+828,Mass Customer,N,Yes,3
+829,High Net Worth,N,Yes,7
+830,Affluent Customer,N,No,7
+831,Affluent Customer,N,No,10
+832,Mass Customer,N,No,10
+833,High Net Worth,N,Yes,8
+834,Mass Customer,N,No,3
+835,Mass Customer,N,Yes,1
+836,Mass Customer,N,Yes,3
+837,Mass Customer,N,Yes,11
+838,High Net Worth,N,No,6
+839,Mass Customer,N,Yes,10
+840,Affluent Customer,N,Yes,5
+841,Affluent Customer,N,Yes,7
+842,High Net Worth,N,No,9
+843,Affluent Customer,N,Yes,7
+844,High Net Worth,N,No,7
+845,Mass Customer,N,No,7
+846,Affluent Customer,N,No,9
+847,High Net Worth,N,No,10
+848,Mass Customer,N,No,7
+849,Mass Customer,N,No,2
+850,Mass Customer,N,No,7
+851,Affluent Customer,N,Yes,2
+852,Affluent Customer,N,Yes,7
+853,Mass Customer,N,Yes,4
+854,Affluent Customer,N,No,7
+855,High Net Worth,N,Yes,10
+856,Mass Customer,N,Yes,9
+857,High Net Worth,N,No,8
+858,High Net Worth,N,Yes,10
+859,Affluent Customer,N,Yes,1
+860,High Net Worth,N,Yes,8
+861,High Net Worth,N,No,5
+862,High Net Worth,N,Yes,7
+863,Affluent Customer,N,No,12
+864,High Net Worth,N,Yes,10
+865,Mass Customer,N,No,10
+866,Affluent Customer,N,Yes,9
+867,Mass Customer,N,No,10
+868,Mass Customer,N,Yes,3
+869,High Net Worth,N,Yes,7
+870,Mass Customer,N,No,10
+871,Mass Customer,N,Yes,9
+872,Mass Customer,N,No,10
+873,Affluent Customer,N,Yes,8
+874,Mass Customer,N,Yes,5
+875,Mass Customer,N,Yes,10
+876,High Net Worth,N,No,10
+877,Mass Customer,N,Yes,5
+878,Mass Customer,N,Yes,12
+879,Mass Customer,N,No,3
+880,High Net Worth,N,Yes,10
+881,High Net Worth,N,No,8
+882,Mass Customer,N,Yes,10
+883,Mass Customer,N,Yes,4
+884,Mass Customer,N,No,1
+885,Mass Customer,N,No,9
+886,Mass Customer,N,No,11
+887,High Net Worth,N,No,12
+888,Mass Customer,N,No,8
+889,Affluent Customer,N,Yes,8
+890,Mass Customer,N,Yes,9
+891,High Net Worth,N,Yes,9
+892,Mass Customer,N,Yes,8
+893,Mass Customer,N,No,10
+894,High Net Worth,N,Yes,8
+895,Mass Customer,N,Yes,7
+896,Mass Customer,N,No,8
+897,Mass Customer,N,No,5
+898,Affluent Customer,N,No,3
+899,Affluent Customer,N,Yes,5
+900,Mass Customer,N,Yes,7
+901,Mass Customer,N,Yes,3
+902,Mass Customer,N,No,9
+903,Mass Customer,N,No,9
+904,High Net Worth,N,Yes,8
+905,Affluent Customer,N,No,7
+906,High Net Worth,N,Yes,10
+907,High Net Worth,N,Yes,8
+908,Affluent Customer,N,Yes,10
+909,High Net Worth,N,Yes,7
+910,Mass Customer,N,No,8
+911,Affluent Customer,N,No,5
+912,Mass Customer,N,Yes,8
+913,Mass Customer,N,No,9
+914,Affluent Customer,N,Yes,4
+915,Mass Customer,N,No,10
+916,Affluent Customer,N,No,10
+917,Mass Customer,N,No,11
+918,High Net Worth,N,No,8
+919,Mass Customer,N,Yes,4
+920,Mass Customer,N,Yes,10
+921,Mass Customer,N,No,4
+922,Mass Customer,N,No,8
+923,High Net Worth,N,No,8
+924,Affluent Customer,N,No,8
+925,Affluent Customer,N,No,12
+926,Affluent Customer,N,No,6
+927,Mass Customer,N,Yes,8
+928,High Net Worth,N,Yes,7
+929,Mass Customer,N,Yes,9
+930,Mass Customer,N,Yes,12
+931,Affluent Customer,N,Yes,10
+932,Mass Customer,N,No,2
+933,Mass Customer,N,Yes,8
+934,Mass Customer,N,No,7
+935,Mass Customer,N,Yes,9
+936,High Net Worth,N,No,2
+937,Affluent Customer,N,No,8
+938,Mass Customer,N,No,8
+939,Mass Customer,N,No,11
+940,Mass Customer,N,No,3
+941,Affluent Customer,N,Yes,6
+942,Mass Customer,N,Yes,10
+943,Affluent Customer,N,Yes,7
+944,Mass Customer,N,No,6
+945,High Net Worth,N,Yes,9
+946,High Net Worth,N,No,5
+947,Mass Customer,N,No,9
+948,Affluent Customer,N,No,7
+949,Mass Customer,N,Yes,1
+950,High Net Worth,N,Yes,6
+951,Mass Customer,N,No,9
+952,Affluent Customer,N,Yes,12
+953,Mass Customer,N,No,10
+954,Mass Customer,N,Yes,12
+955,Mass Customer,N,Yes,9
+956,Mass Customer,N,Yes,8
+957,Affluent Customer,N,Yes,8
+958,High Net Worth,N,No,8
+959,Affluent Customer,N,Yes,10
+960,Mass Customer,N,Yes,12
+961,Mass Customer,N,No,1
+962,High Net Worth,N,Yes,10
+963,High Net Worth,N,Yes,5
+964,High Net Worth,N,No,6
+965,High Net Worth,N,Yes,5
+966,High Net Worth,N,Yes,10
+967,Affluent Customer,N,Yes,7
+968,High Net Worth,N,Yes,5
+969,High Net Worth,N,Yes,7
+970,High Net Worth,N,Yes,7
+971,High Net Worth,N,No,8
+972,Mass Customer,N,Yes,8
+973,High Net Worth,N,No,7
+974,Mass Customer,N,Yes,1
+975,Mass Customer,N,No,9
+976,Affluent Customer,N,No,8
+977,High Net Worth,N,Yes,9
+978,High Net Worth,N,No,6
+979,High Net Worth,N,No,11
+980,Mass Customer,N,No,7
+981,Mass Customer,N,No,4
+982,High Net Worth,N,Yes,3
+983,Affluent Customer,N,No,9
+984,Affluent Customer,N,No,6
+985,High Net Worth,N,No,4
+986,Mass Customer,N,Yes,7
+987,Affluent Customer,N,Yes,9
+988,High Net Worth,N,No,9
+989,Mass Customer,N,No,3
+990,Mass Customer,N,Yes,10
+991,Mass Customer,N,Yes,5
+992,Mass Customer,N,Yes,10
+993,High Net Worth,N,No,9
+994,Affluent Customer,N,Yes,9
+995,Mass Customer,N,Yes,9
+996,Mass Customer,N,Yes,9
+997,Mass Customer,N,Yes,3
+998,Affluent Customer,N,Yes,12
+999,High Net Worth,N,No,7
+1000,Mass Customer,N,No,6
+1001,Mass Customer,N,No,9
+1002,Mass Customer,N,Yes,8
+1003,High Net Worth,N,No,12
+1004,High Net Worth,N,No,12
+1005,High Net Worth,N,Yes,9
+1006,Affluent Customer,N,Yes,4
+1007,Mass Customer,N,No,9
+1008,Mass Customer,N,No,9
+1009,High Net Worth,N,Yes,8
+1010,Affluent Customer,N,No,8
+1011,High Net Worth,N,Yes,8
+1012,High Net Worth,N,Yes,11
+1013,High Net Worth,N,No,11
+1014,Mass Customer,N,Yes,10
+1015,Mass Customer,N,No,8
+1016,Mass Customer,N,Yes,10
+1017,High Net Worth,N,No,8
+1018,Mass Customer,N,Yes,10
+1019,Mass Customer,N,Yes,8
+1020,Affluent Customer,N,No,9
+1021,High Net Worth,N,No,8
+1022,Affluent Customer,N,Yes,10
+1023,Affluent Customer,N,Yes,12
+1024,High Net Worth,N,Yes,9
+1025,Mass Customer,N,Yes,6
+1026,Affluent Customer,N,No,7
+1027,Affluent Customer,N,No,7
+1028,High Net Worth,N,No,11
+1029,Mass Customer,N,No,9
+1030,Mass Customer,N,No,3
+1031,Mass Customer,N,No,9
+1032,Mass Customer,N,Yes,12
+1033,Affluent Customer,N,Yes,11
+1034,High Net Worth,N,Yes,6
+1035,Affluent Customer,N,Yes,4
+1036,Mass Customer,N,Yes,8
+1037,Mass Customer,N,No,10
+1038,Mass Customer,N,Yes,11
+1039,High Net Worth,N,Yes,7
+1040,High Net Worth,N,No,1
+1041,Affluent Customer,N,No,11
+1042,High Net Worth,N,Yes,9
+1043,Mass Customer,N,Yes,7
+1044,High Net Worth,N,No,9
+1045,Mass Customer,N,Yes,8
+1046,Affluent Customer,N,No,11
+1047,Affluent Customer,N,No,10
+1048,Affluent Customer,N,No,11
+1049,Mass Customer,N,No,5
+1050,Mass Customer,N,Yes,11
+1051,High Net Worth,N,Yes,10
+1052,High Net Worth,N,No,7
+1053,Mass Customer,N,Yes,12
+1054,Mass Customer,N,Yes,6
+1055,Mass Customer,N,No,11
+1056,Affluent Customer,N,No,11
+1057,Mass Customer,N,No,12
+1058,Affluent Customer,N,Yes,11
+1059,High Net Worth,N,Yes,10
+1060,Affluent Customer,N,Yes,8
+1061,Mass Customer,N,No,9
+1062,Mass Customer,N,No,10
+1063,Affluent Customer,N,Yes,9
+1064,Affluent Customer,N,Yes,8
+1065,Mass Customer,N,Yes,7
+1066,High Net Worth,N,No,4
+1067,Mass Customer,N,Yes,7
+1068,Mass Customer,N,Yes,3
+1069,Mass Customer,N,No,10
+1070,Mass Customer,N,No,3
+1071,High Net Worth,N,No,1
+1072,High Net Worth,N,Yes,9
+1073,Affluent Customer,N,Yes,7
+1074,High Net Worth,N,Yes,9
+1075,High Net Worth,N,No,9
+1076,Affluent Customer,N,No,9
+1077,Mass Customer,N,Yes,8
+1078,Mass Customer,N,No,9
+1079,Mass Customer,N,No,8
+1080,Mass Customer,N,Yes,4
+1081,Mass Customer,N,No,7
+1082,Mass Customer,N,Yes,9
+1083,Affluent Customer,N,No,5
+1084,Affluent Customer,N,No,9
+1085,Mass Customer,N,No,9
+1086,Mass Customer,N,Yes,11
+1087,Mass Customer,N,Yes,7
+1088,High Net Worth,N,Yes,3
+1089,Affluent Customer,N,No,10
+1090,Affluent Customer,N,No,7
+1091,Mass Customer,N,No,9
+1092,Mass Customer,N,No,9
+1093,Affluent Customer,N,No,8
+1094,High Net Worth,N,No,9
+1095,Mass Customer,N,No,8
+1096,High Net Worth,N,No,3
+1097,Mass Customer,N,Yes,11
+1098,Mass Customer,N,Yes,3
+1099,Affluent Customer,N,Yes,10
+1100,Mass Customer,N,No,6
+1101,Mass Customer,N,No,4
+1102,Affluent Customer,N,No,11
+1103,High Net Worth,N,Yes,9
+1104,Mass Customer,N,No,5
+1105,Mass Customer,N,No,9
+1106,Mass Customer,N,No,7
+1107,High Net Worth,N,No,6
+1108,Mass Customer,N,No,11
+1109,High Net Worth,N,No,12
+1110,High Net Worth,N,No,7
+1111,High Net Worth,N,Yes,10
+1112,Mass Customer,N,Yes,9
+1113,Mass Customer,N,No,9
+1114,Mass Customer,N,No,8
+1115,High Net Worth,N,Yes,11
+1116,Mass Customer,N,Yes,9
+1117,Affluent Customer,N,No,11
+1118,Mass Customer,N,Yes,8
+1119,Mass Customer,N,Yes,7
+1120,Affluent Customer,N,No,11
+1121,Mass Customer,N,Yes,9
+1122,Mass Customer,N,No,11
+1123,Mass Customer,N,No,10
+1124,Affluent Customer,N,Yes,4
+1125,Affluent Customer,N,No,8
+1126,Mass Customer,N,No,12
+1127,Mass Customer,N,No,3
+1128,Mass Customer,N,Yes,7
+1129,Mass Customer,N,Yes,4
+1130,Mass Customer,N,No,11
+1131,Mass Customer,N,No,6
+1132,Affluent Customer,N,Yes,9
+1133,Affluent Customer,N,No,3
+1134,Affluent Customer,N,No,6
+1135,Mass Customer,N,Yes,2
+1136,High Net Worth,N,No,10
+1137,Mass Customer,N,No,11
+1138,Mass Customer,N,Yes,9
+1139,Mass Customer,N,Yes,5
+1140,Mass Customer,N,Yes,9
+1141,High Net Worth,N,Yes,10
+1142,Mass Customer,N,No,4
+1143,Mass Customer,N,Yes,9
+1144,High Net Worth,N,Yes,5
+1145,Mass Customer,N,Yes,7
+1146,High Net Worth,N,No,4
+1147,High Net Worth,N,Yes,9
+1148,High Net Worth,N,No,10
+1149,Affluent Customer,N,Yes,4
+1150,Mass Customer,N,Yes,11
+1151,High Net Worth,N,Yes,1
+1152,Mass Customer,N,Yes,3
+1153,Mass Customer,N,Yes,12
+1154,Mass Customer,N,Yes,4
+1155,Mass Customer,N,Yes,8
+1156,Mass Customer,N,Yes,7
+1157,Affluent Customer,N,Yes,7
+1158,Mass Customer,N,Yes,10
+1159,Mass Customer,N,No,9
+1160,Affluent Customer,N,No,9
+1161,Mass Customer,N,No,1
+1162,Mass Customer,N,Yes,8
+1163,High Net Worth,N,Yes,6
+1164,Mass Customer,N,Yes,8
+1165,High Net Worth,N,No,10
+1166,Affluent Customer,N,No,9
+1167,Mass Customer,N,No,8
+1168,Affluent Customer,N,No,9
+1169,Mass Customer,N,Yes,7
+1170,Mass Customer,N,Yes,7
+1171,Affluent Customer,N,Yes,9
+1172,Mass Customer,N,Yes,9
+1173,High Net Worth,N,No,8
+1174,Mass Customer,N,No,9
+1175,Mass Customer,N,No,8
+1176,Affluent Customer,N,Yes,8
+1177,Affluent Customer,N,Yes,8
+1178,Mass Customer,N,No,3
+1179,High Net Worth,N,Yes,6
+1180,Affluent Customer,N,No,9
+1181,Mass Customer,N,No,10
+1182,Mass Customer,N,Yes,10
+1183,Affluent Customer,N,No,1
+1184,Mass Customer,N,No,11
+1185,Mass Customer,N,Yes,9
+1186,Affluent Customer,N,Yes,2
+1187,Mass Customer,N,No,10
+1188,Affluent Customer,N,Yes,9
+1189,High Net Worth,N,Yes,5
+1190,Affluent Customer,N,Yes,4
+1191,Mass Customer,N,Yes,8
+1192,Mass Customer,N,No,10
+1193,High Net Worth,N,No,8
+1194,Affluent Customer,N,No,1
+1195,Mass Customer,N,No,7
+1196,Mass Customer,N,No,3
+1197,High Net Worth,N,Yes,9
+1198,High Net Worth,N,No,10
+1199,Affluent Customer,N,Yes,6
+1200,High Net Worth,N,No,10
+1201,Mass Customer,N,No,10
+1202,Mass Customer,N,Yes,5
+1203,Affluent Customer,N,No,4
+1204,Affluent Customer,N,Yes,10
+1205,Affluent Customer,N,No,9
+1206,Mass Customer,N,No,9
+1207,Mass Customer,N,No,8
+1208,Mass Customer,N,No,9
+1209,High Net Worth,N,Yes,10
+1210,Mass Customer,N,No,11
+1211,Affluent Customer,N,Yes,10
+1212,Affluent Customer,N,No,7
+1213,High Net Worth,N,No,4
+1214,High Net Worth,N,No,7
+1215,Mass Customer,N,No,4
+1216,Affluent Customer,N,Yes,7
+1217,High Net Worth,N,No,9
+1218,Mass Customer,N,Yes,9
+1219,Mass Customer,N,No,7
+1220,High Net Worth,N,No,6
+1221,High Net Worth,N,Yes,10
+1222,Mass Customer,N,No,7
+1223,Mass Customer,N,Yes,7
+1224,Mass Customer,N,No,4
+1225,Mass Customer,N,Yes,11
+1226,Mass Customer,N,Yes,9
+1227,Affluent Customer,N,Yes,10
+1228,Affluent Customer,N,No,8
+1229,Affluent Customer,N,Yes,11
+1230,Mass Customer,N,Yes,9
+1231,Affluent Customer,N,No,2
+1232,Affluent Customer,N,No,7
+1233,Affluent Customer,N,Yes,4
+1234,Mass Customer,N,No,5
+1235,Mass Customer,N,No,7
+1236,High Net Worth,N,Yes,8
+1237,High Net Worth,N,No,9
+1238,Affluent Customer,N,Yes,7
+1239,Mass Customer,N,Yes,11
+1240,Mass Customer,N,Yes,8
+1241,Affluent Customer,N,Yes,10
+1242,High Net Worth,N,Yes,2
+1243,Mass Customer,N,No,1
+1244,Mass Customer,N,Yes,2
+1245,Affluent Customer,N,No,2
+1246,High Net Worth,N,No,7
+1247,Affluent Customer,N,No,6
+1248,Affluent Customer,N,Yes,4
+1249,Mass Customer,N,No,2
+1250,Mass Customer,N,No,1
+1251,Mass Customer,N,No,9
+1252,Mass Customer,N,Yes,6
+1253,Mass Customer,N,No,2
+1254,Mass Customer,N,Yes,1
+1255,Affluent Customer,N,No,1
+1256,High Net Worth,N,No,2
+1257,Affluent Customer,N,Yes,2
+1258,Mass Customer,N,No,3
+1259,Mass Customer,N,No,1
+1260,Mass Customer,N,No,2
+1261,Mass Customer,N,No,3
+1262,High Net Worth,N,Yes,1
+1263,Affluent Customer,N,No,3
+1264,Mass Customer,N,Yes,9
+1265,Mass Customer,N,Yes,6
+1266,Mass Customer,N,Yes,6
+1267,Affluent Customer,N,Yes,4
+1268,High Net Worth,N,Yes,5
+1269,High Net Worth,N,Yes,2
+1270,Affluent Customer,N,No,7
+1271,Mass Customer,N,Yes,2
+1272,Affluent Customer,N,No,8
+1273,Affluent Customer,N,Yes,1
+1274,Mass Customer,N,No,4
+1275,Mass Customer,N,Yes,3
+1276,Affluent Customer,N,No,7
+1277,Mass Customer,N,Yes,8
+1278,Affluent Customer,N,No,5
+1279,Mass Customer,N,No,7
+1280,High Net Worth,N,Yes,8
+1281,Affluent Customer,N,Yes,6
+1282,Affluent Customer,N,Yes,8
+1283,Mass Customer,N,No,4
+1284,Affluent Customer,N,No,7
+1285,Mass Customer,N,Yes,1
+1286,High Net Worth,N,Yes,5
+1287,Mass Customer,N,Yes,2
+1288,Affluent Customer,N,Yes,3
+1289,Mass Customer,N,Yes,6
+1290,High Net Worth,N,Yes,7
+1291,Mass Customer,N,No,7
+1292,Affluent Customer,N,No,6
+1293,Mass Customer,N,No,7
+1294,Mass Customer,N,Yes,5
+1295,Mass Customer,N,Yes,8
+1296,Affluent Customer,N,Yes,9
+1297,Mass Customer,N,No,7
+1298,Mass Customer,N,No,7
+1299,Affluent Customer,N,No,1
+1300,Affluent Customer,N,Yes,7
+1301,Mass Customer,N,No,4
+1302,Affluent Customer,N,Yes,7
+1303,Mass Customer,N,No,6
+1304,High Net Worth,N,No,7
+1305,High Net Worth,N,Yes,8
+1306,Affluent Customer,N,Yes,9
+1307,High Net Worth,N,Yes,7
+1308,Affluent Customer,N,Yes,8
+1309,Mass Customer,N,No,4
+1310,High Net Worth,N,Yes,8
+1311,Mass Customer,N,Yes,10
+1312,Affluent Customer,N,No,7
+1313,Mass Customer,N,No,2
+1314,Mass Customer,N,Yes,6
+1315,Mass Customer,N,Yes,2
+1316,High Net Worth,N,Yes,3
+1317,Mass Customer,N,Yes,6
+1318,Mass Customer,N,Yes,8
+1319,Mass Customer,N,Yes,7
+1320,High Net Worth,N,Yes,5
+1321,Affluent Customer,N,No,4
+1322,Mass Customer,N,Yes,8
+1323,High Net Worth,N,Yes,8
+1324,Mass Customer,N,No,8
+1325,High Net Worth,N,Yes,7
+1326,Affluent Customer,N,Yes,6
+1327,Affluent Customer,N,No,7
+1328,Mass Customer,N,Yes,10
+1329,Mass Customer,N,No,2
+1330,Affluent Customer,N,No,2
+1331,High Net Worth,N,No,5
+1332,Mass Customer,N,Yes,6
+1333,High Net Worth,N,No,8
+1334,Mass Customer,N,No,9
+1335,Mass Customer,N,Yes,8
+1336,Mass Customer,N,Yes,7
+1337,Mass Customer,N,No,7
+1338,High Net Worth,N,No,8
+1339,High Net Worth,N,No,8
+1340,High Net Worth,N,No,4
+1341,Affluent Customer,N,No,1
+1342,Affluent Customer,N,Yes,4
+1343,High Net Worth,N,No,2
+1344,Mass Customer,N,No,2
+1345,Mass Customer,N,No,10
+1346,Mass Customer,N,No,7
+1347,Mass Customer,N,Yes,2
+1348,High Net Worth,N,No,7
+1349,Affluent Customer,N,No,1
+1350,Mass Customer,N,Yes,4
+1351,High Net Worth,N,No,4
+1352,High Net Worth,N,No,8
+1353,Mass Customer,N,Yes,1
+1354,Affluent Customer,N,No,3
+1355,Mass Customer,N,No,5
+1356,High Net Worth,N,No,5
+1357,High Net Worth,N,No,4
+1358,High Net Worth,N,No,5
+1359,Mass Customer,N,No,5
+1360,Mass Customer,N,Yes,6
+1361,Affluent Customer,N,No,5
+1362,Affluent Customer,N,Yes,9
+1363,Mass Customer,N,No,7
+1364,Mass Customer,N,No,10
+1365,Mass Customer,N,No,6
+1366,Affluent Customer,N,No,6
+1367,Mass Customer,N,No,1
+1368,Mass Customer,N,No,8
+1369,Mass Customer,N,Yes,8
+1370,Mass Customer,N,No,10
+1371,Mass Customer,N,Yes,8
+1372,Affluent Customer,N,No,5
+1373,Mass Customer,N,Yes,10
+1374,Mass Customer,N,No,6
+1375,Affluent Customer,N,No,9
+1376,Mass Customer,N,Yes,9
+1377,Mass Customer,N,Yes,8
+1378,Affluent Customer,N,Yes,8
+1379,Mass Customer,N,Yes,6
+1380,Mass Customer,N,No,7
+1381,Affluent Customer,N,Yes,10
+1382,High Net Worth,N,Yes,9
+1383,Affluent Customer,N,No,6
+1384,Mass Customer,N,No,8
+1385,Mass Customer,N,No,10
+1386,Mass Customer,N,Yes,7
+1387,Mass Customer,N,Yes,9
+1388,Mass Customer,N,No,6
+1389,Affluent Customer,N,No,8
+1390,High Net Worth,N,Yes,9
+1391,High Net Worth,N,No,5
+1392,Mass Customer,N,No,4
+1393,Mass Customer,N,No,5
+1394,Mass Customer,N,Yes,6
+1395,High Net Worth,N,Yes,9
+1396,Mass Customer,N,No,4
+1397,Mass Customer,N,Yes,9
+1398,Mass Customer,N,No,8
+1399,Mass Customer,N,No,7
+1400,Affluent Customer,N,Yes,8
+1401,High Net Worth,N,No,4
+1402,Mass Customer,N,No,6
+1403,Mass Customer,N,No,10
+1404,Mass Customer,N,Yes,1
+1405,High Net Worth,N,Yes,2
+1406,High Net Worth,N,Yes,5
+1407,Mass Customer,N,Yes,7
+1408,High Net Worth,N,No,4
+1409,Mass Customer,N,No,1
+1410,High Net Worth,N,Yes,8
+1411,Mass Customer,N,Yes,8
+1412,Mass Customer,N,Yes,10
+1413,Mass Customer,N,No,7
+1414,Mass Customer,N,Yes,5
+1415,High Net Worth,N,Yes,9
+1416,High Net Worth,N,Yes,8
+1417,High Net Worth,N,Yes,10
+1418,Affluent Customer,N,Yes,10
+1419,Mass Customer,N,Yes,9
+1420,Mass Customer,N,No,9
+1421,Mass Customer,N,No,7
+1422,Affluent Customer,N,Yes,8
+1423,Mass Customer,N,No,9
+1424,High Net Worth,N,Yes,8
+1425,High Net Worth,N,Yes,2
+1426,Mass Customer,N,No,8
+1427,High Net Worth,N,No,9
+1428,High Net Worth,N,No,8
+1429,Mass Customer,N,Yes,8
+1430,Mass Customer,N,Yes,11
+1431,Affluent Customer,N,Yes,8
+1432,High Net Worth,N,Yes,8
+1433,Mass Customer,N,No,9
+1434,High Net Worth,N,No,8
+1435,Affluent Customer,N,Yes,10
+1436,Affluent Customer,N,No,9
+1437,Affluent Customer,N,No,10
+1438,Mass Customer,N,Yes,9
+1439,Mass Customer,N,No,7
+1440,High Net Worth,N,Yes,5
+1441,Affluent Customer,N,No,4
+1442,Affluent Customer,N,No,2
+1443,Affluent Customer,N,Yes,1
+1444,Mass Customer,N,No,8
+1445,Affluent Customer,N,No,3
+1446,Mass Customer,N,No,2
+1447,Mass Customer,N,No,9
+1448,Mass Customer,N,No,8
+1449,High Net Worth,N,No,8
+1450,Affluent Customer,N,No,9
+1451,Mass Customer,N,Yes,7
+1452,Mass Customer,N,No,4
+1453,High Net Worth,N,No,8
+1454,Mass Customer,N,Yes,6
+1455,Affluent Customer,N,No,8
+1456,Mass Customer,N,Yes,9
+1457,Affluent Customer,N,Yes,9
+1458,Affluent Customer,N,No,6
+1459,Mass Customer,N,No,9
+1460,High Net Worth,N,Yes,9
+1461,Mass Customer,N,Yes,5
+1462,Mass Customer,N,Yes,8
+1463,High Net Worth,N,Yes,8
+1464,Affluent Customer,N,Yes,9
+1465,Mass Customer,N,Yes,10
+1466,High Net Worth,N,Yes,8
+1467,Mass Customer,N,Yes,9
+1468,Mass Customer,N,No,9
+1469,Affluent Customer,N,Yes,5
+1470,High Net Worth,N,Yes,5
+1471,Mass Customer,N,No,6
+1472,Mass Customer,N,No,4
+1473,Mass Customer,N,Yes,3
+1474,Mass Customer,N,Yes,2
+1475,Affluent Customer,N,Yes,6
+1476,Affluent Customer,N,Yes,7
+1477,Mass Customer,N,Yes,3
+1478,High Net Worth,N,No,8
+1479,Mass Customer,N,No,10
+1480,High Net Worth,N,Yes,10
+1481,Affluent Customer,N,No,8
+1482,Mass Customer,N,No,4
+1483,Mass Customer,N,Yes,5
+1484,Mass Customer,N,No,3
+1485,Mass Customer,N,Yes,9
+1486,Mass Customer,N,No,6
+1487,Affluent Customer,N,Yes,5
+1488,Mass Customer,N,Yes,3
+1489,Mass Customer,N,No,5
+1490,Mass Customer,N,Yes,5
+1491,Mass Customer,N,Yes,5
+1492,Mass Customer,N,No,9
+1493,High Net Worth,N,No,8
+1494,Mass Customer,N,Yes,9
+1495,High Net Worth,N,Yes,8
+1496,Affluent Customer,N,No,7
+1497,High Net Worth,N,No,9
+1498,Affluent Customer,N,Yes,4
+1499,Mass Customer,N,Yes,10
+1500,Mass Customer,N,No,10
+1501,Mass Customer,N,Yes,12
+1502,Affluent Customer,N,Yes,8
+1503,Affluent Customer,N,No,10
+1504,Affluent Customer,N,Yes,10
+1505,Mass Customer,N,No,10
+1506,Mass Customer,N,No,10
+1507,High Net Worth,N,Yes,10
+1508,Affluent Customer,N,Yes,10
+1509,High Net Worth,N,Yes,10
+1510,Mass Customer,N,No,10
+1511,Mass Customer,N,No,10
+1512,High Net Worth,N,No,10
+1513,Affluent Customer,N,Yes,10
+1514,Mass Customer,N,No,8
+1515,Mass Customer,N,Yes,8
+1516,Affluent Customer,N,No,10
+1517,Affluent Customer,N,No,10
+1518,Affluent Customer,N,No,9
+1519,High Net Worth,N,Yes,8
+1520,Mass Customer,N,No,8
+1521,Affluent Customer,N,Yes,8
+1522,Mass Customer,N,No,6
+1523,Mass Customer,N,Yes,1
+1524,Mass Customer,N,Yes,10
+1525,High Net Worth,N,No,8
+1526,Mass Customer,N,Yes,8
+1527,Mass Customer,N,No,9
+1528,High Net Worth,N,No,8
+1529,High Net Worth,N,Yes,10
+1530,Mass Customer,N,Yes,9
+1531,Mass Customer,N,Yes,12
+1532,Mass Customer,N,Yes,9
+1533,Affluent Customer,N,Yes,8
+1534,Mass Customer,N,No,8
+1535,Affluent Customer,N,Yes,9
+1536,Affluent Customer,N,Yes,11
+1537,Mass Customer,N,No,9
+1538,High Net Worth,N,Yes,10
+1539,Mass Customer,N,Yes,10
+1540,Mass Customer,N,Yes,10
+1541,Mass Customer,N,Yes,10
+1542,Mass Customer,N,Yes,10
+1543,High Net Worth,N,No,10
+1544,Affluent Customer,N,Yes,10
+1545,Mass Customer,N,Yes,7
+1546,Mass Customer,N,Yes,10
+1547,Mass Customer,N,Yes,12
+1548,Mass Customer,N,Yes,10
+1549,Affluent Customer,N,Yes,8
+1550,Mass Customer,N,Yes,8
+1551,Affluent Customer,N,No,8
+1552,Mass Customer,N,Yes,9
+1553,High Net Worth,N,No,9
+1554,Affluent Customer,N,No,10
+1555,High Net Worth,N,No,9
+1556,Mass Customer,N,Yes,10
+1557,Mass Customer,N,No,9
+1558,Affluent Customer,N,No,9
+1559,High Net Worth,N,Yes,4
+1560,Mass Customer,N,No,10
+1561,Mass Customer,N,Yes,10
+1562,Affluent Customer,N,Yes,9
+1563,Mass Customer,N,No,8
+1564,Mass Customer,N,No,11
+1565,High Net Worth,N,Yes,10
+1566,Mass Customer,N,No,12
+1567,Mass Customer,N,No,11
+1568,Mass Customer,N,Yes,12
+1569,Mass Customer,N,No,12
+1570,Mass Customer,N,No,11
+1571,Mass Customer,N,Yes,11
+1572,High Net Worth,N,Yes,9
+1573,Mass Customer,N,Yes,11
+1574,Affluent Customer,N,Yes,8
+1575,Mass Customer,N,No,10
+1576,Mass Customer,N,No,3
+1577,High Net Worth,N,No,6
+1578,High Net Worth,N,Yes,11
+1579,Affluent Customer,N,Yes,11
+1580,High Net Worth,N,No,9
+1581,Mass Customer,N,No,10
+1582,Mass Customer,N,No,11
+1583,Mass Customer,N,Yes,10
+1584,Mass Customer,N,No,11
+1585,Mass Customer,N,Yes,9
+1586,High Net Worth,N,No,5
+1587,Affluent Customer,N,Yes,12
+1588,High Net Worth,N,Yes,10
+1589,Mass Customer,N,Yes,12
+1590,Mass Customer,N,No,10
+1591,Mass Customer,N,Yes,9
+1592,Mass Customer,N,Yes,12
+1593,Mass Customer,N,No,10
+1594,Mass Customer,N,No,11
+1595,High Net Worth,N,Yes,11
+1596,High Net Worth,N,Yes,9
+1597,Affluent Customer,N,No,9
+1598,Mass Customer,N,No,9
+1599,Affluent Customer,N,No,9
+1600,High Net Worth,N,No,5
+1601,Affluent Customer,N,No,3
+1602,Mass Customer,N,No,7
+1603,Affluent Customer,N,Yes,5
+1604,High Net Worth,N,No,11
+1605,Affluent Customer,N,No,11
+1606,Affluent Customer,N,Yes,11
+1607,Mass Customer,N,Yes,9
+1608,Mass Customer,N,Yes,4
+1609,Mass Customer,N,Yes,8
+1610,High Net Worth,N,Yes,6
+1611,High Net Worth,N,Yes,6
+1612,High Net Worth,N,Yes,4
+1613,Mass Customer,N,No,8
+1614,High Net Worth,N,No,9
+1615,Mass Customer,N,Yes,10
+1616,High Net Worth,N,Yes,7
+1617,Affluent Customer,N,No,8
+1618,Mass Customer,N,No,8
+1619,Mass Customer,N,Yes,1
+1620,High Net Worth,N,Yes,8
+1621,Mass Customer,N,No,8
+1622,High Net Worth,N,No,5
+1623,High Net Worth,N,Yes,9
+1624,Mass Customer,N,Yes,6
+1625,Mass Customer,N,Yes,5
+1626,Mass Customer,N,No,1
+1627,Affluent Customer,N,No,2
+1628,Mass Customer,N,No,7
+1629,Mass Customer,N,No,4
+1630,Mass Customer,N,No,11
+1631,Affluent Customer,N,No,11
+1632,High Net Worth,N,Yes,8
+1633,High Net Worth,N,Yes,9
+1634,Affluent Customer,N,No,4
+1635,Mass Customer,N,No,10
+1636,High Net Worth,N,Yes,6
+1637,High Net Worth,N,No,4
+1638,Mass Customer,N,Yes,10
+1639,Mass Customer,N,Yes,10
+1640,High Net Worth,N,Yes,9
+1641,Mass Customer,N,No,11
+1642,Affluent Customer,N,Yes,12
+1643,Mass Customer,N,No,9
+1644,Mass Customer,N,No,10
+1645,Affluent Customer,N,Yes,8
+1646,Mass Customer,N,Yes,1
+1647,High Net Worth,N,Yes,10
+1648,Mass Customer,N,No,10
+1649,Mass Customer,N,No,11
+1650,High Net Worth,N,No,1
+1651,Mass Customer,N,Yes,11
+1652,High Net Worth,N,Yes,8
+1653,Mass Customer,N,Yes,9
+1654,High Net Worth,N,Yes,7
+1655,Affluent Customer,N,Yes,12
+1656,Mass Customer,N,Yes,10
+1657,Mass Customer,N,No,11
+1658,Mass Customer,N,Yes,3
+1659,High Net Worth,N,Yes,10
+1660,Affluent Customer,N,No,2
+1661,Affluent Customer,N,No,7
+1662,High Net Worth,N,No,10
+1663,High Net Worth,N,Yes,12
+1664,Affluent Customer,N,Yes,11
+1665,Mass Customer,N,No,11
+1666,Mass Customer,N,No,11
+1667,High Net Worth,N,No,11
+1668,Mass Customer,N,No,11
+1669,High Net Worth,N,Yes,10
+1670,Mass Customer,N,No,10
+1671,Mass Customer,N,Yes,12
+1672,Affluent Customer,N,Yes,8
+1673,Affluent Customer,N,Yes,12
+1674,High Net Worth,N,No,12
+1675,Affluent Customer,N,Yes,11
+1676,Mass Customer,N,No,10
+1677,Affluent Customer,N,Yes,9
+1678,High Net Worth,N,Yes,12
+1679,Mass Customer,N,Yes,12
+1680,Mass Customer,N,Yes,5
+1681,High Net Worth,N,Yes,9
+1682,Affluent Customer,N,Yes,10
+1683,Mass Customer,N,Yes,12
+1684,Mass Customer,N,No,9
+1685,Mass Customer,N,No,2
+1686,Mass Customer,N,Yes,10
+1687,Affluent Customer,N,Yes,12
+1688,Mass Customer,N,No,9
+1689,Mass Customer,N,Yes,9
+1690,Affluent Customer,N,Yes,1
+1691,High Net Worth,N,Yes,8
+1692,Mass Customer,N,Yes,10
+1693,Affluent Customer,N,No,11
+1694,Mass Customer,N,Yes,9
+1695,High Net Worth,N,Yes,10
+1696,High Net Worth,N,No,6
+1697,Mass Customer,N,Yes,12
+1698,Affluent Customer,N,Yes,9
+1699,Mass Customer,N,Yes,6
+1700,High Net Worth,N,Yes,3
+1701,High Net Worth,N,No,5
+1702,Mass Customer,N,No,11
+1703,Mass Customer,N,Yes,8
+1704,High Net Worth,N,No,10
+1705,Mass Customer,N,Yes,10
+1706,High Net Worth,N,Yes,12
+1707,High Net Worth,N,No,5
+1708,High Net Worth,N,No,7
+1709,Affluent Customer,N,No,9
+1710,High Net Worth,N,No,5
+1711,High Net Worth,N,Yes,9
+1712,High Net Worth,N,Yes,11
+1713,High Net Worth,N,Yes,8
+1714,High Net Worth,N,Yes,9
+1715,Mass Customer,N,Yes,8
+1716,Affluent Customer,N,No,11
+1717,Mass Customer,N,No,4
+1718,High Net Worth,N,Yes,4
+1719,High Net Worth,N,No,7
+1720,Mass Customer,N,Yes,12
+1721,High Net Worth,N,No,7
+1722,Mass Customer,N,No,10
+1723,Mass Customer,N,Yes,12
+1724,High Net Worth,N,Yes,8
+1725,High Net Worth,N,Yes,10
+1726,High Net Worth,N,No,10
+1727,High Net Worth,N,No,5
+1728,Affluent Customer,N,No,8
+1729,High Net Worth,N,No,5
+1730,Mass Customer,N,No,4
+1731,High Net Worth,N,Yes,2
+1732,Mass Customer,N,Yes,4
+1733,High Net Worth,N,No,8
+1734,Mass Customer,N,Yes,9
+1735,Mass Customer,N,No,4
+1736,Affluent Customer,N,No,8
+1737,Affluent Customer,N,Yes,9
+1738,High Net Worth,N,Yes,7
+1739,Mass Customer,N,No,3
+1740,Mass Customer,N,Yes,8
+1741,High Net Worth,N,No,4
+1742,High Net Worth,N,No,4
+1743,Affluent Customer,N,Yes,5
+1744,High Net Worth,N,No,8
+1745,Mass Customer,N,Yes,9
+1746,High Net Worth,N,No,12
+1747,Affluent Customer,N,No,11
+1748,Mass Customer,N,Yes,10
+1749,High Net Worth,N,No,11
+1750,Mass Customer,N,Yes,10
+1751,Mass Customer,N,No,11
+1752,Mass Customer,N,No,6
+1753,High Net Worth,N,Yes,3
+1754,Mass Customer,N,Yes,2
+1755,Mass Customer,N,No,12
+1756,High Net Worth,N,No,8
+1757,High Net Worth,N,No,9
+1758,Mass Customer,N,Yes,9
+1759,High Net Worth,N,No,6
+1760,High Net Worth,N,No,8
+1761,Mass Customer,N,Yes,7
+1762,Mass Customer,N,Yes,9
+1763,Affluent Customer,N,Yes,3
+1764,Mass Customer,N,Yes,12
+1765,High Net Worth,N,No,7
+1766,Affluent Customer,N,No,10
+1767,Affluent Customer,N,Yes,5
+1768,High Net Worth,N,No,10
+1769,Mass Customer,N,Yes,8
+1770,Mass Customer,N,Yes,7
+1771,Mass Customer,N,Yes,11
+1772,High Net Worth,N,Yes,1
+1773,Mass Customer,N,Yes,11
+1774,Mass Customer,N,Yes,9
+1775,Affluent Customer,N,No,7
+1776,Affluent Customer,N,No,3
+1777,Affluent Customer,N,No,8
+1778,Mass Customer,N,Yes,6
+1779,Affluent Customer,N,No,8
+1780,Mass Customer,N,No,9
+1781,Affluent Customer,N,No,8
+1782,Affluent Customer,N,Yes,9
+1783,Mass Customer,N,Yes,1
+1784,Mass Customer,N,Yes,5
+1785,Mass Customer,N,No,12
+1786,High Net Worth,N,Yes,10
+1787,High Net Worth,N,Yes,6
+1788,High Net Worth,N,Yes,9
+1789,Mass Customer,N,No,7
+1790,Affluent Customer,N,No,5
+1791,Affluent Customer,N,Yes,12
+1792,Mass Customer,N,No,9
+1793,Mass Customer,N,Yes,7
+1794,Mass Customer,N,No,6
+1795,Affluent Customer,N,No,12
+1796,High Net Worth,N,Yes,9
+1797,Mass Customer,N,No,7
+1798,High Net Worth,N,Yes,9
+1799,Affluent Customer,N,No,3
+1800,High Net Worth,N,No,8
+1801,Affluent Customer,N,No,3
+1802,Mass Customer,N,No,1
+1803,Mass Customer,N,No,5
+1804,Affluent Customer,N,No,9
+1805,Mass Customer,N,No,7
+1806,Mass Customer,N,No,9
+1807,High Net Worth,N,Yes,12
+1808,High Net Worth,N,No,9
+1809,Mass Customer,N,Yes,9
+1810,High Net Worth,N,No,5
+1811,Mass Customer,N,No,8
+1812,Affluent Customer,N,No,9
+1813,Mass Customer,N,No,6
+1814,Affluent Customer,N,No,8
+1815,Mass Customer,N,Yes,12
+1816,Mass Customer,N,No,10
+1817,High Net Worth,N,No,9
+1818,Mass Customer,N,Yes,7
+1819,Mass Customer,N,Yes,5
+1820,Affluent Customer,N,No,6
+1821,High Net Worth,N,Yes,5
+1822,Mass Customer,N,No,11
+1823,High Net Worth,N,No,4
+1824,Affluent Customer,N,Yes,7
+1825,Mass Customer,N,Yes,10
+1826,High Net Worth,N,Yes,8
+1827,Affluent Customer,N,Yes,3
+1828,Affluent Customer,N,No,3
+1829,Mass Customer,N,No,3
+1830,High Net Worth,N,No,4
+1831,Mass Customer,N,No,10
+1832,Mass Customer,N,Yes,11
+1833,High Net Worth,N,Yes,8
+1834,High Net Worth,N,Yes,11
+1835,Affluent Customer,N,Yes,8
+1836,Mass Customer,N,Yes,10
+1837,Mass Customer,N,Yes,11
+1838,Affluent Customer,N,Yes,8
+1839,High Net Worth,N,Yes,8
+1840,High Net Worth,N,Yes,4
+1841,Affluent Customer,N,No,12
+1842,Mass Customer,N,No,10
+1843,Mass Customer,N,Yes,1
+1844,Mass Customer,N,No,3
+1845,Mass Customer,N,No,8
+1846,Affluent Customer,N,No,9
+1847,Mass Customer,N,No,9
+1848,Mass Customer,N,No,6
+1849,Mass Customer,N,Yes,6
+1850,High Net Worth,N,No,1
+1851,Mass Customer,N,No,7
+1852,Affluent Customer,N,No,10
+1853,Mass Customer,N,Yes,10
+1854,High Net Worth,N,Yes,8
+1855,Mass Customer,N,Yes,7
+1856,Mass Customer,N,No,6
+1857,Affluent Customer,N,Yes,7
+1858,High Net Worth,N,Yes,10
+1859,High Net Worth,N,Yes,1
+1860,Mass Customer,N,Yes,7
+1861,Mass Customer,N,Yes,9
+1862,High Net Worth,N,Yes,12
+1863,High Net Worth,N,No,6
+1864,Mass Customer,N,No,5
+1865,Mass Customer,N,No,7
+1866,Mass Customer,N,No,9
+1867,Affluent Customer,N,No,4
+1868,Mass Customer,N,No,6
+1869,High Net Worth,N,Yes,10
+1870,Affluent Customer,N,No,9
+1871,High Net Worth,N,Yes,8
+1872,Mass Customer,N,Yes,10
+1873,Affluent Customer,N,Yes,4
+1874,High Net Worth,N,Yes,1
+1875,High Net Worth,N,Yes,8
+1876,Affluent Customer,N,No,12
+1877,High Net Worth,N,Yes,8
+1878,Affluent Customer,N,No,9
+1879,High Net Worth,N,No,6
+1880,High Net Worth,N,No,12
+1881,Affluent Customer,N,Yes,8
+1882,Affluent Customer,N,No,9
+1883,Mass Customer,N,No,9
+1884,Mass Customer,N,Yes,10
+1885,High Net Worth,N,Yes,7
+1886,Affluent Customer,N,No,7
+1887,Affluent Customer,N,Yes,8
+1888,Mass Customer,N,Yes,10
+1889,Affluent Customer,N,No,4
+1890,Mass Customer,N,No,8
+1891,Mass Customer,N,Yes,11
+1892,High Net Worth,N,Yes,5
+1893,Mass Customer,N,No,3
+1894,High Net Worth,N,Yes,9
+1895,Mass Customer,N,No,1
+1896,High Net Worth,N,No,6
+1897,Mass Customer,N,Yes,6
+1898,Affluent Customer,N,Yes,9
+1899,Affluent Customer,N,Yes,7
+1900,Affluent Customer,N,Yes,1
+1901,Affluent Customer,N,No,6
+1902,Mass Customer,N,Yes,4
+1903,High Net Worth,N,Yes,8
+1904,High Net Worth,N,Yes,8
+1905,Affluent Customer,N,No,7
+1906,Mass Customer,N,No,2
+1907,High Net Worth,N,No,7
+1908,High Net Worth,N,Yes,2
+1909,Affluent Customer,N,Yes,6
+1910,High Net Worth,N,Yes,6
+1911,Mass Customer,N,No,8
+1912,High Net Worth,N,No,4
+1913,Mass Customer,N,Yes,4
+1914,Mass Customer,N,No,8
+1915,Mass Customer,N,Yes,8
+1916,High Net Worth,N,Yes,1
+1917,Affluent Customer,N,Yes,9
+1918,Affluent Customer,N,No,7
+1919,Mass Customer,N,Yes,9
+1920,Mass Customer,N,No,9
+1921,Mass Customer,N,No,7
+1922,High Net Worth,N,Yes,5
+1923,Mass Customer,N,No,10
+1924,Mass Customer,N,Yes,9
+1925,Mass Customer,N,Yes,7
+1926,High Net Worth,N,Yes,1
+1927,Affluent Customer,N,Yes,5
+1928,High Net Worth,N,Yes,7
+1929,Affluent Customer,N,No,11
+1930,High Net Worth,N,No,10
+1931,Affluent Customer,N,No,8
+1932,Affluent Customer,N,Yes,1
+1933,Affluent Customer,N,No,3
+1934,Affluent Customer,N,Yes,2
+1935,Mass Customer,N,No,3
+1936,Mass Customer,N,Yes,6
+1937,Mass Customer,N,No,8
+1938,Mass Customer,N,Yes,9
+1939,Mass Customer,N,Yes,11
+1940,High Net Worth,N,Yes,8
+1941,Mass Customer,N,No,9
+1942,High Net Worth,N,No,9
+1943,Affluent Customer,N,Yes,8
+1944,High Net Worth,N,Yes,7
+1945,High Net Worth,N,Yes,7
+1946,Mass Customer,N,No,6
+1947,Affluent Customer,N,Yes,6
+1948,Mass Customer,N,No,8
+1949,Mass Customer,N,No,12
+1950,Affluent Customer,N,Yes,9
+1951,Mass Customer,N,Yes,9
+1952,Mass Customer,N,Yes,3
+1953,High Net Worth,N,No,10
+1954,Affluent Customer,N,No,11
+1955,Mass Customer,N,No,9
+1956,Affluent Customer,N,Yes,8
+1957,Affluent Customer,N,No,11
+1958,Mass Customer,N,No,4
+1959,Mass Customer,N,Yes,8
+1960,Mass Customer,N,Yes,7
+1961,Mass Customer,N,Yes,9
+1962,Mass Customer,N,Yes,10
+1963,Mass Customer,N,Yes,9
+1964,Affluent Customer,N,Yes,3
+1965,Mass Customer,N,Yes,8
+1966,High Net Worth,N,No,10
+1967,Affluent Customer,N,Yes,5
+1968,Mass Customer,N,No,8
+1969,Mass Customer,N,Yes,10
+1970,Mass Customer,N,No,9
+1971,Mass Customer,N,Yes,9
+1972,Mass Customer,N,Yes,7
+1973,High Net Worth,N,No,8
+1974,Mass Customer,N,Yes,9
+1975,Affluent Customer,N,No,2
+1976,Mass Customer,N,No,8
+1977,Mass Customer,N,Yes,10
+1978,Mass Customer,N,No,2
+1979,Mass Customer,N,Yes,4
+1980,High Net Worth,N,Yes,10
+1981,Affluent Customer,N,No,10
+1982,High Net Worth,N,Yes,8
+1983,Affluent Customer,N,Yes,12
+1984,Mass Customer,N,Yes,5
+1985,Mass Customer,N,Yes,6
+1986,Mass Customer,N,No,8
+1987,Affluent Customer,N,No,10
+1988,Mass Customer,N,No,10
+1989,High Net Worth,N,Yes,9
+1990,High Net Worth,N,No,6
+1991,Mass Customer,N,Yes,9
+1992,Mass Customer,N,Yes,8
+1993,High Net Worth,N,Yes,11
+1994,High Net Worth,N,No,7
+1995,Mass Customer,N,Yes,10
+1996,Mass Customer,N,No,8
+1997,Mass Customer,N,No,4
+1998,High Net Worth,N,No,6
+1999,Mass Customer,N,Yes,7
+2000,High Net Worth,N,Yes,1
+2001,Mass Customer,N,Yes,10
+2002,Mass Customer,N,No,4
+2003,High Net Worth,N,Yes,8
+2004,Affluent Customer,N,Yes,2
+2005,High Net Worth,N,No,8
+2006,High Net Worth,N,Yes,11
+2007,Mass Customer,N,Yes,12
+2008,Mass Customer,N,Yes,8
+2009,Affluent Customer,N,Yes,8
+2010,High Net Worth,N,Yes,10
+2011,High Net Worth,N,Yes,9
+2012,High Net Worth,N,No,11
+2013,Affluent Customer,N,Yes,11
+2014,Mass Customer,N,Yes,11
+2015,Affluent Customer,N,No,2
+2016,Affluent Customer,N,Yes,8
+2017,Affluent Customer,N,Yes,10
+2018,Affluent Customer,N,No,7
+2019,High Net Worth,N,No,7
+2020,Affluent Customer,N,Yes,3
+2021,High Net Worth,N,Yes,9
+2022,Affluent Customer,N,No,7
+2023,High Net Worth,N,No,10
+2024,Mass Customer,N,Yes,8
+2025,Mass Customer,N,Yes,8
+2026,Mass Customer,N,Yes,7
+2027,High Net Worth,N,No,8
+2028,Affluent Customer,N,Yes,8
+2029,Mass Customer,N,No,10
+2030,High Net Worth,N,No,11
+2031,Mass Customer,N,No,7
+2032,Mass Customer,N,Yes,10
+2033,High Net Worth,N,No,3
+2034,Mass Customer,N,No,2
+2035,Mass Customer,N,No,8
+2036,Mass Customer,N,No,9
+2037,Mass Customer,N,No,9
+2038,Mass Customer,N,Yes,4
+2039,High Net Worth,N,Yes,6
+2040,Affluent Customer,N,Yes,12
+2041,Mass Customer,N,No,11
+2042,Mass Customer,N,No,8
+2043,Mass Customer,N,No,7
+2044,Mass Customer,N,Yes,8
+2045,High Net Worth,N,No,8
+2046,Mass Customer,N,Yes,10
+2047,Affluent Customer,N,Yes,12
+2048,High Net Worth,N,No,3
+2049,High Net Worth,N,No,7
+2050,Mass Customer,N,Yes,11
+2051,Affluent Customer,N,No,3
+2052,Mass Customer,N,Yes,8
+2053,Affluent Customer,N,Yes,8
+2054,Mass Customer,N,Yes,1
+2055,High Net Worth,N,No,10
+2056,High Net Worth,N,No,9
+2057,Affluent Customer,N,Yes,4
+2058,High Net Worth,N,No,7
+2059,High Net Worth,N,No,12
+2060,Mass Customer,N,No,3
+2061,High Net Worth,N,No,9
+2062,Mass Customer,N,No,9
+2063,Affluent Customer,N,No,10
+2064,Mass Customer,N,Yes,1
+2065,Mass Customer,N,Yes,7
+2066,High Net Worth,N,Yes,7
+2067,Mass Customer,N,No,10
+2068,High Net Worth,N,No,9
+2069,Mass Customer,N,Yes,8
+2070,Mass Customer,N,No,7
+2071,Mass Customer,N,No,4
+2072,Mass Customer,N,Yes,9
+2073,High Net Worth,N,Yes,8
+2074,Mass Customer,N,No,9
+2075,Mass Customer,N,No,10
+2076,Mass Customer,N,Yes,11
+2077,Mass Customer,N,Yes,12
+2078,Mass Customer,N,No,1
+2079,High Net Worth,N,No,3
+2080,High Net Worth,N,No,2
+2081,Mass Customer,N,No,7
+2082,Affluent Customer,N,Yes,7
+2083,Mass Customer,N,No,7
+2084,Mass Customer,N,Yes,7
+2085,Mass Customer,N,No,9
+2086,High Net Worth,N,No,9
+2087,Mass Customer,N,Yes,3
+2088,Mass Customer,N,Yes,7
+2089,High Net Worth,N,No,4
+2090,Mass Customer,N,Yes,6
+2091,Mass Customer,N,No,9
+2092,High Net Worth,N,No,8
+2093,High Net Worth,N,No,9
+2094,Mass Customer,N,No,2
+2095,Affluent Customer,N,No,8
+2096,High Net Worth,N,Yes,9
+2097,Mass Customer,N,No,2
+2098,High Net Worth,N,No,12
+2099,High Net Worth,N,Yes,6
+2100,Mass Customer,N,No,1
+2101,Mass Customer,N,Yes,7
+2102,Affluent Customer,N,No,10
+2103,Affluent Customer,N,No,4
+2104,Mass Customer,N,No,3
+2105,High Net Worth,N,Yes,8
+2106,High Net Worth,N,Yes,6
+2107,Affluent Customer,N,Yes,9
+2108,Mass Customer,N,Yes,8
+2109,High Net Worth,N,Yes,6
+2110,High Net Worth,N,No,11
+2111,Affluent Customer,N,Yes,4
+2112,Mass Customer,N,Yes,9
+2113,Affluent Customer,N,No,12
+2114,High Net Worth,N,No,8
+2115,Mass Customer,N,Yes,5
+2116,Affluent Customer,N,Yes,8
+2117,Affluent Customer,N,No,8
+2118,High Net Worth,N,No,10
+2119,Mass Customer,N,No,10
+2120,Mass Customer,N,No,8
+2121,Mass Customer,N,Yes,8
+2122,High Net Worth,N,Yes,1
+2123,Affluent Customer,N,No,12
+2124,High Net Worth,N,No,10
+2125,High Net Worth,N,No,9
+2126,Mass Customer,N,Yes,2
+2127,Mass Customer,N,No,8
+2128,Affluent Customer,N,Yes,9
+2129,High Net Worth,N,No,1
+2130,High Net Worth,N,Yes,3
+2131,Mass Customer,N,Yes,12
+2132,High Net Worth,N,Yes,9
+2133,High Net Worth,N,No,9
+2134,Affluent Customer,N,No,8
+2135,Mass Customer,N,Yes,7
+2136,High Net Worth,N,Yes,1
+2137,Affluent Customer,N,No,10
+2138,High Net Worth,N,No,3
+2139,Affluent Customer,N,Yes,8
+2140,High Net Worth,N,No,4
+2141,High Net Worth,N,Yes,8
+2142,Affluent Customer,N,No,10
+2143,High Net Worth,N,Yes,8
+2144,Mass Customer,N,Yes,6
+2145,Affluent Customer,N,Yes,10
+2146,Mass Customer,N,No,7
+2147,High Net Worth,N,Yes,3
+2148,Mass Customer,N,Yes,10
+2149,High Net Worth,N,No,5
+2150,Affluent Customer,N,Yes,9
+2151,Affluent Customer,N,No,3
+2152,Mass Customer,N,Yes,1
+2153,Mass Customer,N,No,8
+2154,High Net Worth,N,No,9
+2155,Mass Customer,N,No,4
+2156,Mass Customer,N,Yes,8
+2157,Mass Customer,N,No,10
+2158,Mass Customer,N,No,8
+2159,High Net Worth,N,Yes,10
+2160,Mass Customer,N,Yes,9
+2161,Mass Customer,N,No,6
+2162,High Net Worth,N,Yes,6
+2163,Mass Customer,N,Yes,8
+2164,Mass Customer,N,Yes,5
+2165,Affluent Customer,N,No,4
+2166,Mass Customer,N,No,12
+2167,Mass Customer,N,No,9
+2168,Mass Customer,N,Yes,10
+2169,Mass Customer,N,No,2
+2170,Affluent Customer,N,No,6
+2171,High Net Worth,N,No,8
+2172,Affluent Customer,N,Yes,5
+2173,Mass Customer,N,Yes,7
+2174,High Net Worth,N,No,8
+2175,Mass Customer,N,No,10
+2176,High Net Worth,N,Yes,10
+2177,Mass Customer,N,No,11
+2178,Mass Customer,N,No,7
+2179,Mass Customer,N,No,4
+2180,High Net Worth,N,Yes,8
+2181,Mass Customer,N,Yes,7
+2182,High Net Worth,N,Yes,9
+2183,Mass Customer,N,Yes,9
+2184,Mass Customer,N,No,9
+2185,Mass Customer,N,No,8
+2186,High Net Worth,N,No,3
+2187,Mass Customer,N,No,11
+2188,Mass Customer,N,No,1
+2189,High Net Worth,N,No,4
+2190,Affluent Customer,N,No,11
+2191,Mass Customer,N,Yes,10
+2192,Mass Customer,N,No,7
+2193,Mass Customer,N,Yes,4
+2194,Affluent Customer,N,Yes,6
+2195,Affluent Customer,N,Yes,4
+2196,High Net Worth,N,Yes,5
+2197,Mass Customer,N,No,7
+2198,Affluent Customer,N,Yes,11
+2199,High Net Worth,N,Yes,10
+2200,Affluent Customer,N,Yes,9
+2201,Affluent Customer,N,Yes,8
+2202,Affluent Customer,N,Yes,5
+2203,High Net Worth,N,Yes,8
+2204,High Net Worth,N,No,7
+2205,Mass Customer,N,No,8
+2206,Affluent Customer,N,No,5
+2207,Mass Customer,N,Yes,10
+2208,Mass Customer,N,No,7
+2209,Affluent Customer,N,Yes,9
+2210,High Net Worth,N,No,8
+2211,Mass Customer,N,Yes,6
+2212,Affluent Customer,N,Yes,7
+2213,Affluent Customer,N,Yes,2
+2214,High Net Worth,N,Yes,1
+2215,Mass Customer,N,Yes,9
+2216,High Net Worth,N,Yes,9
+2217,Mass Customer,N,No,5
+2218,Affluent Customer,N,No,6
+2219,High Net Worth,N,Yes,5
+2220,Mass Customer,N,Yes,6
+2221,Affluent Customer,N,No,4
+2222,Mass Customer,N,No,8
+2223,Mass Customer,N,No,7
+2224,High Net Worth,N,Yes,3
+2225,Affluent Customer,N,No,8
+2226,Mass Customer,N,No,8
+2227,Affluent Customer,N,Yes,8
+2228,High Net Worth,N,No,1
+2229,Affluent Customer,N,Yes,9
+2230,Mass Customer,N,No,12
+2231,Mass Customer,N,No,5
+2232,Mass Customer,N,Yes,5
+2233,Mass Customer,N,Yes,7
+2234,Mass Customer,N,No,9
+2235,Affluent Customer,N,No,1
+2236,Affluent Customer,N,Yes,7
+2237,Mass Customer,N,Yes,6
+2238,Mass Customer,N,Yes,9
+2239,High Net Worth,N,Yes,8
+2240,High Net Worth,N,Yes,10
+2241,High Net Worth,N,No,1
+2242,Mass Customer,N,Yes,7
+2243,Affluent Customer,N,Yes,12
+2244,Mass Customer,N,No,12
+2245,Mass Customer,N,No,9
+2246,Mass Customer,N,Yes,1
+2247,High Net Worth,N,Yes,3
+2248,Mass Customer,N,No,7
+2249,Mass Customer,N,No,10
+2250,High Net Worth,N,No,8
+2251,High Net Worth,N,No,1
+2252,High Net Worth,N,Yes,9
+2253,Affluent Customer,N,Yes,11
+2254,Affluent Customer,N,No,11
+2255,Affluent Customer,N,Yes,5
+2256,Mass Customer,N,No,8
+2257,Mass Customer,N,No,11
+2258,High Net Worth,N,No,8
+2259,Affluent Customer,N,No,4
+2260,High Net Worth,N,No,6
+2261,Mass Customer,N,Yes,8
+2262,Mass Customer,N,Yes,6
+2263,Mass Customer,N,Yes,10
+2264,Affluent Customer,N,No,8
+2265,Mass Customer,N,Yes,3
+2266,High Net Worth,N,No,10
+2267,Affluent Customer,N,No,8
+2268,Mass Customer,N,No,4
+2269,Mass Customer,N,No,12
+2270,Affluent Customer,N,No,10
+2271,Mass Customer,N,Yes,2
+2272,Mass Customer,N,No,10
+2273,Mass Customer,N,Yes,4
+2274,Mass Customer,N,Yes,4
+2275,High Net Worth,N,Yes,9
+2276,Mass Customer,N,Yes,1
+2277,High Net Worth,N,Yes,1
+2278,Affluent Customer,N,Yes,4
+2279,Mass Customer,N,No,2
+2280,Mass Customer,N,No,1
+2281,High Net Worth,N,Yes,6
+2282,Affluent Customer,N,Yes,3
+2283,High Net Worth,N,No,7
+2284,High Net Worth,N,No,1
+2285,High Net Worth,N,No,1
+2286,High Net Worth,N,No,3
+2287,High Net Worth,N,No,1
+2288,High Net Worth,N,No,9
+2289,Affluent Customer,N,Yes,1
+2290,Mass Customer,N,Yes,5
+2291,Affluent Customer,N,Yes,12
+2292,Mass Customer,N,Yes,9
+2293,Affluent Customer,N,No,10
+2294,Mass Customer,N,No,4
+2295,Mass Customer,N,Yes,10
+2296,Affluent Customer,N,No,8
+2297,Affluent Customer,N,Yes,10
+2298,Mass Customer,N,Yes,8
+2299,High Net Worth,N,Yes,12
+2300,Mass Customer,N,Yes,8
+2301,Mass Customer,N,Yes,10
+2302,Mass Customer,N,Yes,9
+2303,Mass Customer,N,Yes,8
+2304,Mass Customer,N,Yes,9
+2305,Affluent Customer,N,Yes,5
+2306,High Net Worth,N,Yes,12
+2307,High Net Worth,N,Yes,10
+2308,Mass Customer,N,Yes,2
+2309,Affluent Customer,N,No,1
+2310,High Net Worth,N,Yes,3
+2311,Mass Customer,N,No,7
+2312,Mass Customer,N,No,6
+2313,Mass Customer,N,No,9
+2314,High Net Worth,N,Yes,10
+2315,Affluent Customer,N,No,9
+2316,Affluent Customer,N,Yes,11
+2317,Mass Customer,N,Yes,3
+2318,Mass Customer,N,Yes,10
+2319,High Net Worth,N,No,7
+2320,Affluent Customer,N,No,5
+2321,Mass Customer,N,Yes,8
+2322,Mass Customer,N,Yes,11
+2323,High Net Worth,N,No,10
+2324,Mass Customer,N,Yes,8
+2325,High Net Worth,N,Yes,6
+2326,High Net Worth,N,No,8
+2327,Affluent Customer,N,No,8
+2328,Mass Customer,N,Yes,6
+2329,Affluent Customer,N,No,10
+2330,Mass Customer,N,No,10
+2331,Mass Customer,N,Yes,9
+2332,High Net Worth,N,Yes,8
+2333,Mass Customer,N,Yes,6
+2334,Affluent Customer,N,No,5
+2335,Mass Customer,N,No,10
+2336,Affluent Customer,N,No,7
+2337,Mass Customer,N,No,9
+2338,Mass Customer,N,No,9
+2339,Affluent Customer,N,Yes,5
+2340,Mass Customer,N,Yes,10
+2341,Mass Customer,N,Yes,8
+2342,Mass Customer,N,No,12
+2343,High Net Worth,N,Yes,12
+2344,Mass Customer,N,Yes,8
+2345,Affluent Customer,N,Yes,1
+2346,Mass Customer,N,Yes,10
+2347,High Net Worth,N,No,10
+2348,Mass Customer,N,No,10
+2349,High Net Worth,N,No,6
+2350,Mass Customer,N,Yes,8
+2351,Affluent Customer,N,Yes,8
+2352,Mass Customer,N,Yes,7
+2353,Affluent Customer,N,Yes,12
+2354,Mass Customer,N,No,2
+2355,Mass Customer,N,Yes,3
+2356,Affluent Customer,N,No,10
+2357,Mass Customer,N,No,7
+2358,High Net Worth,N,Yes,9
+2359,High Net Worth,N,Yes,9
+2360,High Net Worth,N,Yes,9
+2361,High Net Worth,N,Yes,6
+2362,Affluent Customer,N,Yes,9
+2363,Mass Customer,N,Yes,10
+2364,Mass Customer,N,Yes,5
+2365,Mass Customer,N,Yes,5
+2366,Mass Customer,N,Yes,10
+2367,Mass Customer,N,Yes,10
+2368,Mass Customer,N,No,12
+2369,Mass Customer,N,Yes,7
+2370,High Net Worth,N,No,9
+2371,High Net Worth,N,Yes,8
+2372,Affluent Customer,N,No,9
+2373,High Net Worth,N,Yes,11
+2374,Mass Customer,N,No,10
+2375,Affluent Customer,N,No,10
+2376,High Net Worth,N,Yes,10
+2377,High Net Worth,N,No,9
+2378,Affluent Customer,N,No,8
+2379,Affluent Customer,N,Yes,9
+2380,Mass Customer,N,Yes,9
+2381,Affluent Customer,N,Yes,7
+2382,Mass Customer,N,Yes,9
+2383,Mass Customer,N,No,11
+2384,High Net Worth,N,Yes,8
+2385,Mass Customer,N,No,8
+2386,Mass Customer,N,No,7
+2387,High Net Worth,N,Yes,7
+2388,Mass Customer,N,No,6
+2389,High Net Worth,N,No,7
+2390,Mass Customer,N,No,7
+2391,Mass Customer,N,No,5
+2392,Affluent Customer,N,No,7
+2393,High Net Worth,N,Yes,7
+2394,Mass Customer,N,Yes,5
+2395,High Net Worth,N,No,6
+2396,Affluent Customer,N,Yes,11
+2397,Affluent Customer,N,Yes,6
+2398,High Net Worth,N,Yes,7
+2399,High Net Worth,N,Yes,10
+2400,Mass Customer,N,Yes,11
+2401,Mass Customer,N,Yes,5
+2402,Mass Customer,N,Yes,6
+2403,Affluent Customer,N,No,9
+2404,Mass Customer,N,No,8
+2405,Mass Customer,N,No,8
+2406,Affluent Customer,N,Yes,11
+2407,High Net Worth,N,Yes,12
+2408,Mass Customer,N,No,8
+2409,Mass Customer,N,No,8
+2410,Mass Customer,N,Yes,7
+2411,High Net Worth,N,No,8
+2412,Affluent Customer,N,No,10
+2413,High Net Worth,N,Yes,11
+2414,Mass Customer,N,Yes,5
+2415,Mass Customer,N,No,5
+2416,Affluent Customer,N,No,3
+2417,Affluent Customer,N,No,8
+2418,Mass Customer,N,Yes,10
+2419,High Net Worth,N,No,9
+2420,High Net Worth,N,No,6
+2421,Affluent Customer,N,Yes,10
+2422,High Net Worth,N,No,10
+2423,Mass Customer,N,Yes,8
+2424,Affluent Customer,N,Yes,7
+2425,Mass Customer,N,Yes,9
+2426,Affluent Customer,N,Yes,10
+2427,High Net Worth,N,Yes,10
+2428,Mass Customer,N,Yes,10
+2429,Mass Customer,N,Yes,9
+2430,Mass Customer,N,No,4
+2431,Mass Customer,N,Yes,7
+2432,Affluent Customer,N,Yes,11
+2433,High Net Worth,N,Yes,7
+2434,Affluent Customer,N,No,7
+2435,Mass Customer,N,No,1
+2436,Mass Customer,N,No,9
+2437,Mass Customer,N,Yes,9
+2438,Mass Customer,N,Yes,11
+2439,Affluent Customer,N,No,11
+2440,Affluent Customer,N,No,5
+2441,High Net Worth,N,Yes,8
+2442,Affluent Customer,N,Yes,11
+2443,High Net Worth,N,No,1
+2444,High Net Worth,N,No,10
+2445,Affluent Customer,N,No,4
+2446,Affluent Customer,N,No,3
+2447,Affluent Customer,N,Yes,7
+2448,High Net Worth,N,No,7
+2449,Affluent Customer,N,No,7
+2450,Affluent Customer,N,Yes,8
+2451,Affluent Customer,N,Yes,5
+2452,Mass Customer,N,Yes,6
+2453,High Net Worth,N,No,10
+2454,Mass Customer,N,Yes,10
+2455,Mass Customer,N,No,6
+2456,Mass Customer,N,No,1
+2457,High Net Worth,N,Yes,9
+2458,High Net Worth,N,Yes,8
+2459,High Net Worth,N,No,10
+2460,High Net Worth,N,Yes,8
+2461,Affluent Customer,N,No,8
+2462,Affluent Customer,N,No,1
+2463,Mass Customer,N,No,7
+2464,Mass Customer,N,No,8
+2465,Mass Customer,N,Yes,11
+2466,High Net Worth,N,No,8
+2467,Affluent Customer,N,Yes,10
+2468,High Net Worth,N,No,7
+2469,Mass Customer,N,Yes,6
+2470,Mass Customer,N,No,2
+2471,Mass Customer,N,Yes,5
+2472,High Net Worth,N,Yes,5
+2473,Mass Customer,N,Yes,9
+2474,High Net Worth,N,Yes,6
+2475,Mass Customer,N,No,9
+2476,High Net Worth,N,No,2
+2477,Affluent Customer,N,Yes,7
+2478,Affluent Customer,N,Yes,9
+2479,Mass Customer,N,No,7
+2480,High Net Worth,N,Yes,7
+2481,Mass Customer,N,Yes,1
+2482,Mass Customer,N,Yes,12
+2483,Mass Customer,N,No,7
+2484,Mass Customer,N,Yes,8
+2485,Mass Customer,N,Yes,9
+2486,Mass Customer,N,Yes,10
+2487,Affluent Customer,N,Yes,7
+2488,Mass Customer,N,Yes,9
+2489,Mass Customer,N,No,11
+2490,Mass Customer,N,Yes,9
+2491,Mass Customer,N,No,8
+2492,High Net Worth,N,No,7
+2493,Mass Customer,N,Yes,9
+2494,High Net Worth,N,No,11
+2495,Affluent Customer,N,No,7
+2496,Mass Customer,N,Yes,6
+2497,Affluent Customer,N,No,9
+2498,High Net Worth,N,No,9
+2499,Mass Customer,N,No,7
+2500,High Net Worth,N,Yes,9
+2501,Mass Customer,N,Yes,11
+2502,Mass Customer,N,Yes,11
+2503,Affluent Customer,N,Yes,1
+2504,Mass Customer,N,No,8
+2505,High Net Worth,N,No,2
+2506,Affluent Customer,N,No,4
+2507,Affluent Customer,N,Yes,11
+2508,Mass Customer,N,No,6
+2509,Mass Customer,N,No,12
+2510,Mass Customer,N,Yes,10
+2511,Mass Customer,N,Yes,10
+2512,High Net Worth,N,Yes,5
+2513,Mass Customer,N,No,6
+2514,High Net Worth,N,Yes,10
+2515,Affluent Customer,N,Yes,2
+2516,Mass Customer,N,No,6
+2517,Mass Customer,N,Yes,7
+2518,Mass Customer,N,Yes,9
+2519,Mass Customer,N,Yes,4
+2520,Affluent Customer,N,Yes,10
+2521,High Net Worth,N,Yes,2
+2522,High Net Worth,N,No,9
+2523,Mass Customer,N,Yes,2
+2524,Mass Customer,N,Yes,7
+2525,Mass Customer,N,No,7
+2526,Mass Customer,N,No,8
+2527,Affluent Customer,N,Yes,5
+2528,Affluent Customer,N,No,11
+2529,High Net Worth,N,Yes,8
+2530,Mass Customer,N,Yes,3
+2531,High Net Worth,N,Yes,4
+2532,Mass Customer,N,No,7
+2533,Affluent Customer,N,Yes,11
+2534,Affluent Customer,N,Yes,10
+2535,Affluent Customer,N,No,7
+2536,Mass Customer,N,Yes,7
+2537,Affluent Customer,N,Yes,10
+2538,High Net Worth,N,Yes,8
+2539,Affluent Customer,N,Yes,10
+2540,Mass Customer,N,Yes,7
+2541,High Net Worth,N,Yes,2
+2542,Affluent Customer,N,Yes,5
+2543,Affluent Customer,N,No,4
+2544,Mass Customer,N,Yes,7
+2545,Mass Customer,N,Yes,9
+2546,High Net Worth,N,No,6
+2547,Mass Customer,N,Yes,8
+2548,Mass Customer,N,No,9
+2549,Mass Customer,N,Yes,7
+2550,Mass Customer,N,Yes,3
+2551,Mass Customer,N,No,7
+2552,Affluent Customer,N,Yes,2
+2553,High Net Worth,N,Yes,8
+2554,High Net Worth,N,No,9
+2555,Affluent Customer,N,No,2
+2556,Mass Customer,N,Yes,8
+2557,Mass Customer,N,No,1
+2558,High Net Worth,N,Yes,5
+2559,High Net Worth,N,No,11
+2560,Mass Customer,N,No,11
+2561,High Net Worth,N,Yes,11
+2562,Mass Customer,N,No,8
+2563,Mass Customer,N,Yes,5
+2564,Mass Customer,N,No,5
+2565,Affluent Customer,N,Yes,10
+2566,Affluent Customer,N,Yes,3
+2567,Mass Customer,N,No,11
+2568,Mass Customer,N,No,10
+2569,Mass Customer,N,No,9
+2570,Mass Customer,N,Yes,3
+2571,Affluent Customer,N,Yes,9
+2572,Mass Customer,N,No,7
+2573,Mass Customer,N,No,11
+2574,Mass Customer,N,No,7
+2575,High Net Worth,N,Yes,9
+2576,Mass Customer,N,No,1
+2577,Mass Customer,N,Yes,11
+2578,High Net Worth,N,No,7
+2579,Mass Customer,N,No,8
+2580,Mass Customer,N,Yes,9
+2581,Affluent Customer,N,Yes,7
+2582,Mass Customer,N,No,8
+2583,Mass Customer,N,No,5
+2584,High Net Worth,N,No,10
+2585,Affluent Customer,N,No,10
+2586,Mass Customer,N,Yes,11
+2587,Affluent Customer,N,No,12
+2588,High Net Worth,N,No,5
+2589,High Net Worth,N,No,4
+2590,Affluent Customer,N,Yes,9
+2591,High Net Worth,N,No,6
+2592,Mass Customer,N,Yes,7
+2593,Affluent Customer,N,No,10
+2594,Mass Customer,N,No,8
+2595,Affluent Customer,N,Yes,9
+2596,Affluent Customer,N,Yes,9
+2597,High Net Worth,N,Yes,7
+2598,Affluent Customer,N,No,12
+2599,Mass Customer,N,No,11
+2600,Mass Customer,N,Yes,9
+2601,Affluent Customer,N,No,1
+2602,Mass Customer,N,No,10
+2603,High Net Worth,N,No,10
+2604,Mass Customer,N,Yes,12
+2605,High Net Worth,N,Yes,6
+2606,High Net Worth,N,No,7
+2607,Affluent Customer,N,Yes,10
+2608,Affluent Customer,N,Yes,9
+2609,Mass Customer,N,Yes,11
+2610,Mass Customer,N,No,7
+2611,Affluent Customer,N,No,7
+2612,Affluent Customer,N,No,9
+2613,Mass Customer,N,Yes,9
+2614,High Net Worth,N,No,8
+2615,Mass Customer,N,Yes,3
+2616,High Net Worth,N,Yes,10
+2617,High Net Worth,N,No,7
+2618,Mass Customer,N,No,1
+2619,High Net Worth,N,Yes,7
+2620,Mass Customer,N,No,7
+2621,High Net Worth,N,No,6
+2622,Mass Customer,N,No,5
+2623,Mass Customer,N,Yes,7
+2624,Mass Customer,N,Yes,7
+2625,Affluent Customer,N,Yes,9
+2626,Affluent Customer,N,Yes,5
+2627,Mass Customer,N,Yes,8
+2628,Affluent Customer,N,No,9
+2629,High Net Worth,N,No,1
+2630,Mass Customer,N,No,12
+2631,Mass Customer,N,Yes,8
+2632,Mass Customer,N,No,10
+2633,Mass Customer,N,Yes,10
+2634,High Net Worth,N,No,11
+2635,Mass Customer,N,No,6
+2636,High Net Worth,N,Yes,10
+2637,Mass Customer,N,Yes,12
+2638,Mass Customer,N,Yes,5
+2639,Mass Customer,N,Yes,5
+2640,Affluent Customer,N,No,7
+2641,Mass Customer,N,Yes,12
+2642,High Net Worth,N,No,1
+2643,Affluent Customer,N,No,7
+2644,Mass Customer,N,No,5
+2645,High Net Worth,N,Yes,10
+2646,Mass Customer,N,Yes,8
+2647,High Net Worth,N,No,6
+2648,Affluent Customer,N,No,10
+2649,Affluent Customer,N,Yes,8
+2650,Affluent Customer,N,Yes,10
+2651,Mass Customer,N,Yes,3
+2652,Affluent Customer,N,Yes,10
+2653,Affluent Customer,N,No,5
+2654,Mass Customer,N,No,9
+2655,Mass Customer,N,No,4
+2656,Mass Customer,N,Yes,8
+2657,Mass Customer,N,No,7
+2658,Mass Customer,N,Yes,2
+2659,High Net Worth,N,Yes,8
+2660,High Net Worth,N,Yes,10
+2661,High Net Worth,N,Yes,8
+2662,Mass Customer,N,Yes,8
+2663,Mass Customer,N,Yes,10
+2664,Mass Customer,N,No,8
+2665,Mass Customer,N,Yes,2
+2666,Mass Customer,N,No,3
+2667,Affluent Customer,N,Yes,2
+2668,Mass Customer,N,No,12
+2669,Affluent Customer,N,No,5
+2670,High Net Worth,N,Yes,7
+2671,Mass Customer,N,No,7
+2672,Affluent Customer,N,No,3
+2673,Mass Customer,N,Yes,12
+2674,High Net Worth,N,No,11
+2675,Mass Customer,N,No,8
+2676,Mass Customer,N,Yes,11
+2677,Mass Customer,N,No,8
+2678,Mass Customer,N,No,5
+2679,High Net Worth,N,No,8
+2680,Mass Customer,N,Yes,2
+2681,Affluent Customer,N,Yes,8
+2682,High Net Worth,N,Yes,8
+2683,Affluent Customer,N,Yes,10
+2684,Mass Customer,N,Yes,4
+2685,Mass Customer,N,No,2
+2686,Affluent Customer,N,No,9
+2687,High Net Worth,N,Yes,6
+2688,Mass Customer,N,No,7
+2689,Mass Customer,N,No,7
+2690,Affluent Customer,N,Yes,3
+2691,Mass Customer,N,No,12
+2692,High Net Worth,N,Yes,8
+2693,High Net Worth,N,Yes,12
+2694,Mass Customer,N,No,8
+2695,Mass Customer,N,Yes,7
+2696,Mass Customer,N,Yes,8
+2697,High Net Worth,N,No,4
+2698,High Net Worth,N,No,9
+2699,Affluent Customer,N,Yes,7
+2700,Mass Customer,N,No,5
+2701,Affluent Customer,N,Yes,2
+2702,Affluent Customer,N,Yes,12
+2703,Affluent Customer,N,Yes,8
+2704,Affluent Customer,N,Yes,6
+2705,Mass Customer,N,No,1
+2706,Affluent Customer,N,No,3
+2707,High Net Worth,N,Yes,11
+2708,Mass Customer,N,Yes,7
+2709,High Net Worth,N,No,11
+2710,Mass Customer,N,No,4
+2711,Affluent Customer,N,No,11
+2712,High Net Worth,N,Yes,11
+2713,Affluent Customer,N,Yes,5
+2714,High Net Worth,N,Yes,9
+2715,Affluent Customer,N,No,4
+2716,Mass Customer,N,No,12
+2717,Mass Customer,N,No,10
+2718,High Net Worth,N,Yes,10
+2719,Affluent Customer,N,Yes,9
+2720,High Net Worth,N,No,6
+2721,Mass Customer,N,Yes,7
+2722,Mass Customer,N,No,7
+2723,Mass Customer,N,Yes,6
+2724,Mass Customer,N,No,11
+2725,Affluent Customer,N,No,5
+2726,Affluent Customer,N,No,7
+2727,High Net Worth,N,Yes,10
+2728,High Net Worth,N,No,9
+2729,Mass Customer,N,Yes,2
+2730,Mass Customer,N,No,8
+2731,Mass Customer,N,Yes,5
+2732,Mass Customer,N,No,11
+2733,Mass Customer,N,Yes,8
+2734,High Net Worth,N,No,9
+2735,High Net Worth,N,Yes,12
+2736,Affluent Customer,N,Yes,7
+2737,Mass Customer,N,Yes,2
+2738,Mass Customer,N,No,8
+2739,High Net Worth,N,Yes,11
+2740,Affluent Customer,N,Yes,1
+2741,High Net Worth,N,No,8
+2742,High Net Worth,N,Yes,8
+2743,High Net Worth,N,Yes,9
+2744,Mass Customer,N,No,11
+2745,Mass Customer,N,Yes,10
+2746,High Net Worth,N,Yes,10
+2747,Affluent Customer,N,No,7
+2748,Mass Customer,N,No,8
+2749,Mass Customer,N,No,9
+2750,High Net Worth,N,No,7
+2751,High Net Worth,N,Yes,6
+2752,Affluent Customer,N,Yes,9
+2753,Mass Customer,N,Yes,8
+2754,Mass Customer,N,No,9
+2755,Mass Customer,N,Yes,3
+2756,Mass Customer,N,No,3
+2757,Affluent Customer,N,No,9
+2758,Affluent Customer,N,No,7
+2759,Affluent Customer,N,Yes,10
+2760,Mass Customer,N,No,1
+2761,Mass Customer,N,No,8
+2762,Mass Customer,N,No,9
+2763,Mass Customer,N,Yes,10
+2764,Mass Customer,N,Yes,12
+2765,Mass Customer,N,Yes,11
+2766,High Net Worth,N,Yes,6
+2767,High Net Worth,N,No,4
+2768,Mass Customer,N,No,9
+2769,Affluent Customer,N,Yes,7
+2770,High Net Worth,N,Yes,1
+2771,Affluent Customer,N,Yes,8
+2772,Affluent Customer,N,Yes,7
+2773,Mass Customer,N,Yes,8
+2774,Mass Customer,N,No,5
+2775,Mass Customer,N,Yes,7
+2776,Mass Customer,N,No,2
+2777,Mass Customer,N,Yes,7
+2778,Mass Customer,N,No,8
+2779,Affluent Customer,N,Yes,9
+2780,Affluent Customer,N,Yes,7
+2781,Affluent Customer,N,Yes,6
+2782,Mass Customer,N,No,9
+2783,Affluent Customer,N,Yes,9
+2784,Mass Customer,N,No,10
+2785,Mass Customer,N,No,11
+2786,Mass Customer,N,Yes,8
+2787,Affluent Customer,N,Yes,8
+2788,Affluent Customer,N,No,9
+2789,Affluent Customer,N,Yes,8
+2790,High Net Worth,N,Yes,8
+2791,Mass Customer,N,No,3
+2792,Mass Customer,N,Yes,2
+2793,Affluent Customer,N,Yes,7
+2794,Mass Customer,N,Yes,5
+2795,Mass Customer,N,No,9
+2796,Mass Customer,N,No,5
+2797,Mass Customer,N,Yes,3
+2798,High Net Worth,N,Yes,1
+2799,Mass Customer,N,Yes,6
+2800,Mass Customer,N,No,8
+2801,Mass Customer,N,No,7
+2802,Mass Customer,N,No,5
+2803,Mass Customer,N,Yes,6
+2804,Mass Customer,N,Yes,9
+2805,High Net Worth,N,No,12
+2806,Mass Customer,N,Yes,8
+2807,Mass Customer,N,Yes,9
+2808,Mass Customer,N,Yes,10
+2809,Mass Customer,N,No,9
+2810,Mass Customer,N,Yes,6
+2811,Mass Customer,N,No,5
+2812,High Net Worth,N,Yes,9
+2813,Mass Customer,N,Yes,10
+2814,High Net Worth,N,Yes,4
+2815,Mass Customer,N,No,10
+2816,Mass Customer,N,Yes,8
+2817,Affluent Customer,N,Yes,11
+2818,Affluent Customer,N,No,12
+2819,Affluent Customer,N,No,6
+2820,Affluent Customer,N,Yes,10
+2821,Affluent Customer,N,No,9
+2822,Mass Customer,N,No,10
+2823,Mass Customer,N,No,11
+2824,Affluent Customer,N,No,10
+2825,Affluent Customer,N,Yes,8
+2826,Mass Customer,N,No,10
+2827,High Net Worth,N,No,12
+2828,High Net Worth,N,Yes,8
+2829,High Net Worth,N,No,4
+2830,High Net Worth,N,No,7
+2831,Mass Customer,N,Yes,8
+2832,Mass Customer,N,Yes,9
+2833,Mass Customer,N,Yes,8
+2834,Affluent Customer,N,No,8
+2835,Affluent Customer,N,No,7
+2836,Mass Customer,N,No,3
+2837,Mass Customer,N,No,7
+2838,High Net Worth,N,No,12
+2839,Mass Customer,N,No,8
+2840,Mass Customer,N,Yes,7
+2841,Mass Customer,N,No,7
+2842,Mass Customer,N,No,10
+2843,Affluent Customer,N,Yes,9
+2844,Mass Customer,N,Yes,12
+2845,Mass Customer,N,No,8
+2846,Mass Customer,N,No,9
+2847,Mass Customer,N,No,8
+2848,Mass Customer,N,Yes,9
+2849,High Net Worth,N,Yes,10
+2850,Mass Customer,N,Yes,4
+2851,Affluent Customer,N,Yes,10
+2852,High Net Worth,N,Yes,10
+2853,High Net Worth,N,Yes,6
+2854,High Net Worth,N,Yes,10
+2855,Mass Customer,N,Yes,7
+2856,Mass Customer,N,Yes,7
+2857,Mass Customer,N,Yes,9
+2858,Mass Customer,N,Yes,10
+2859,High Net Worth,N,No,3
+2860,Mass Customer,N,No,6
+2861,Mass Customer,N,Yes,9
+2862,Mass Customer,N,No,7
+2863,Mass Customer,N,No,6
+2864,Mass Customer,N,No,10
+2865,High Net Worth,N,No,9
+2866,High Net Worth,N,No,7
+2867,High Net Worth,N,No,12
+2868,High Net Worth,N,No,8
+2869,Affluent Customer,N,No,8
+2870,Mass Customer,N,No,7
+2871,High Net Worth,N,Yes,9
+2872,Affluent Customer,N,Yes,10
+2873,Mass Customer,N,No,5
+2874,Affluent Customer,N,No,6
+2875,High Net Worth,N,No,9
+2876,High Net Worth,N,No,9
+2877,Affluent Customer,N,Yes,11
+2878,Mass Customer,N,Yes,3
+2879,Mass Customer,N,Yes,8
+2880,Mass Customer,N,No,9
+2881,Affluent Customer,N,Yes,8
+2882,Mass Customer,N,No,11
+2883,Mass Customer,N,Yes,10
+2884,Mass Customer,N,No,7
+2885,Mass Customer,N,Yes,5
+2886,Mass Customer,N,No,11
+2887,High Net Worth,N,Yes,11
+2888,High Net Worth,N,Yes,7
+2889,Mass Customer,N,Yes,8
+2890,Affluent Customer,N,Yes,4
+2891,High Net Worth,N,Yes,9
+2892,Affluent Customer,N,Yes,4
+2893,Mass Customer,N,No,10
+2894,Mass Customer,N,Yes,7
+2895,Mass Customer,N,Yes,1
+2896,Mass Customer,N,Yes,7
+2897,Affluent Customer,N,No,3
+2898,Affluent Customer,N,Yes,9
+2899,High Net Worth,N,No,8
+2900,Mass Customer,N,Yes,9
+2901,Mass Customer,N,Yes,5
+2902,Mass Customer,N,Yes,4
+2903,Affluent Customer,N,Yes,10
+2904,High Net Worth,N,Yes,8
+2905,Mass Customer,N,No,9
+2906,Mass Customer,N,Yes,10
+2907,High Net Worth,N,No,10
+2908,Affluent Customer,N,Yes,11
+2909,High Net Worth,N,No,5
+2910,Mass Customer,N,Yes,9
+2911,Mass Customer,N,No,4
+2912,High Net Worth,N,No,8
+2913,Affluent Customer,N,Yes,6
+2914,Affluent Customer,N,Yes,8
+2915,Mass Customer,N,No,9
+2916,Affluent Customer,N,Yes,8
+2917,Affluent Customer,N,No,9
+2918,Mass Customer,N,Yes,4
+2919,High Net Worth,N,Yes,2
+2920,Mass Customer,N,Yes,10
+2921,Mass Customer,N,No,8
+2922,Affluent Customer,N,Yes,12
+2923,Affluent Customer,N,Yes,11
+2924,Mass Customer,N,Yes,10
+2925,Affluent Customer,N,Yes,3
+2926,High Net Worth,N,No,10
+2927,Affluent Customer,N,Yes,5
+2928,Mass Customer,N,No,3
+2929,Mass Customer,N,No,5
+2930,Mass Customer,N,No,2
+2931,Mass Customer,N,Yes,9
+2932,Mass Customer,N,No,10
+2933,Affluent Customer,N,Yes,8
+2934,Mass Customer,N,Yes,7
+2935,Mass Customer,N,No,9
+2936,Mass Customer,N,Yes,3
+2937,Mass Customer,N,No,1
+2938,Affluent Customer,N,No,5
+2939,Mass Customer,N,Yes,3
+2940,Affluent Customer,N,Yes,10
+2941,Mass Customer,N,No,9
+2942,High Net Worth,N,No,10
+2943,High Net Worth,N,No,3
+2944,Affluent Customer,N,No,9
+2945,Mass Customer,N,No,5
+2946,Mass Customer,N,Yes,6
+2947,Mass Customer,N,No,8
+2948,Mass Customer,N,Yes,10
+2949,Mass Customer,N,No,7
+2950,Mass Customer,N,Yes,8
+2951,High Net Worth,N,No,9
+2952,High Net Worth,N,Yes,9
+2953,High Net Worth,N,Yes,8
+2954,Mass Customer,N,No,8
+2955,High Net Worth,N,No,5
+2956,Mass Customer,N,Yes,4
+2957,Affluent Customer,N,No,8
+2958,Affluent Customer,N,Yes,11
+2959,Mass Customer,N,Yes,10
+2960,Mass Customer,N,Yes,10
+2961,Mass Customer,N,Yes,5
+2962,Mass Customer,N,No,9
+2963,Affluent Customer,N,Yes,3
+2964,Mass Customer,N,Yes,8
+2965,High Net Worth,N,No,9
+2966,Mass Customer,N,Yes,8
+2967,Affluent Customer,N,Yes,12
+2968,High Net Worth,N,No,9
+2969,Mass Customer,N,Yes,11
+2970,Mass Customer,N,No,7
+2971,High Net Worth,N,Yes,9
+2972,High Net Worth,N,No,9
+2973,High Net Worth,N,No,4
+2974,High Net Worth,N,No,9
+2975,Mass Customer,N,No,6
+2976,Mass Customer,N,Yes,6
+2977,Affluent Customer,N,No,9
+2978,Affluent Customer,N,No,9
+2979,Mass Customer,N,No,9
+2980,Mass Customer,N,No,11
+2981,High Net Worth,N,Yes,10
+2982,Mass Customer,N,Yes,9
+2983,Mass Customer,N,Yes,8
+2984,Mass Customer,N,Yes,10
+2985,Affluent Customer,N,Yes,10
+2986,Mass Customer,N,No,12
+2987,High Net Worth,N,Yes,4
+2988,Mass Customer,N,Yes,5
+2989,High Net Worth,N,Yes,9
+2990,High Net Worth,N,No,8
+2991,Mass Customer,N,No,7
+2992,Mass Customer,N,Yes,7
+2993,Affluent Customer,N,No,3
+2994,Mass Customer,N,Yes,7
+2995,Mass Customer,N,Yes,8
+2996,Mass Customer,N,No,10
+2997,Affluent Customer,N,No,10
+2998,High Net Worth,N,Yes,2
+2999,Affluent Customer,N,Yes,8
+3000,Affluent Customer,N,No,9
+3001,Mass Customer,N,No,10
+3002,Mass Customer,N,Yes,7
+3003,Mass Customer,N,Yes,10
+3004,Mass Customer,N,Yes,7
+3005,Affluent Customer,N,Yes,7
+3006,Mass Customer,N,Yes,8
+3007,Mass Customer,N,No,12
+3008,High Net Worth,N,Yes,2
+3009,High Net Worth,N,Yes,7
+3010,Affluent Customer,N,No,10
+3011,High Net Worth,N,No,9
+3012,Mass Customer,N,Yes,10
+3013,High Net Worth,N,No,9
+3014,High Net Worth,N,No,9
+3015,Affluent Customer,N,No,9
+3016,High Net Worth,N,No,1
+3017,Affluent Customer,N,No,4
+3018,High Net Worth,N,Yes,8
+3019,Affluent Customer,N,Yes,9
+3020,High Net Worth,N,Yes,6
+3021,Mass Customer,N,No,11
+3022,High Net Worth,N,No,9
+3023,High Net Worth,N,Yes,3
+3024,Mass Customer,N,No,2
+3025,Mass Customer,N,Yes,10
+3026,Mass Customer,N,Yes,5
+3027,Mass Customer,N,Yes,1
+3028,High Net Worth,N,No,6
+3029,Mass Customer,N,No,7
+3030,Affluent Customer,N,No,6
+3031,Mass Customer,N,Yes,11
+3032,Affluent Customer,N,Yes,8
+3033,High Net Worth,N,No,11
+3034,Mass Customer,N,Yes,5
+3035,High Net Worth,N,No,8
+3036,Affluent Customer,N,Yes,9
+3037,High Net Worth,N,Yes,7
+3038,High Net Worth,N,No,2
+3039,Affluent Customer,N,No,8
+3040,Mass Customer,N,No,12
+3041,Mass Customer,N,Yes,1
+3042,High Net Worth,N,Yes,8
+3043,Mass Customer,N,Yes,10
+3044,Affluent Customer,N,Yes,1
+3045,Affluent Customer,N,Yes,3
+3046,Affluent Customer,N,No,6
+3047,Mass Customer,N,Yes,11
+3048,Mass Customer,N,No,9
+3049,High Net Worth,N,Yes,5
+3050,High Net Worth,N,No,3
+3051,Affluent Customer,N,Yes,6
+3052,Mass Customer,N,No,8
+3053,High Net Worth,N,No,10
+3054,Affluent Customer,N,No,12
+3055,Mass Customer,N,Yes,7
+3056,Mass Customer,N,No,8
+3057,Mass Customer,N,No,8
+3058,Mass Customer,N,Yes,2
+3059,Mass Customer,N,No,6
+3060,Mass Customer,N,Yes,8
+3061,Affluent Customer,N,Yes,11
+3062,Mass Customer,N,No,10
+3063,Affluent Customer,N,No,6
+3064,Affluent Customer,N,Yes,7
+3065,High Net Worth,N,Yes,4
+3066,Affluent Customer,N,Yes,9
+3067,Mass Customer,N,Yes,9
+3068,Affluent Customer,N,No,5
+3069,Affluent Customer,N,No,10
+3070,Affluent Customer,N,Yes,9
+3071,Mass Customer,N,Yes,8
+3072,Mass Customer,N,Yes,10
+3073,Affluent Customer,N,No,10
+3074,Mass Customer,N,Yes,6
+3075,Mass Customer,N,Yes,9
+3076,Mass Customer,N,Yes,8
+3077,Affluent Customer,N,No,6
+3078,Mass Customer,N,No,8
+3079,Mass Customer,N,Yes,9
+3080,High Net Worth,N,No,4
+3081,High Net Worth,N,Yes,8
+3082,Mass Customer,N,Yes,7
+3083,Mass Customer,N,Yes,8
+3084,Affluent Customer,N,Yes,8
+3085,Affluent Customer,N,No,7
+3086,High Net Worth,N,No,8
+3087,Mass Customer,N,No,7
+3088,Affluent Customer,N,Yes,4
+3089,Affluent Customer,N,Yes,9
+3090,Mass Customer,N,No,8
+3091,Affluent Customer,N,Yes,10
+3092,Affluent Customer,N,No,7
+3093,High Net Worth,N,Yes,5
+3094,Mass Customer,N,Yes,4
+3095,High Net Worth,N,Yes,7
+3096,Mass Customer,N,No,11
+3097,Affluent Customer,N,Yes,12
+3098,Mass Customer,N,No,6
+3099,Mass Customer,N,Yes,7
+3100,Mass Customer,N,No,3
+3101,High Net Worth,N,No,7
+3102,Affluent Customer,N,No,6
+3103,Mass Customer,N,No,3
+3104,Mass Customer,N,Yes,2
+3105,Mass Customer,N,No,9
+3106,Mass Customer,N,Yes,3
+3107,High Net Worth,N,No,11
+3108,Mass Customer,N,No,11
+3109,Mass Customer,N,Yes,7
+3110,Affluent Customer,N,Yes,5
+3111,Mass Customer,N,Yes,7
+3112,High Net Worth,N,Yes,8
+3113,Mass Customer,N,Yes,7
+3114,Mass Customer,N,Yes,8
+3115,Mass Customer,N,No,9
+3116,Mass Customer,N,No,5
+3117,Affluent Customer,N,Yes,7
+3118,High Net Worth,N,No,9
+3119,High Net Worth,N,No,6
+3120,Mass Customer,N,Yes,6
+3121,Mass Customer,N,No,8
+3122,High Net Worth,N,Yes,5
+3123,High Net Worth,N,No,6
+3124,High Net Worth,N,Yes,1
+3125,High Net Worth,N,Yes,2
+3126,High Net Worth,N,No,4
+3127,Mass Customer,N,No,10
+3128,High Net Worth,N,Yes,6
+3129,High Net Worth,N,Yes,8
+3130,Mass Customer,N,No,1
+3131,Affluent Customer,N,Yes,10
+3132,Mass Customer,N,Yes,7
+3133,Mass Customer,N,No,8
+3134,Mass Customer,N,No,10
+3135,Mass Customer,N,No,7
+3136,Mass Customer,N,Yes,10
+3137,Mass Customer,N,No,9
+3138,Mass Customer,N,Yes,9
+3139,High Net Worth,N,Yes,8
+3140,High Net Worth,N,No,9
+3141,Mass Customer,N,Yes,7
+3142,Mass Customer,N,No,5
+3143,Mass Customer,N,No,7
+3144,Mass Customer,N,Yes,9
+3145,High Net Worth,N,Yes,10
+3146,Mass Customer,N,No,9
+3147,Affluent Customer,N,Yes,8
+3148,High Net Worth,N,Yes,7
+3149,Affluent Customer,N,Yes,9
+3150,Mass Customer,N,No,10
+3151,Affluent Customer,N,Yes,7
+3152,High Net Worth,N,Yes,10
+3153,High Net Worth,N,No,7
+3154,Mass Customer,N,Yes,9
+3155,Affluent Customer,N,Yes,7
+3156,Mass Customer,N,No,10
+3157,Mass Customer,N,Yes,9
+3158,Mass Customer,N,Yes,11
+3159,Affluent Customer,N,No,10
+3160,Mass Customer,N,No,9
+3161,Mass Customer,N,Yes,9
+3162,Mass Customer,N,Yes,8
+3163,Affluent Customer,N,No,8
+3164,Mass Customer,N,Yes,7
+3165,Affluent Customer,N,Yes,7
+3166,Mass Customer,N,No,8
+3167,Mass Customer,N,No,1
+3168,Affluent Customer,N,No,3
+3169,Mass Customer,N,Yes,2
+3170,Mass Customer,N,No,12
+3171,Affluent Customer,N,Yes,9
+3172,Affluent Customer,N,No,4
+3173,Mass Customer,N,Yes,10
+3174,Affluent Customer,N,No,7
+3175,Mass Customer,N,No,9
+3176,Affluent Customer,N,No,9
+3177,Affluent Customer,N,No,2
+3178,Mass Customer,N,Yes,11
+3179,Affluent Customer,N,Yes,10
+3180,Mass Customer,N,Yes,10
+3181,High Net Worth,N,No,7
+3182,Affluent Customer,N,No,9
+3183,Mass Customer,N,No,7
+3184,Affluent Customer,N,Yes,9
+3185,Mass Customer,N,No,3
+3186,Mass Customer,N,Yes,9
+3187,Mass Customer,N,Yes,4
+3188,Mass Customer,N,No,2
+3189,Mass Customer,N,No,10
+3190,Affluent Customer,N,No,9
+3191,Affluent Customer,N,Yes,8
+3192,High Net Worth,N,Yes,7
+3193,High Net Worth,N,No,8
+3194,Mass Customer,N,No,8
+3195,Mass Customer,N,No,7
+3196,Mass Customer,N,No,7
+3197,High Net Worth,N,No,8
+3198,Mass Customer,N,Yes,9
+3199,Mass Customer,N,Yes,8
+3200,Mass Customer,N,No,6
+3201,Mass Customer,N,Yes,10
+3202,Mass Customer,N,Yes,9
+3203,Affluent Customer,N,Yes,1
+3204,Mass Customer,N,Yes,2
+3205,Mass Customer,N,No,7
+3206,Mass Customer,N,No,5
+3207,Mass Customer,N,No,8
+3208,High Net Worth,N,No,12
+3209,Affluent Customer,N,No,11
+3210,Mass Customer,N,No,3
+3211,High Net Worth,N,Yes,11
+3212,Affluent Customer,N,No,7
+3213,Affluent Customer,N,Yes,11
+3214,Mass Customer,N,Yes,4
+3215,Mass Customer,N,Yes,7
+3216,Mass Customer,N,Yes,10
+3217,Mass Customer,N,No,8
+3218,Mass Customer,N,Yes,9
+3219,Mass Customer,N,No,9
+3220,Affluent Customer,N,No,8
+3221,High Net Worth,N,Yes,11
+3222,Affluent Customer,N,No,7
+3223,Mass Customer,N,Yes,7
+3224,Affluent Customer,N,No,1
+3225,Mass Customer,N,Yes,1
+3226,Affluent Customer,N,No,5
+3227,Affluent Customer,N,No,8
+3228,Mass Customer,N,No,10
+3229,High Net Worth,N,Yes,7
+3230,Mass Customer,N,No,8
+3231,Affluent Customer,N,Yes,9
+3232,Mass Customer,N,Yes,4
+3233,Mass Customer,N,Yes,8
+3234,Mass Customer,N,Yes,4
+3235,Affluent Customer,N,Yes,7
+3236,Mass Customer,N,Yes,8
+3237,Mass Customer,N,No,7
+3238,Mass Customer,N,No,8
+3239,High Net Worth,N,No,7
+3240,Mass Customer,N,Yes,9
+3241,Mass Customer,N,Yes,8
+3242,Affluent Customer,N,Yes,12
+3243,Mass Customer,N,No,5
+3244,Mass Customer,N,No,7
+3245,High Net Worth,N,No,4
+3246,Mass Customer,N,Yes,5
+3247,Mass Customer,N,Yes,10
+3248,Affluent Customer,N,No,12
+3249,Mass Customer,N,Yes,8
+3250,High Net Worth,N,Yes,6
+3251,High Net Worth,N,Yes,10
+3252,High Net Worth,N,Yes,9
+3253,High Net Worth,N,Yes,7
+3254,Mass Customer,N,No,9
+3255,High Net Worth,N,No,3
+3256,Affluent Customer,N,No,4
+3257,Mass Customer,N,Yes,8
+3258,Mass Customer,N,Yes,8
+3259,High Net Worth,N,No,9
+3260,High Net Worth,N,No,11
+3261,Mass Customer,N,Yes,8
+3262,Mass Customer,N,No,12
+3263,Affluent Customer,N,No,4
+3264,Mass Customer,N,Yes,5
+3265,High Net Worth,N,No,9
+3266,Mass Customer,N,Yes,10
+3267,High Net Worth,N,Yes,10
+3268,Mass Customer,N,No,3
+3269,Mass Customer,N,No,12
+3270,Mass Customer,N,Yes,10
+3271,High Net Worth,N,Yes,11
+3272,Affluent Customer,N,No,2
+3273,Mass Customer,N,No,7
+3274,Mass Customer,N,Yes,8
+3275,Mass Customer,N,No,9
+3276,High Net Worth,N,No,11
+3277,Affluent Customer,N,No,1
+3278,Affluent Customer,N,No,10
+3279,Mass Customer,N,No,8
+3280,Mass Customer,N,Yes,10
+3281,Mass Customer,N,No,9
+3282,High Net Worth,N,No,7
+3283,Mass Customer,N,Yes,11
+3284,Affluent Customer,N,No,9
+3285,Affluent Customer,N,Yes,12
+3286,Mass Customer,N,No,8
+3287,Affluent Customer,N,Yes,11
+3288,High Net Worth,N,No,10
+3289,Mass Customer,N,No,11
+3290,High Net Worth,N,Yes,4
+3291,Mass Customer,N,No,4
+3292,Affluent Customer,N,Yes,11
+3293,High Net Worth,N,No,6
+3294,Affluent Customer,N,No,7
+3295,High Net Worth,N,Yes,6
+3296,Affluent Customer,N,Yes,9
+3297,Mass Customer,N,No,8
+3298,Affluent Customer,N,Yes,9
+3299,Affluent Customer,N,Yes,10
+3300,Mass Customer,N,No,8
+3301,Mass Customer,N,Yes,10
+3302,Affluent Customer,N,No,9
+3303,Affluent Customer,N,Yes,2
+3304,Mass Customer,N,No,12
+3305,Mass Customer,N,Yes,6
+3306,Mass Customer,N,No,8
+3307,High Net Worth,N,No,7
+3308,Mass Customer,N,Yes,2
+3309,High Net Worth,N,Yes,10
+3310,Affluent Customer,N,Yes,10
+3311,Mass Customer,N,Yes,7
+3312,High Net Worth,N,No,9
+3313,High Net Worth,N,Yes,7
+3314,Mass Customer,N,Yes,1
+3315,Mass Customer,N,Yes,7
+3316,Mass Customer,N,No,10
+3317,Mass Customer,N,Yes,11
+3318,High Net Worth,N,Yes,10
+3319,Affluent Customer,N,Yes,7
+3320,High Net Worth,N,No,9
+3321,High Net Worth,N,Yes,2
+3322,Affluent Customer,N,Yes,9
+3323,High Net Worth,N,No,4
+3324,Mass Customer,N,Yes,6
+3325,High Net Worth,N,No,8
+3326,High Net Worth,N,Yes,12
+3327,Mass Customer,N,No,3
+3328,Mass Customer,N,No,11
+3329,High Net Worth,N,No,10
+3330,Mass Customer,N,Yes,12
+3331,Mass Customer,N,No,1
+3332,Mass Customer,N,No,1
+3333,Mass Customer,N,Yes,4
+3334,Mass Customer,N,Yes,6
+3335,Mass Customer,N,No,3
+3336,Mass Customer,N,Yes,11
+3337,Mass Customer,N,Yes,12
+3338,Mass Customer,N,Yes,9
+3339,Mass Customer,N,No,8
+3340,Mass Customer,N,No,12
+3341,Affluent Customer,N,Yes,2
+3342,Mass Customer,N,No,2
+3343,Mass Customer,N,Yes,10
+3344,Affluent Customer,N,Yes,1
+3345,High Net Worth,N,No,9
+3346,High Net Worth,N,No,10
+3347,High Net Worth,N,Yes,7
+3348,High Net Worth,N,Yes,5
+3349,Affluent Customer,N,No,8
+3350,Affluent Customer,N,No,10
+3351,Affluent Customer,N,No,4
+3352,Affluent Customer,N,No,8
+3353,Mass Customer,N,Yes,4
+3354,Mass Customer,N,Yes,9
+3355,Mass Customer,N,No,7
+3356,Mass Customer,N,Yes,10
+3357,Affluent Customer,N,No,9
+3358,Affluent Customer,N,Yes,9
+3359,Mass Customer,N,No,5
+3360,Affluent Customer,N,No,6
+3361,Mass Customer,N,Yes,9
+3362,Affluent Customer,N,No,7
+3363,High Net Worth,N,Yes,2
+3364,Mass Customer,N,Yes,8
+3365,Mass Customer,N,No,1
+3366,Mass Customer,N,Yes,12
+3367,Mass Customer,N,Yes,4
+3368,Affluent Customer,N,No,12
+3369,Mass Customer,N,No,10
+3370,High Net Worth,N,Yes,8
+3371,Mass Customer,N,No,10
+3372,High Net Worth,N,No,9
+3373,Mass Customer,N,No,9
+3374,Mass Customer,N,Yes,8
+3375,High Net Worth,N,Yes,11
+3376,Mass Customer,N,No,5
+3377,Mass Customer,N,Yes,3
+3378,Affluent Customer,N,No,10
+3379,Mass Customer,N,Yes,8
+3380,High Net Worth,N,Yes,8
+3381,Mass Customer,N,No,9
+3382,High Net Worth,N,No,1
+3383,Affluent Customer,N,Yes,9
+3384,Mass Customer,N,No,6
+3385,Mass Customer,N,No,9
+3386,High Net Worth,N,Yes,8
+3387,Affluent Customer,N,Yes,7
+3388,Mass Customer,N,No,11
+3389,Affluent Customer,N,No,12
+3390,High Net Worth,N,No,10
+3391,Mass Customer,N,No,8
+3392,Mass Customer,N,No,10
+3393,Mass Customer,N,Yes,8
+3394,Mass Customer,N,No,9
+3395,Mass Customer,N,No,9
+3396,Mass Customer,N,Yes,10
+3397,Mass Customer,N,No,10
+3398,High Net Worth,N,Yes,1
+3399,Mass Customer,N,No,5
+3400,Mass Customer,N,Yes,11
+3401,Mass Customer,N,Yes,6
+3402,Mass Customer,N,No,9
+3403,Mass Customer,N,Yes,10
+3404,Affluent Customer,N,No,8
+3405,Mass Customer,N,Yes,1
+3406,Mass Customer,N,Yes,10
+3407,High Net Worth,N,Yes,5
+3408,Mass Customer,N,No,8
+3409,Mass Customer,N,No,10
+3410,Mass Customer,N,No,7
+3411,Mass Customer,N,Yes,7
+3412,Mass Customer,N,Yes,7
+3413,Mass Customer,N,No,12
+3414,Affluent Customer,N,Yes,1
+3415,High Net Worth,N,Yes,7
+3416,Mass Customer,N,Yes,5
+3417,Mass Customer,N,No,10
+3418,High Net Worth,N,No,10
+3419,Mass Customer,N,Yes,9
+3420,Mass Customer,N,Yes,8
+3421,Affluent Customer,N,Yes,7
+3422,Mass Customer,N,No,8
+3423,Affluent Customer,N,No,9
+3424,Affluent Customer,N,Yes,3
+3425,Mass Customer,N,Yes,1
+3426,Mass Customer,N,No,12
+3427,Mass Customer,N,Yes,1
+3428,Mass Customer,N,Yes,7
+3429,High Net Worth,N,No,8
+3430,Affluent Customer,N,Yes,11
+3431,Affluent Customer,N,No,3
+3432,Mass Customer,N,Yes,10
+3433,Mass Customer,N,No,6
+3434,Mass Customer,N,No,7
+3435,Affluent Customer,N,No,8
+3436,Mass Customer,N,Yes,12
+3437,High Net Worth,N,No,9
+3438,Mass Customer,N,No,8
+3439,Affluent Customer,N,Yes,3
+3440,Mass Customer,N,No,8
+3441,High Net Worth,N,Yes,4
+3442,Mass Customer,N,Yes,4
+3443,Mass Customer,N,Yes,8
+3444,Affluent Customer,N,No,9
+3445,Affluent Customer,N,Yes,10
+3446,Mass Customer,N,No,3
+3447,High Net Worth,N,No,5
+3448,High Net Worth,N,No,10
+3449,High Net Worth,N,Yes,9
+3450,Mass Customer,N,No,9
+3451,High Net Worth,N,No,4
+3452,Mass Customer,N,No,11
+3453,Affluent Customer,N,No,8
+3454,Mass Customer,N,No,9
+3455,Mass Customer,N,Yes,10
+3456,Mass Customer,N,Yes,10
+3457,Mass Customer,N,No,9
+3458,High Net Worth,N,Yes,1
+3459,Mass Customer,N,Yes,11
+3460,Mass Customer,N,No,10
+3461,Affluent Customer,N,Yes,12
+3462,High Net Worth,N,No,11
+3463,Affluent Customer,N,No,6
+3464,Mass Customer,N,Yes,12
+3465,High Net Worth,N,Yes,3
+3466,Mass Customer,N,No,11
+3467,Mass Customer,N,No,7
+3468,Mass Customer,N,No,3
+3469,Mass Customer,N,Yes,7
+3470,Affluent Customer,N,Yes,1
+3471,High Net Worth,N,Yes,10
+3472,Affluent Customer,N,Yes,11
+3473,Mass Customer,N,No,7
+3474,Mass Customer,N,No,1
+3475,Affluent Customer,N,No,9
+3476,Affluent Customer,N,No,10
+3477,Affluent Customer,N,Yes,7
+3478,Mass Customer,N,No,8
+3479,Mass Customer,N,No,5
+3480,Mass Customer,N,No,6
+3481,High Net Worth,N,No,8
+3482,Affluent Customer,N,Yes,8
+3483,High Net Worth,N,Yes,9
+3484,High Net Worth,N,Yes,10
+3485,High Net Worth,N,Yes,11
+3486,Mass Customer,N,No,10
+3487,High Net Worth,N,No,10
+3488,Mass Customer,N,Yes,9
+3489,Mass Customer,N,Yes,10
+3490,High Net Worth,N,No,10
+3491,Affluent Customer,N,No,9
+3492,Mass Customer,N,No,9
+3493,High Net Worth,N,No,5
+3494,High Net Worth,N,No,4
+3495,High Net Worth,N,No,9
+3496,Mass Customer,N,Yes,10
+3497,Affluent Customer,N,Yes,11
+3498,Mass Customer,N,No,10
+3499,Mass Customer,N,Yes,11
+3500,Affluent Customer,N,No,10
+3501,Mass Customer,N,Yes,10
+3502,High Net Worth,N,Yes,7
+3503,Affluent Customer,N,Yes,3
+3504,Mass Customer,N,Yes,10
+3505,Mass Customer,N,No,9
+3506,Mass Customer,N,No,2
+3507,Mass Customer,N,No,4
+3508,Mass Customer,N,No,10
+3509,Mass Customer,N,Yes,9
+3510,Affluent Customer,N,Yes,7
+3511,Affluent Customer,N,No,5
+3512,Mass Customer,N,Yes,10
+3513,Affluent Customer,N,Yes,8
+3514,Mass Customer,N,No,8
+3515,High Net Worth,N,Yes,5
+3516,Mass Customer,N,Yes,12
+3517,Mass Customer,N,Yes,11
+3518,Mass Customer,N,Yes,11
+3519,Mass Customer,N,Yes,10
+3520,Mass Customer,N,Yes,2
+3521,High Net Worth,N,Yes,3
+3522,High Net Worth,N,Yes,9
+3523,Affluent Customer,N,No,9
+3524,Mass Customer,N,Yes,10
+3525,Mass Customer,N,No,7
+3526,High Net Worth,N,Yes,8
+3527,High Net Worth,N,No,10
+3528,Mass Customer,N,Yes,6
+3529,High Net Worth,N,Yes,5
+3530,High Net Worth,N,Yes,1
+3531,Affluent Customer,N,Yes,6
+3532,High Net Worth,N,Yes,10
+3533,Affluent Customer,N,Yes,7
+3534,Affluent Customer,N,Yes,9
+3535,High Net Worth,N,No,7
+3536,Affluent Customer,N,No,8
+3537,Mass Customer,N,No,9
+3538,Mass Customer,N,No,2
+3539,Mass Customer,N,Yes,4
+3540,Mass Customer,N,Yes,4
+3541,Mass Customer,N,No,9
+3542,Mass Customer,N,No,12
+3543,High Net Worth,N,Yes,10
+3544,Affluent Customer,N,No,8
+3545,High Net Worth,N,No,9
+3546,Affluent Customer,N,Yes,8
+3547,Affluent Customer,N,No,6
+3548,Affluent Customer,N,No,7
+3549,Mass Customer,N,No,10
+3550,Mass Customer,N,Yes,11
+3551,Mass Customer,N,Yes,12
+3552,Affluent Customer,N,Yes,12
+3553,Mass Customer,N,No,4
+3554,Mass Customer,N,Yes,10
+3555,Mass Customer,N,No,7
+3556,High Net Worth,N,No,2
+3557,Affluent Customer,N,No,7
+3558,High Net Worth,N,Yes,9
+3559,High Net Worth,N,Yes,7
+3560,Mass Customer,N,Yes,12
+3561,Mass Customer,N,Yes,12
+3562,Affluent Customer,N,No,9
+3563,Affluent Customer,N,No,5
+3564,High Net Worth,N,Yes,9
+3565,High Net Worth,N,Yes,8
+3566,Affluent Customer,N,Yes,2
+3567,Affluent Customer,N,Yes,2
+3568,Affluent Customer,N,No,8
+3569,Affluent Customer,N,No,7
+3570,Mass Customer,N,No,3
+3571,Mass Customer,N,Yes,4
+3572,Affluent Customer,N,Yes,4
+3573,Mass Customer,N,Yes,4
+3574,Mass Customer,N,No,9
+3575,Affluent Customer,N,Yes,6
+3576,Mass Customer,N,No,7
+3577,High Net Worth,N,No,9
+3578,Mass Customer,N,No,10
+3579,High Net Worth,N,No,10
+3580,Mass Customer,N,No,7
+3581,Mass Customer,N,Yes,12
+3582,Mass Customer,N,No,10
+3583,Affluent Customer,N,No,8
+3584,Mass Customer,N,No,10
+3585,High Net Worth,N,Yes,8
+3586,Affluent Customer,N,No,11
+3587,Affluent Customer,N,No,2
+3588,Affluent Customer,N,Yes,6
+3589,High Net Worth,N,No,8
+3590,Mass Customer,N,Yes,10
+3591,Mass Customer,N,No,10
+3592,Mass Customer,N,No,11
+3593,Mass Customer,N,No,7
+3594,Mass Customer,N,No,2
+3595,Mass Customer,N,No,12
+3596,Mass Customer,N,No,8
+3597,Affluent Customer,N,Yes,7
+3598,Affluent Customer,N,Yes,6
+3599,High Net Worth,N,Yes,2
+3600,Mass Customer,N,No,8
+3601,Mass Customer,N,No,7
+3602,Mass Customer,N,No,7
+3603,Mass Customer,N,Yes,11
+3604,High Net Worth,N,Yes,10
+3605,Mass Customer,N,No,9
+3606,High Net Worth,N,No,10
+3607,Mass Customer,N,No,8
+3608,High Net Worth,N,No,12
+3609,Mass Customer,N,No,7
+3610,High Net Worth,N,Yes,8
+3611,Affluent Customer,N,Yes,7
+3612,High Net Worth,N,No,6
+3613,Mass Customer,N,Yes,10
+3614,Affluent Customer,N,Yes,8
+3615,Mass Customer,N,Yes,8
+3616,High Net Worth,N,No,8
+3617,Mass Customer,N,Yes,3
+3618,Affluent Customer,N,Yes,10
+3619,Mass Customer,N,Yes,1
+3620,Mass Customer,N,No,4
+3621,High Net Worth,N,No,4
+3622,Mass Customer,N,No,8
+3623,Affluent Customer,N,Yes,9
+3624,Mass Customer,N,Yes,9
+3625,High Net Worth,N,Yes,5
+3626,Mass Customer,N,Yes,10
+3627,High Net Worth,N,Yes,8
+3628,Mass Customer,N,Yes,7
+3629,High Net Worth,N,No,11
+3630,Affluent Customer,N,Yes,8
+3631,High Net Worth,N,Yes,9
+3632,Mass Customer,N,No,2
+3633,Mass Customer,N,No,8
+3634,High Net Worth,N,Yes,11
+3635,High Net Worth,N,No,7
+3636,Mass Customer,N,Yes,6
+3637,Affluent Customer,N,Yes,10
+3638,Mass Customer,N,No,4
+3639,High Net Worth,N,No,5
+3640,Mass Customer,N,No,10
+3641,Affluent Customer,N,No,2
+3642,Affluent Customer,N,Yes,3
+3643,Mass Customer,N,No,8
+3644,High Net Worth,N,Yes,10
+3645,High Net Worth,N,No,9
+3646,Mass Customer,N,No,12
+3647,Affluent Customer,N,No,12
+3648,Mass Customer,N,No,4
+3649,Mass Customer,N,Yes,9
+3650,Mass Customer,N,Yes,10
+3651,Mass Customer,N,No,3
+3652,High Net Worth,N,Yes,9
+3653,Mass Customer,N,Yes,7
+3654,Mass Customer,N,No,8
+3655,Mass Customer,N,Yes,3
+3656,Mass Customer,N,Yes,10
+3657,High Net Worth,N,No,8
+3658,Mass Customer,N,Yes,9
+3659,High Net Worth,N,No,12
+3660,Mass Customer,N,No,9
+3661,Mass Customer,N,Yes,1
+3662,Mass Customer,N,No,7
+3663,Affluent Customer,N,No,10
+3664,Mass Customer,N,Yes,5
+3665,Mass Customer,N,No,8
+3666,High Net Worth,N,No,8
+3667,Mass Customer,N,Yes,10
+3668,Mass Customer,N,Yes,10
+3669,Affluent Customer,N,No,3
+3670,Affluent Customer,N,Yes,4
+3671,Affluent Customer,N,No,5
+3672,Mass Customer,N,Yes,12
+3673,Mass Customer,N,Yes,10
+3674,Mass Customer,N,No,9
+3675,Affluent Customer,N,Yes,5
+3676,Affluent Customer,N,No,5
+3677,Mass Customer,N,Yes,10
+3678,Mass Customer,N,No,3
+3679,High Net Worth,N,No,9
+3680,High Net Worth,N,No,3
+3681,Mass Customer,N,Yes,11
+3682,Mass Customer,N,Yes,6
+3683,Mass Customer,N,Yes,8
+3684,High Net Worth,N,Yes,5
+3685,Affluent Customer,N,Yes,6
+3686,High Net Worth,N,Yes,9
+3687,Mass Customer,N,Yes,6
+3688,Affluent Customer,N,Yes,9
+3689,Mass Customer,N,Yes,7
+3690,Mass Customer,N,No,11
+3691,Affluent Customer,N,No,8
+3692,High Net Worth,N,Yes,8
+3693,Affluent Customer,N,Yes,12
+3694,Mass Customer,N,Yes,8
+3695,Affluent Customer,N,Yes,5
+3696,High Net Worth,N,No,3
+3697,Mass Customer,N,Yes,10
+3698,Mass Customer,N,No,7
+3699,Mass Customer,N,No,7
+3700,Mass Customer,N,No,3
+3701,Affluent Customer,N,No,9
+3702,Mass Customer,N,No,9
+3703,Affluent Customer,N,No,10
+3704,High Net Worth,N,Yes,6
+3705,Mass Customer,N,Yes,10
+3706,Affluent Customer,N,Yes,9
+3707,Mass Customer,N,Yes,5
+3708,Mass Customer,N,No,9
+3709,Mass Customer,N,No,5
+3710,Mass Customer,N,No,4
+3711,Affluent Customer,N,Yes,6
+3712,Mass Customer,N,No,12
+3713,High Net Worth,N,Yes,7
+3714,Mass Customer,N,No,9
+3715,High Net Worth,N,Yes,2
+3716,Affluent Customer,N,No,10
+3717,Mass Customer,N,Yes,4
+3718,Mass Customer,N,Yes,10
+3719,Mass Customer,N,No,11
+3720,Mass Customer,N,No,5
+3721,Mass Customer,N,Yes,12
+3722,Mass Customer,N,No,8
+3723,High Net Worth,N,No,8
+3724,Affluent Customer,N,No,10
+3725,Mass Customer,N,Yes,10
+3726,Mass Customer,N,No,4
+3727,Mass Customer,N,No,9
+3728,Affluent Customer,N,Yes,9
+3729,Mass Customer,N,No,8
+3730,Affluent Customer,N,No,8
+3731,Mass Customer,N,No,11
+3732,Mass Customer,N,No,8
+3733,Mass Customer,N,No,8
+3734,Mass Customer,N,No,10
+3735,Mass Customer,N,No,9
+3736,Mass Customer,N,Yes,1
+3737,Affluent Customer,N,No,10
+3738,High Net Worth,N,Yes,7
+3739,High Net Worth,N,No,10
+3740,Mass Customer,N,No,7
+3741,Affluent Customer,N,Yes,1
+3742,High Net Worth,N,Yes,10
+3743,Mass Customer,N,No,7
+3744,Mass Customer,N,Yes,8
+3745,Mass Customer,N,Yes,12
+3746,Affluent Customer,N,Yes,4
+3747,Mass Customer,N,Yes,6
+3748,Affluent Customer,N,Yes,9
+3749,Affluent Customer,N,No,7
+3750,Affluent Customer,N,Yes,8
+3751,Affluent Customer,N,Yes,9
+3752,Affluent Customer,N,Yes,9
+3753,Mass Customer,N,No,11
+3754,Mass Customer,N,No,10
+3755,High Net Worth,N,Yes,7
+3756,Affluent Customer,N,No,11
+3757,Affluent Customer,N,No,3
+3758,Mass Customer,N,Yes,9
+3759,Mass Customer,N,Yes,5
+3760,Mass Customer,N,No,4
+3761,Mass Customer,N,Yes,11
+3762,Mass Customer,N,No,6
+3763,Affluent Customer,N,Yes,7
+3764,Mass Customer,N,Yes,7
+3765,Mass Customer,N,No,10
+3766,Mass Customer,N,Yes,10
+3767,High Net Worth,N,No,9
+3768,Mass Customer,N,Yes,10
+3769,High Net Worth,N,Yes,7
+3770,Mass Customer,N,No,8
+3771,Mass Customer,N,No,5
+3772,Mass Customer,N,Yes,6
+3773,Affluent Customer,N,Yes,7
+3774,High Net Worth,N,No,4
+3775,Affluent Customer,N,No,11
+3776,Mass Customer,N,Yes,8
+3777,High Net Worth,N,Yes,7
+3778,High Net Worth,N,No,7
+3779,Affluent Customer,N,No,11
+3780,High Net Worth,N,No,9
+3781,Mass Customer,N,Yes,10
+3782,Mass Customer,N,No,11
+3783,Mass Customer,N,No,10
+3784,High Net Worth,N,No,3
+3785,Affluent Customer,N,No,9
+3786,High Net Worth,N,No,3
+3787,High Net Worth,N,No,8
+3788,Mass Customer,N,No,3
+3789,Mass Customer,N,Yes,10
+3790,Mass Customer,Y,Yes,10
+3791,Affluent Customer,N,No,9
+3792,Affluent Customer,N,Yes,1
+3793,Affluent Customer,N,Yes,9
+3794,Mass Customer,N,No,9
+3795,High Net Worth,N,Yes,12
+3796,Mass Customer,N,Yes,7
+3797,Affluent Customer,N,Yes,7
+3798,Mass Customer,N,Yes,7
+3799,High Net Worth,N,No,6
+3800,High Net Worth,N,No,6
+3801,Mass Customer,N,Yes,9
+3802,High Net Worth,N,Yes,5
+3803,Mass Customer,N,Yes,6
+3804,Mass Customer,N,Yes,3
+3805,Affluent Customer,N,No,12
+3806,Mass Customer,N,No,7
+3807,Mass Customer,N,No,9
+3808,Mass Customer,N,Yes,11
+3809,Affluent Customer,N,No,1
+3810,Affluent Customer,N,No,7
+3811,High Net Worth,N,No,5
+3812,Mass Customer,N,Yes,9
+3813,Mass Customer,N,Yes,1
+3814,Mass Customer,N,Yes,12
+3815,Mass Customer,N,Yes,8
+3816,Mass Customer,N,Yes,10
+3817,High Net Worth,N,No,7
+3818,Mass Customer,N,Yes,1
+3819,High Net Worth,N,No,10
+3820,Mass Customer,N,No,8
+3821,Affluent Customer,N,No,7
+3822,High Net Worth,N,Yes,7
+3823,Affluent Customer,N,No,5
+3824,Mass Customer,N,No,9
+3825,Mass Customer,N,No,8
+3826,Mass Customer,N,No,6
+3827,Affluent Customer,N,No,6
+3828,Mass Customer,N,No,9
+3829,Mass Customer,N,Yes,10
+3830,High Net Worth,N,No,7
+3831,Affluent Customer,N,Yes,6
+3832,High Net Worth,N,No,6
+3833,Mass Customer,N,No,10
+3834,Mass Customer,N,Yes,8
+3835,Affluent Customer,N,No,11
+3836,Affluent Customer,N,Yes,3
+3837,Mass Customer,N,Yes,3
+3838,Affluent Customer,N,Yes,11
+3839,High Net Worth,N,Yes,8
+3840,High Net Worth,N,No,7
+3841,Affluent Customer,N,No,8
+3842,Mass Customer,N,Yes,7
+3843,Mass Customer,N,Yes,8
+3844,Affluent Customer,N,No,11
+3845,Mass Customer,N,Yes,10
+3846,Mass Customer,N,No,11
+3847,Mass Customer,N,Yes,3
+3848,High Net Worth,N,No,4
+3849,Mass Customer,N,Yes,8
+3850,Mass Customer,N,Yes,4
+3851,High Net Worth,N,No,4
+3852,Mass Customer,N,No,7
+3853,Mass Customer,N,Yes,7
+3854,High Net Worth,N,Yes,9
+3855,Mass Customer,N,No,7
+3856,Affluent Customer,N,No,8
+3857,Mass Customer,N,Yes,3
+3858,Mass Customer,N,Yes,10
+3859,Mass Customer,N,No,8
+3860,Affluent Customer,N,Yes,3
+3861,Affluent Customer,N,No,1
+3862,Mass Customer,N,No,2
+3863,High Net Worth,N,No,9
+3864,Mass Customer,N,Yes,5
+3865,Mass Customer,N,Yes,7
+3866,Mass Customer,N,Yes,8
+3867,Mass Customer,N,Yes,4
+3868,Affluent Customer,N,Yes,10
+3869,Affluent Customer,N,No,9
+3870,Mass Customer,N,No,7
+3871,Mass Customer,N,No,7
+3872,High Net Worth,N,Yes,2
+3873,Mass Customer,N,No,6
+3874,Mass Customer,N,No,9
+3875,Mass Customer,N,Yes,11
+3876,High Net Worth,N,No,8
+3877,High Net Worth,N,No,3
+3878,Mass Customer,N,No,9
+3879,High Net Worth,N,No,9
+3880,Mass Customer,N,No,4
+3881,Affluent Customer,N,No,11
+3882,Mass Customer,N,Yes,1
+3883,Mass Customer,N,No,6
+3884,High Net Worth,N,Yes,12
+3885,Mass Customer,N,Yes,1
+3886,Affluent Customer,N,No,9
+3887,Affluent Customer,N,No,5
+3888,High Net Worth,N,Yes,9
+3889,Affluent Customer,N,No,7
+3890,Mass Customer,N,No,8
+3891,High Net Worth,N,Yes,10
+3892,Mass Customer,N,Yes,8
+3893,High Net Worth,N,Yes,5
+3894,Affluent Customer,N,No,9
+3895,Affluent Customer,N,Yes,6
+3896,Mass Customer,N,Yes,12
+3897,High Net Worth,N,Yes,2
+3898,Mass Customer,N,No,1
+3899,Affluent Customer,N,Yes,3
+3900,Mass Customer,N,Yes,4
+3901,High Net Worth,N,No,7
+3902,Affluent Customer,N,No,11
+3903,Mass Customer,N,Yes,9
+3904,Affluent Customer,N,No,10
+3905,High Net Worth,N,No,9
+3906,High Net Worth,N,No,8
+3907,High Net Worth,N,Yes,8
+3908,High Net Worth,N,No,9
+3909,High Net Worth,N,Yes,10
+3910,Mass Customer,N,No,11
+3911,Mass Customer,N,No,7
+3912,Affluent Customer,N,No,8
+3913,Mass Customer,N,Yes,4
+3914,Affluent Customer,N,Yes,5
+3915,Affluent Customer,N,No,10
+3916,Affluent Customer,N,Yes,9
+3917,Mass Customer,N,No,12
+3918,High Net Worth,N,No,1
+3919,High Net Worth,N,No,8
+3920,Mass Customer,N,Yes,10
+3921,High Net Worth,N,No,11
+3922,Mass Customer,N,Yes,9
+3923,High Net Worth,N,No,9
+3924,High Net Worth,N,Yes,10
+3925,High Net Worth,N,No,8
+3926,Mass Customer,N,Yes,9
+3927,Mass Customer,N,Yes,9
+3928,Affluent Customer,N,Yes,8
+3929,Affluent Customer,N,Yes,2
+3930,High Net Worth,N,No,6
+3931,High Net Worth,N,Yes,10
+3932,Mass Customer,N,No,10
+3933,High Net Worth,N,Yes,8
+3934,Mass Customer,N,Yes,10
+3935,High Net Worth,N,Yes,11
+3936,Affluent Customer,N,Yes,9
+3937,Mass Customer,N,No,2
+3938,High Net Worth,N,Yes,11
+3939,Affluent Customer,N,No,8
+3940,Mass Customer,N,No,12
+3941,Mass Customer,N,Yes,7
+3942,Mass Customer,N,No,8
+3943,Affluent Customer,N,No,4
+3944,Affluent Customer,N,No,9
+3945,High Net Worth,N,No,2
+3946,High Net Worth,N,Yes,7
+3947,Mass Customer,N,No,7
+3948,Mass Customer,N,No,10
+3949,High Net Worth,N,Yes,5
+3950,High Net Worth,N,Yes,5
+3951,Affluent Customer,N,Yes,2
+3952,Affluent Customer,N,No,8
+3953,Affluent Customer,N,Yes,11
+3954,High Net Worth,N,No,3
+3955,Mass Customer,N,Yes,7
+3956,Mass Customer,N,Yes,9
+3957,High Net Worth,N,Yes,10
+3958,Affluent Customer,N,Yes,7
+3959,Mass Customer,N,No,2
+3960,Mass Customer,N,No,9
+3961,High Net Worth,N,Yes,7
+3962,High Net Worth,N,Yes,10
+3963,Mass Customer,N,No,8
+3964,High Net Worth,N,No,12
+3965,Mass Customer,N,Yes,5
+3966,Mass Customer,N,Yes,7
+3967,Affluent Customer,N,No,8
+3968,High Net Worth,N,No,11
+3969,Affluent Customer,N,Yes,10
+3970,High Net Worth,N,Yes,8
+3971,High Net Worth,N,No,9
+3972,Mass Customer,N,No,7
+3973,High Net Worth,N,No,11
+3974,Affluent Customer,N,Yes,7
+3975,Affluent Customer,N,No,8
+3976,Affluent Customer,N,Yes,10
+3977,Mass Customer,N,Yes,9
+3978,Mass Customer,N,No,9
+3979,Mass Customer,N,Yes,10
+3980,Mass Customer,N,No,10
+3981,Mass Customer,N,No,5
+3982,Mass Customer,N,Yes,9
+3983,Mass Customer,N,Yes,10
+3984,Affluent Customer,N,No,11
+3985,Mass Customer,N,No,2
+3986,Mass Customer,N,No,8
+3987,Mass Customer,N,No,5
+3988,Mass Customer,N,Yes,11
+3989,Affluent Customer,N,Yes,6
+3990,High Net Worth,N,No,2
+3991,Mass Customer,N,Yes,12
+3992,Affluent Customer,N,Yes,6
+3993,Mass Customer,N,No,2
+3994,Affluent Customer,N,No,6
+3995,Mass Customer,N,Yes,3
+3996,Mass Customer,N,No,6
+3997,High Net Worth,N,Yes,10
+3998,High Net Worth,N,No,7
+3999,Affluent Customer,N,Yes,7
+4000,Affluent Customer,N,No,10

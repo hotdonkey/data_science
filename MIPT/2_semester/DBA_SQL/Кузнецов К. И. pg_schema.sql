@@ -29,17 +29,7 @@ CREATE TABLE public.customers (
     first_name character varying(50) NOT NULL,
     last_name character varying(50),
     gender character varying(6) NOT NULL,
-    "DOB" date,
-    job_title character varying(100),
-    job_industry_category character varying(100),
-    wealth_segment character varying(50) NOT NULL,
-    deceased_indicator character(1) NOT NULL,
-    owns_car character varying(3) NOT NULL,
-    address character varying(255) NOT NULL,
-    postcode character varying(20) NOT NULL,
-    state character varying(50) NOT NULL,
-    country character varying(50) NOT NULL,
-    property_valuation integer NOT NULL
+    "DOB" date
 );
 
 
@@ -68,6 +58,80 @@ ALTER SEQUENCE public.customers_customer_id_seq OWNED BY public.customers.custom
 
 
 --
+-- Name: job_title; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.job_title (
+    id integer NOT NULL,
+    customer_id integer NOT NULL,
+    job_title character varying(100),
+    job_industry_category character varying(100)
+);
+
+
+ALTER TABLE public.job_title OWNER TO postgres;
+
+--
+-- Name: job_title_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.job_title_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.job_title_id_seq OWNER TO postgres;
+
+--
+-- Name: job_title_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.job_title_id_seq OWNED BY public.job_title.id;
+
+
+--
+-- Name: location; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.location (
+    id integer NOT NULL,
+    customer_id integer NOT NULL,
+    address character varying(255) NOT NULL,
+    postcode character varying(20) NOT NULL,
+    state character varying(50) NOT NULL,
+    country character varying(50) NOT NULL
+);
+
+
+ALTER TABLE public.location OWNER TO postgres;
+
+--
+-- Name: location_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.location_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.location_id_seq OWNER TO postgres;
+
+--
+-- Name: location_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.location_id_seq OWNED BY public.location.id;
+
+
+--
 -- Name: products; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -83,6 +147,44 @@ CREATE TABLE public.products (
 
 
 ALTER TABLE public.products OWNER TO postgres;
+
+--
+-- Name: prop_feats; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.prop_feats (
+    id integer NOT NULL,
+    customer_id integer NOT NULL,
+    wealth_segment character varying(50) NOT NULL,
+    deceased_indicator character(1) NOT NULL,
+    owns_car character varying(3) NOT NULL,
+    property_valuation integer NOT NULL
+);
+
+
+ALTER TABLE public.prop_feats OWNER TO postgres;
+
+--
+-- Name: prop_feats_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.prop_feats_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.prop_feats_id_seq OWNER TO postgres;
+
+--
+-- Name: prop_feats_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.prop_feats_id_seq OWNED BY public.prop_feats.id;
+
 
 --
 -- Name: transactions; Type: TABLE; Schema: public; Owner: postgres
@@ -131,6 +233,27 @@ ALTER TABLE ONLY public.customers ALTER COLUMN customer_id SET DEFAULT nextval('
 
 
 --
+-- Name: job_title id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.job_title ALTER COLUMN id SET DEFAULT nextval('public.job_title_id_seq'::regclass);
+
+
+--
+-- Name: location id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.location ALTER COLUMN id SET DEFAULT nextval('public.location_id_seq'::regclass);
+
+
+--
+-- Name: prop_feats id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.prop_feats ALTER COLUMN id SET DEFAULT nextval('public.prop_feats_id_seq'::regclass);
+
+
+--
 -- Name: transactions transaction_id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -146,6 +269,22 @@ ALTER TABLE ONLY public.customers
 
 
 --
+-- Name: job_title job_title_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.job_title
+    ADD CONSTRAINT job_title_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: location location_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.location
+    ADD CONSTRAINT location_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -154,11 +293,43 @@ ALTER TABLE ONLY public.products
 
 
 --
+-- Name: prop_feats prop_feats_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.prop_feats
+    ADD CONSTRAINT prop_feats_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: transactions transactions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.transactions
     ADD CONSTRAINT transactions_pkey PRIMARY KEY (transaction_id);
+
+
+--
+-- Name: job_title job_title_customer_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.job_title
+    ADD CONSTRAINT job_title_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customers(customer_id);
+
+
+--
+-- Name: location location_customer_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.location
+    ADD CONSTRAINT location_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customers(customer_id);
+
+
+--
+-- Name: prop_feats prop_feats_customer_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.prop_feats
+    ADD CONSTRAINT prop_feats_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customers(customer_id);
 
 
 --
