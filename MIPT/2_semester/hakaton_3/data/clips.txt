@@ -1,0 +1,9 @@
+file 'input.mp4'
+inpoint 2005
+outpoint 2025
+file 'input.mp4'
+inpoint 2025
+outpoint 2045
+file 'input.mp4'
+inpoint 1340
+outpoint 1360
