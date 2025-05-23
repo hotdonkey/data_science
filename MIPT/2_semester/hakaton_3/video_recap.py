@@ -4,7 +4,11 @@ import pandas as pd
 from typing import Dict, List, Optional, Tuple, Any
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
-import os
+
+import re
+from sumy.parsers.plaintext import PlaintextParser
+from sumy.nlp.tokenizers import Tokenizer
+from sumy.summarizers.lsa import LsaSummarizer
 
 from collections import Counter
 
@@ -12,13 +16,13 @@ import random
 from datetime import timedelta
 
 import subprocess
-import os
 from datetime import timedelta
-
-from transformers import pipeline
 
 from moviepy import VideoFileClip
 import os
+
+import warnings
+warnings.filterwarnings("ignore")
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -557,6 +561,77 @@ class RecapVideoTransformer:
 
         return unified_moments
     
+##########################################################################################
+##########################################################################################
+    
+class SubtitleSummarizer:
+    """
+    Класс для чтения .srt файлов и создания текстового рекэпа с помощью LSA-суммаризации.
+    """
+
+    def __init__(self, file_name: str):
+        """
+        Инициализация с путём к субтитрам.
+        :param file_name: Путь к .srt файлу.
+        """
+        
+        self.path = f"./data/subtitles/{file_name}.srt"
+        
+        if not os.path.exists(self.path):
+            raise FileNotFoundError(f"Файл {file_name} не найден.")
+
+        self.file_name = file_name
+        self.subtitle_blocks = self.load_subtitle_blocks()
+
+    def load_subtitle_blocks(self):
+        """
+        Загружает .srt файл и разбивает его на блоки (строки с текстом).
+        :return: Список блоков с текстом.
+        """
+        with open(self.path, "r", encoding="utf-8") as f:
+            raw_text = f.read()
+
+        blocks = raw_text.strip().split("\n\n")
+        subtitle_blocks = []
+
+        for block in blocks:
+            lines = block.strip().split("\n")
+            if len(lines) >= 3:
+                text = " ".join(lines[2:])
+            elif len(lines) == 2:
+                text = lines[1]
+            else:
+                continue
+            subtitle_blocks.append({"text": text})
+
+        return subtitle_blocks
+
+    def summarize(self, sentence_count=10):
+        """
+        Генерирует суммаризацию текста из субтитров.
+        :param sentence_count: Число предложений в итоговой выжимке.
+        :return: Текстовый результат суммаризации.
+        """
+        subtitle_text = " ".join([block["text"] for block in self.subtitle_blocks])
+        parser = PlaintextParser.from_string(subtitle_text, Tokenizer("english"))
+        summarizer = LsaSummarizer()
+        summarizer.stop_words = []  # Можно задать список стоп-слов при необходимости
+        summary_sentences = summarizer(parser.document, sentences_count=sentence_count)
+        return "\n".join(str(sentence) for sentence in summary_sentences)
+
+    def save_summary(self, output_path: str, sentence_count=10):
+        """
+        Сохраняет суммаризацию в указанный файл.
+        :param output_path: Путь к выходному файлу.
+        :param sentence_count: Число предложений в суммаризации.
+        """
+        summary = self.summarize(sentence_count)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(summary)
+        print(f"Суммаризация сохранена в {output_path}")
+
+
+    
 
 ##########################################################################################
 ##########################################################################################
@@ -587,6 +662,8 @@ if __name__ == "__main__":
         print(f"🎬 Обрабатываем: {file_name}")
         try:
             recap_video = RecapVideoTransformer(file_name)
+            summarizer = SubtitleSummarizer(file_name)
+            summarizer.save_summary(f"./data/result/{file_name}_summary.txt", sentence_count=10)
             print(f"Готово: {file_name}")
         except Exception as e:
             print(f"Ошибка при обработке {file_name}: {e}")
