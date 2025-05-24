@@ -4,11 +4,6 @@ import pandas as pd
 from typing import Dict, List, Optional, Tuple, Any
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
-from transformers import AutoTokenizer as SumAutoTokenizer
-from transformers import AutoModelForSeq2SeqLM as SumAutoModelForSeq2SeqLM
-
-import logging
-from sumy.nlp.tokenizers import Tokenizer as SumyTokenizer
 
 import re
 from sumy.parsers.plaintext import PlaintextParser
@@ -17,7 +12,6 @@ from sumy.summarizers.lsa import LsaSummarizer
 from nltk.tokenize import sent_tokenize
 
 from collections import Counter
-import torch
 
 import random
 from datetime import timedelta
@@ -31,47 +25,34 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
+import warnings
 warnings.filterwarnings("ignore")
 
 ###########################################################################################
-# === Пути и названия моделей ===
-CLASS_MODEL_NAME = "handler-bird/movie_genre_multi_classification"
-SUM_MODEL_NAME = "facebook/bart-large-cnn"
 
-CLASS_SAVE_DIR = "./local_model"  # Для классификации жанра
-SUM_SAVE_DIR = "./local_summarizer_model"  # Для суммаризации
 
-# === Шаг 1: Загрузка и сохранение модели классификации жанра ===
-if not os.path.exists(CLASS_SAVE_DIR) or not os.listdir(CLASS_SAVE_DIR):
-    print("Классификационная модель не найдена локально. Скачиваю...")
-    os.makedirs(CLASS_SAVE_DIR, exist_ok=True)
+MODEL_NAME = "handler-bird/movie_genre_multi_classification"
+SAVE_DIR = "./local_model"
 
-    tokenizer = AutoTokenizer.from_pretrained(CLASS_MODEL_NAME)
-    model = AutoModelForSequenceClassification.from_pretrained(
-        CLASS_MODEL_NAME)
+# Проверяем, существует ли папка и файлы модели
+if not os.path.exists(SAVE_DIR) or not os.listdir(SAVE_DIR):
+    print("Модель не найдена локально. Скачиваю...")
+    
+    # Создаем папку, если её нет
+    os.makedirs(SAVE_DIR, exist_ok=True)
 
-    tokenizer.save_pretrained(CLASS_SAVE_DIR)
-    model.save_pretrained(CLASS_SAVE_DIR)
-    print(f"Модель классификации успешно сохранена в {CLASS_SAVE_DIR}")
+    # Скачиваем токенизатор и модель
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+
+    # Сохраняем локально
+    tokenizer.save_pretrained(SAVE_DIR)
+    model.save_pretrained(SAVE_DIR)
+    
+    print(f"Модель успешно сохранена в {SAVE_DIR}")
 else:
-    print(
-        f"Модель классификации уже существует в {CLASS_SAVE_DIR}. Пропускаем скачивание.")
-
-# === Шаг 2: Загрузка и сохранение модели суммаризации ===
-if not os.path.exists(SUM_SAVE_DIR) or not os.listdir(SUM_SAVE_DIR):
-    print("Суммаризирующая модель не найдена локально. Скачиваю...")
-    os.makedirs(SUM_SAVE_DIR, exist_ok=True)
-
-    sum_tokenizer = SumAutoTokenizer.from_pretrained(SUM_MODEL_NAME)
-    sum_model = SumAutoModelForSeq2SeqLM.from_pretrained(SUM_MODEL_NAME)
-
-    sum_tokenizer.save_pretrained(SUM_SAVE_DIR)
-    sum_model.save_pretrained(SUM_SAVE_DIR)
-    print(f"Модель суммаризации успешно сохранена в {SUM_SAVE_DIR}")
-else:
-    print(
-        f"Модель суммаризации уже существует в {SUM_SAVE_DIR}. Пропускаем скачивание.")
-
+    print(f"Модель уже существует в {SAVE_DIR}. Пропускаем скачивание.")
+    
 
 # Задаем переменные среды
 LOCAL_MODEL_PATH = "./local_model"
@@ -80,7 +61,6 @@ VIDEO_DIR = "./data/vids"
 
 ##########################################################################################
 ##########################################################################################
-
 
 class RecapVideoTransformer:
     """
@@ -377,10 +357,10 @@ class RecapVideoTransformer:
         # Определение жанра видео
         classifier = pipeline(
             "text-classification",
-            model=CLASS_SAVE_DIR,
-            tokenizer=CLASS_MODEL_NAME,
-            # model="handler-bird/movie_genre_multi_classification",
-            # tokenizer="distilbert-base-uncased",
+            model=LOCAL_MODEL_PATH,
+            tokenizer=LOCAL_MODEL_PATH,
+            #model="handler-bird/movie_genre_multi_classification",
+            #tokenizer="distilbert-base-uncased",
             framework="pt"
         )
         self.results = classifier(self.df["text"].tolist()[:100])
@@ -582,8 +562,70 @@ class RecapVideoTransformer:
             }
 
         return unified_moments
-
+    
 ##########################################################################################
+
+# class SubtitleSummarizer:
+#     """
+#     Класс для чтения .srt файлов и создания текстового рекэпа через LSA-суммаризацию.
+#     """
+
+#     def __init__(self, file_name: str, language: str = "russian"):
+#         self.path = f"./data/subtitles/{file_name}.srt"
+#         self.file_name = file_name
+#         self.language = language
+
+#         if not os.path.exists(self.path):
+#             raise FileNotFoundError(f"Файл {self.path} не найден.")
+
+#         self.subtitle_blocks = self.load_subtitle_blocks()
+
+#     def clean_text(self, text: str) -> str:
+#         """Очистка текста от мусора."""
+#         text = re.sub(r"♪", "", text)
+#         text = re.sub(r"\[.*?\]", "", text)
+#         text = re.sub(r"\(.*?\)", "", text)
+#         text = re.sub(r"\s+", " ", text).strip()
+#         return text
+
+#     def load_subtitle_blocks(self):
+#         """Загружает субтитры и разбивает на блоки."""
+#         with open(self.path, "r", encoding="utf-8") as f:
+#             raw_text = f.read()
+
+#         blocks = raw_text.strip().split("\n\n")
+#         subtitle_blocks = []
+
+#         for block in blocks:
+#             lines = block.strip().split("\n")
+#             if len(lines) >= 3:
+#                 text = " ".join([self.clean_text(line) for line in lines[2:] if self.clean_text(line)])
+#             elif len(lines) == 2:
+#                 text = self.clean_text(lines[1])
+#             else:
+#                 continue
+#             if text:
+#                 subtitle_blocks.append({"text": text})
+
+#         return subtitle_blocks
+
+#     def summarize(self, sentence_count=15):
+#         """Создаёт суммаризацию текста."""
+#         full_text = " ".join([block["text"] for block in self.subtitle_blocks])
+#         parser = PlaintextParser.from_string(full_text, Tokenizer(self.language))
+#         summarizer = LsaSummarizer()
+#         summarizer.stop_words = []  # Можно добавить stop_words при необходимости
+#         summary_sentences = summarizer(parser.document, sentences_count=sentence_count)
+#         return "\n".join(str(sentence) for sentence in summary_sentences)
+
+#     def save_summary(self, output_path: str, sentence_count=15):
+#         """Сохраняет результат суммаризации."""
+#         summary = self.summarize(sentence_count)
+#         with open(output_path, "w", encoding="utf-8") as f:
+#             f.write(summary)
+#         print(f"✅ Суммаризация сохранена: {output_path}")
+
+
 ##########################################################################################
 
 class SubtitleSummarizer:
@@ -594,7 +636,6 @@ class SubtitleSummarizer:
     Поддерживает:
     - Предобработку текста
     - Суммаризацию через BART, T5 и другие модели
-    - Резервную суммаризацию через LSA (sumy)
     - Сохранение результата в .txt файл
     """
 
@@ -614,137 +655,71 @@ class SubtitleSummarizer:
         if not os.path.exists(self.subtitle_path):
             raise FileNotFoundError(f"Файл субтитров не найден: {self.subtitle_path}")
 
-        # Выбираем устройство
-        self.device = 0 if torch.cuda.is_available() else "mps" if getattr(torch.backends, 'mps', None) and torch.backends.mps.is_available() else -1
-        logger.info(f"Используемое устройство для суммаризации: {self.device}")
-
-        try:
-            self.summarizer = pipeline(
-                "summarization",
-                model=SUM_SAVE_DIR,
-                tokenizer=SUM_SAVE_DIR,
-                device=self.device
-            )
-        except Exception as e:
-            logger.warning(f"Не удалось загрузить модель суммаризации: {e}. Используется резервный метод (LSA).")
-            self.summarizer = None
-
+        self.summarizer = pipeline("summarization", model=model_name)
         self.subtitle_blocks = self.load_subtitle_blocks()
 
     def clean_text(self, text: str) -> str:
         """Очистка текста от мусора и ненужных обозначений"""
-        if not text:
-            return ""
-        text = re.sub(r"♪+", "", text)                 # музыка
-        text = re.sub(r"\[.*?\]", "", text)             # [звук]
-        text = re.sub(r"$.*?$", "", text)               # (вздыхает)
-        text = re.sub(r"\b(\w+)( \1\b)+", r"\1", text)  # удаление повторяющихся слов
-        text = re.sub(r"[^\w\s.,—–!?\"\«\»„“]", " ", text)  # допустимые символы
+        text = re.sub(r"♪", "", text)
+        text = re.sub(r"\[.*?\]", "", text)   # [фоновая музыка]
+        text = re.sub(r"$.*?$", "", text)     # (вздыхает)
+        text = re.sub(r"[^\w\s.,—–!?]", " ", text)
         text = re.sub(r"\s+", " ", text).strip()
         return text
 
     def load_subtitle_blocks(self):
         """Загрузка и разбор субтитров"""
-        try:
-            subs = pysrt.open(self.subtitle_path)
-        except Exception as e:
-            logger.error(f"Ошибка при чтении файла субтитров: {e}")
-            return []
+        subs = pysrt.open(self.subtitle_path)
+        df = pd.DataFrame([
+            {
+                "text": self.clean_text(sub.text),
+                "start": sub.start.to_time(),
+                "end": sub.end.to_time()
+            } for sub in subs
+        ])
 
-        cleaned_subs = []
-        for sub in subs:
-            cleaned_text = self.clean_text(sub.text)
-            if len(cleaned_text.split()) >= 2:  # минимум 2 слова
-                cleaned_subs.append({
-                    "text": cleaned_text,
-                    "start": sub.start.to_time(),
-                    "end": sub.end.to_time()
-                })
+        # Удаляем пустые строки
+        df = df[df["text"].apply(lambda x: len(x.split()) >= 3)]
+        return df.to_dict(orient="records")
 
-        if not cleaned_subs:
-            logger.warning("После очистки не осталось подходящих строк в субтитрах.")
-            return []
-
-        return cleaned_subs
-
-    def lsa_summarize(self, sentence_count=5):
-        """Резервная суммаризация через LSA (sumy)"""
-        full_text = " ".join([block["text"] for block in self.subtitle_blocks])
-        parser = PlaintextParser.from_string(full_text, SumyTokenizer("russian"))
-        summarizer = LsaSummarizer()
-        summary_sentences = summarizer(parser.document, sentences_count=sentence_count)
-        return " ".join(str(sentence) for sentence in summary_sentences)
-
-    def summarize(self, min_length=30, max_length=130, do_sample=False, num_beams=4):
+    def summarize(self, min_length=20, max_length=100, do_sample=False):
         """
         Генерирует суммаризацию текста из субтитров
         
         :param min_length: минимальная длина суммы
         :param max_length: максимальная длина суммы
         :param do_sample: использовать ли sampling
-        :param num_beams: количество beam для генерации
         :return: строка — суммаризация
         """
         full_text = " ".join([block["text"] for block in self.subtitle_blocks])
         
         # Делим на предложения и ограничиваем длину
-        sentences = sent_tokenize(full_text, language='russian')
+        sentences = sent_tokenize(full_text)
         truncated_text = " ".join(sentences[:200])  # до 200 предложений
 
-        logger.info(f"Общий объём текста для суммаризации: {len(truncated_text)} символов")
-
-        if len(truncated_text.strip()) < 20:
-            logger.warning("Текст слишком короткий для суммаризации. Используется резервный метод.")
-            return self.lsa_summarize(sentence_count=5)
-
-        if not self.summarizer:
-            logger.warning("Модель недоступна. Используется резервный метод.")
-            return self.lsa_summarize(sentence_count=5)
-
-        try:
-            summary = self.summarizer(
-                truncated_text,
-                max_length=max_length,
-                min_length=min_length,
-                do_sample=do_sample,
-                num_beams=num_beams,
-                no_repeat_ngram_size=2,
-                early_stopping=True
-            )[0]["summary_text"]
-        except IndexError as e:
-            logger.error(f"Ошибка суммаризации: {e}")
-            summary = self.lsa_summarize(sentence_count=5)
-        except Exception as e:
-            logger.error(f"Произошла ошибка: {e}")
-            summary = "Ошибка при обработке текста."
+        print(f"Общий объём текста для суммаризации: {len(truncated_text)} символов")
+        summary = self.summarizer(
+            truncated_text,
+            max_length=max_length,
+            min_length=min_length,
+            do_sample=do_sample
+        )[0]["summary_text"]
 
         return summary
 
-    def save_summary(self, min_length=30, max_length=130, do_sample=False, num_beams=4):
+    def save_summary(self, min_length=30, max_length=130, do_sample=False):
         """Сохраняет результат суммаризации в файл"""
-        summary = self.summarize(
-            min_length=min_length, 
-            max_length=max_length, 
-            do_sample=do_sample,
-            num_beams=num_beams
-        )
-
-        try:
-            with open(self.output_path, "w", encoding="utf-8") as f:
-                f.write(summary)
-            logger.info(f"Суммаризация сохранена: {self.output_path}")
-        except Exception as e:
-            logger.error(f"Не удалось сохранить файл: {e}")
+        summary = self.summarize(min_length=min_length, max_length=max_length, do_sample=do_sample)
+        with open(self.output_path, "w", encoding="utf-8") as f:
+            f.write(summary)
+        print(f"✅ Суммаризация сохранена: {self.output_path}")
+    
 
 ##########################################################################################
 ##########################################################################################
-
-# === Настройка логирования ===
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("SubtitleSummarizer")
 
 if __name__ == "__main__":
-
+    
     # Получаем все .mp4 файлы в указанной директории
     video_files = [f for f in os.listdir(VIDEO_DIR) if f.endswith(".mp4")]
 
@@ -766,12 +741,11 @@ if __name__ == "__main__":
             continue
 
         # Обрабатываем видео
-        print(f"Обрабатываем: {file_name}")
+        print(f"🎬 Обрабатываем: {file_name}")
         try:
             recap_video = RecapVideoTransformer(file_name)
             summarizer = SubtitleSummarizer(file_name)
-            # summarizer.save_summary(f"./data/result/{file_name}_summary.txt", sentence_count=10)
-            summarizer.save_summary()
+            summarizer.save_summary(f"./data/result/{file_name}_summary.txt", sentence_count=10)
             print(f"Готово: {file_name}")
         except Exception as e:
             print(f"Ошибка при обработке {file_name}: {e}")
