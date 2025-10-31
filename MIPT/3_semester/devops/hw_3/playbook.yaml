@@ -1,0 +1,9 @@
+---
+- name: Установка и запуск веб-сервера
+  hosts: local
+  become: no
+  tasks:
+    - name: Установка Apache
+      command: brew install httpd
+    - name: Запуск и включение Apache
+      command: brew services start httpd

@@ -40,3 +40,6 @@ credentials.txt
 /MIPT/3_semester/devops/hw_1/xtunnel
 /MIPT/3_semester/devops/hw_1/__pycache__
 /MIPT/3_semester/cmmo/lections
+/MIPT/3_semester/devops/hw_3/terraform*
+/MIPT/3_semester/devops/hw_3/main*
+/MIPT/3_semester/devops/hw_3/.terr*
