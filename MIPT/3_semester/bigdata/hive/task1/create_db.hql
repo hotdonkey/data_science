@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS ${hiveconf:DB_NAME}
+LOCATION '${hiveconf:DB_PATH}';
