@@ -1,0 +1,15 @@
+minio:
+  endpoint_url: "http://localhost:9000"
+  access_key: "yeQmq1b1XV3WKYQWMl16"
+  secret_key: "tQMgH8B5kSGrD6ccyw2ZCjONBaxpYyWqJNI7piqw"
+
+hbase:
+  host: "78.24.180.92"
+  port: 9090
+  table: "kill_stats_v1"
+
+# cassandra:
+#   contact_points: ["master.hadoop.akhcheck.ru"] 
+#   port: 9042
+#   keyspace: "pubg"
+#   table: "kill_stats_v2"
